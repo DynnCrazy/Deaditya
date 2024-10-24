@@ -2,45 +2,7 @@
 <html lang="id">
 <head>
     <title>Deaditya</title>
-    <style>
-        body {
-            background-color: blue;
-        }
-        .titleweb {
-            text-align: center;
-        }
-        .descweb {
-            padding:20px;
-            text-align: center;
-            margin: 0;
-        }
-        .divsm {
-            padding: 20px;
-            text-align: center;
-            justify-content: center;
-            margin:0;
-        }
-        .divsm button {
-            width: 80%;
-            margin: 5px;
-            padding: 10px;
-        }
-        .contdivps {
-            text-align: center;
-            display: flex;
-            justify-content: center;
-        }
-        .divps {
-            margin:0px;
-        }
-        .garisdidivps {
-            width:5px;
-            background-color: black;
-            height: 50px;
-            color: trasnparent;
-            margin:0;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
 <body>
@@ -48,14 +10,14 @@
     <p class="descweb">Live in Gianyar, Bali.</p>
     
     <div class="divsm">
-        <h4>Social Media:</h4>
-        <button>Instagram</button>
-        <button>YouTube</button>
-        <button>Facebook</button>
-        <button>TikTok</button>
+        <p class="subttl">Social Media:</p>
+        <button onclick="goToLink('ig')">Instagram</button>
+        <button onclick="goToLink('yt')">YouTube</button>
+        <button onclick="goToLink('fb')">Facebook</button>
+        <button onclick="goToLink('tt')">TikTok</button>
     </dib>
     <div class="divsm">
-        <h4>My Website:</h4>
+        <p class="subttl">My Website:</p>
         <button>Kerang Ajaib</button>
         <button>Kata Hari Ini</button>
         <button>Happy Birthday</button>
@@ -63,7 +25,7 @@
     </dib>
     <br><br>
     <div class="divps">
-        <h4>Riwayat Sekolah:</h4>
+        <p class="subttl">Riwayat Sekolah:</p>
         <p id="tk">TK</p>
         <div class="contdivps" id="grsps1">
             <div class="garisdidivps">.</div>
@@ -79,5 +41,4 @@
         <p id="smasmk">SMA/SMK</p>
     </dib>
 </body>
-<footer></footer>
-          </html>
+</html>
