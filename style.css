@@ -6,11 +6,13 @@ body {
     font-family: "Poppins", sans-serif;
     font-size: 14px;
 }
-
+.link1 {
+    color: white;
+    text-decoration: none;
+}
 .titleweb {
     text-align: center;
 }
-
 .descweb {
     padding:20px;
     text-align: center;
@@ -47,6 +49,7 @@ body {
 }
 .divps {
     margin:0px;
+    padding: 20px;
 }
 .garisdidivps {
     width: 4px;
@@ -55,12 +58,73 @@ body {
     border-radius: 50px;
     color: transparent;
     margin:0;
+    cursor: default;
 }
 .subttl {
     margin-bottom: 5px;
     font-weight: bold;
 }
-  
+#contprofimg {
+    display: flex;
+    justify-content: center;
+}
+#contprofimg img {
+    border-radius: 50%;
+    border: 2px solid white;
+    width: 100px;
+}
+#contdetailrs {
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.963);
+}
+#subcontdetailrs {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+#imgindetailrs {
+    width: 350px;
+    margin: 20px;
+    border-radius: 6px;
+}
+#closedetailrs {
+    top: 0;
+    right: 0;
+    position: fixed;
+    font-size: 30px;
+    margin: 50px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.fttr {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.301);
+    margin-top: 50px;
+}
+
+#tk, #sd, #smp, #smasmk {
+    cursor: pointer;
+}
+
+/*
+#tk, #sd, #smp, #smasmk {
+    color: rgb(5, 5, 5);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    background-color: white;
+    padding: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 6px;
+}
+*/
+
 @media (max-width: 600px) {
     .descweb {
         padding:20px;
@@ -75,8 +139,8 @@ body {
     }
     .divsm button {
         width: 80%;
-        margin: 10px;
-        padding: 20px;
+        margin: 7px;
+        padding: 15px;
         outline: none;
         background-color: white;
         border: 1px solid transparent;
@@ -89,5 +153,19 @@ body {
         background-color: transparent;
         border-color: white;
         color: white;
+    }
+    #imgindetailrs {
+        width: 250px;
+        margin: 20px;
+        border-radius: 6px;
+    }
+    #closedetailrs {
+        top: 0;
+        right: 0;
+        position: fixed;
+        font-size: 24px;
+        margin: 20px;
+        margin-top: 15px;
+        cursor: pointer;
     }
 }

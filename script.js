@@ -1,7 +1,19 @@
-var mytk = "TK Budi Dharma Pering";
+var mytk = "TK Budhi Dharma Pering";
+var descmytk = "TK Budhi Dharma Pering, saya bersekolah disini pada tahun ajaran 2014/2015.";
+var locmytk = "https://maps.app.goo.gl/zu4t6VaVE5qmREkL9";
+var imgmytk = "https://i.ibb.co.com/X4ZX3dH/20241005-143339.jpg";
 var mysd = "SD Negeri 4 Pering";
+var descmytsd = "SD Negeri 4 Pering (Fouring), saya bersekolah disini pada tahun ajaran 2015-2021.";
+var locmysd = "https://maps.app.goo.gl/4QXdaeDkbppKybP37";
+var imgmysd = "https://i.ibb.co.com/X4ZX3dH/20241005-143339.jpg";
 var mysmp = "SMP Negeri 2 Blahbatuh";
+var descmysmp = "SMP Negeri 2 Blahbatuh (Blaspentwo), saya bersekolah disini pada tahun ajaran 2021-2024.";
+var locmysmp = "https://maps.app.goo.gl/oBwFK9ssHA48NApX7";
+var imgmysmp = "https://i.ibb.co.com/X4ZX3dH/20241005-143339.jpg";
 var mysmasmk = "SMA Negeri 1 Blahbatuh";
+var descmysmasmk = "SMA Negeri 1 Blahbatuh, saya bersekolah disini pada tahun ajaran 2024-2027.";
+var locmysmasmk = "https://maps.app.goo.gl/pZickYQ4qUirGTHg9";
+var imgmysmasmk = "https://i.ibb.co.com/X4ZX3dH/20241005-143339.jpg";
 var sekolahnow = "";
 const lastsekolahnow = "(Now)";
 
@@ -51,17 +63,71 @@ if (sekolahnow === "TK") {
 }
 
 function goToLink(to) {
-var link = "";
+    var link = "";
+    var adaLink = true;
 
     if (to === "ig") {
-        link = "https://instagram.com/@deaditya.xyz/";
+        link = "https://www.instagram.com/deaditya.xyz";
     } else if (to === "yt") {
         link = "https://www.youtube.com/@DynCrazy";
     } else if (to === "fb") {
         link = "https://www.facebook.com/gede.aditya.777158?mibextid=ZbWKwL";
     } else if (to === "tt") {
         link = "https://tiktok.com/@deaditya.xyz";
+    } else if (to === "mw-ka") {
+        link = "https://kerang-ajaib.netlify.app/";
+    } else if (to === "mw-hbd") {
+        link = "https://hbdtoyou.netlify.app/";
+    } else if (to === "mw-kkhi") {
+        link = "https://kata2harini.netlify.app/";
+    } else if (to === "mw-hm") {
+        link = "https://hitungmundur.netlify.app/";
+    } else if (to === "mw-dcfg") {
+        link = "https://dcfinder.netlify.app/";
+    } else {
+        terjadiKesalahan();
+        adaLink = false;
     }
 
-window.location.href = link;
+    if (adaLink === true) {
+        // window.location.href = link;
+        window.open(link, '_blank');
+    } else {
+        console.log("Link tidak ditemukan!");
+    }
+
+}
+
+function detailRiwayatSekolah(whatSch) {
+    document.getElementById("contdetailrs").style.display = "block";
+
+    if (whatSch === "TK") {
+        document.getElementById("descindetailrs").innerHTML = descmytk;
+        document.getElementById("linkindetailrs").href = locmytk;
+        document.getElementById("imgindetailrs").src = imgmytk;
+    } else if (whatSch === "SD") {
+        document.getElementById("descindetailrs").innerHTML = descmysd;
+        document.getElementById("linkindetailrs").href = locmysd;
+        document.getElementById("imgindetailrs").src = imgmysd;
+    } else if (whatSch === "SMP") {
+        document.getElementById("descindetailrs").innerHTML = descmysmp;
+        document.getElementById("linkindetailrs").href = locmysmp;
+        document.getElementById("imgindetailrs").src = imgmysmp;
+    } else if (whatSch === "SMASMK") {
+        document.getElementById("descindetailrs").innerHTML = descmysmasmk;
+        document.getElementById("linkindetailrs").href = locmysmasmk;
+        document.getElementById("imgindetailrs").src = imgmysmasmk;
+    }
+
+}
+
+function closedtlrs() {
+    document.getElementById("contdetailrs").style.display = "none";
+}
+
+
+
+function terjadiKesalahan() {
+    alert("Terjadi kesalahan!");
+    console.log("Error!");
 }

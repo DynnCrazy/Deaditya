@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5, minimum-scale=0.5">
     <title>Deaditya</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1 class="titleweb">DEADITYA</h1>
+    <h1 class="titleweb" id="deaditya">DEADITYA</h1>
+
+    <div id="contprofimg">
+        <img src="https://i.ibb.co.com/Qk5qTY1/IMG-20231212-142221-0597.jpg">
+    </div>
+
     <p class="descweb">Live in Gianyar, Bali.</p>
     
     <div class="divsm">
@@ -18,27 +26,44 @@
     </dib>
     <div class="divsm">
         <p class="subttl">My Website:</p>
-        <button>Kerang Ajaib</button>
-        <button>Kata Hari Ini</button>
-        <button>Happy Birthday</button>
-        <button>Hitung Mundur</button>
+        <button onclick="goToLink('mw-ka')">Kerang Ajaib</button>
+        <button onclick="goToLink('mw-hbd')">Happpy Birthday</button>
+        <button onclick="goToLink('mw-kkhi')">Kata-Kata Hari Ini</button>
+        <button onclick="goToLink('mw-hm')">Hitung Mundur</button>
+        <button onclick="goToLink('mw-dcfg')">Hitung Mundur</button>
     </dib>
     <br><br>
     <div class="divps">
         <p class="subttl">Riwayat Sekolah:</p>
-        <p id="tk">TK</p>
+        <p id="tk" onclick="detailRiwayatSekolah('TK')">TK</p>
         <div class="contdivps" id="grsps1">
             <div class="garisdidivps">.</div>
         </div>
-        <p id="sd">SD</p>
+        <p id="sd" onclick="detailRiwayatSekolah('SD')">SD</p>
         <div class="contdivps" id="grsps2">
             <div class="garisdidivps">.</div>
         </div>
-        <p id="smp">SMP</p>
+        <p id="smp" onclick="detailRiwayatSekolah('SMP')">SMP</p>
         <div class="contdivps" id="grsps3">
             <div class="garisdidivps">.</div>
         </div>
-        <p id="smasmk">SMA/SMK</p>
-    </dib>
+        <p id="smasmk" onclick="detailRiwayatSekolah('SMASMK')">SMA/SMK</p>
+    </div>
+
+    <div id="contdetailrs" style="display: none;">
+        <div id="subcontdetailrs">
+            <img src="" id="imgindetailrs" alt="Gambar">
+            <p class="subttl">Deskripsi:</p>
+            <p id="descindetailrs">Deskripsi</p>
+            <p class="subttl">Lokasi:</p>
+            <p><a href="" class="link1" id="linkindetailrs"><u>Klik disini</u> untuk melihat lokasi!</a></p>
+            <p id="closedetailrs" onclick="closedtlrs()"><i class="fas fa-times"></i></p>
+        </div>
+    </div>
+    </div>
+
+<footer>
+    <p class="fttr">Web by <a href="#deaditya" style="text-decoration: none; color: rgba(255, 255, 255, 0.301);">Deaditya</a></p>
+</footer>
 </body>
 </html>
