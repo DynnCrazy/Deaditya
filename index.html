@@ -15,7 +15,7 @@
         <img src="https://i.ibb.co.com/Qk5qTY1/IMG-20231212-142221-0597.jpg">
     </div>
 
-    <p class="descweb">Live in Gianyar, Bali.</p>
+    <p class="descweb">Live in <a href="https://maps.app.goo.gl/np5y9ueUrj8DUDRE9" class="normaltxt">Gianyar, Bali.</a></p>
     
     <div class="divsm">
         <p class="subttl">Social Media:</p>
@@ -30,8 +30,8 @@
         <button onclick="goToLink('mw-hbd')">Happpy Birthday</button>
         <button onclick="goToLink('mw-kkhi')">Kata-Kata Hari Ini</button>
         <button onclick="goToLink('mw-hm')">Hitung Mundur</button>
-        <button onclick="goToLink('mw-dcfg')">Hitung Mundur</button>
-    </dib>
+        <button onclick="goToLink('mw-dcfg')">DC Finder (Game)</button>
+    </div>
     <br><br>
     <div class="divps">
         <p class="subttl">Riwayat Sekolah:</p>
@@ -53,14 +53,23 @@
     <div id="contdetailrs" style="display: none;">
         <div id="subcontdetailrs">
             <img src="" id="imgindetailrs" alt="Gambar">
-            <p class="subttl">Deskripsi:</p>
+            <p class="subttl" id="descrsdetlincntdetailrs">Deskripsi:</p>
             <p id="descindetailrs">Deskripsi</p>
-            <p class="subttl">Lokasi:</p>
+            <p class="subttl" id="locrsdetlincntdetailrs">Lokasi:</p>
             <p><a href="" class="link1" id="linkindetailrs"><u>Klik disini</u> untuk melihat lokasi!</a></p>
             <p id="closedetailrs" onclick="closedtlrs()"><i class="fas fa-times"></i></p>
         </div>
     </div>
     </div>
+
+    <div class="divplymsck">
+        <p class="subttl">Random Music:</p>
+        <audio id="rndmMusic" loop>
+            <source src="Audio/randomaudio_manonawire.mp3" type="audio/mp3">
+        </audio>
+        <button onclick="playRndmMusic()" class="btnrndmmsck" id="btnpm1">Play</button>
+        <button onclick="pauseRndmMusic()" class="btnrndmmsck" id="btnpm2" disabled style="cursor: not-allowed;">Pause</button>
+    </dib>
 
 <footer>
     <p class="fttr">Web by <a href="#deaditya" style="text-decoration: none; color: rgba(255, 255, 255, 0.301);">Deaditya</a></p>

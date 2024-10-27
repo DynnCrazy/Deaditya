@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=SUSE:wght@100..800&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: rgb(0, 136, 255);
     color: white;
@@ -10,6 +14,11 @@ body {
     color: white;
     text-decoration: none;
 }
+.normaltxt {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
 .titleweb {
     text-align: center;
 }
@@ -19,6 +28,12 @@ body {
     margin: 0;
 }
 .divsm {
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+    margin:0;
+}
+.divplymsck {
     padding: 20px;
     text-align: center;
     justify-content: center;
@@ -80,7 +95,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.963);
+    background-color: rgba(0, 13, 24, 0.981);
 }
 #subcontdetailrs {
     padding-left: 10%;
@@ -88,8 +103,14 @@ body {
 }
 #imgindetailrs {
     width: 350px;
-    margin: 20px;
+    margin: 30px;
+    margin-bottom: 0px;
     border-radius: 6px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+#locrsdetlincntdetailrs {
+    margin-top: 30px;
 }
 #closedetailrs {
     top: 0;
@@ -99,6 +120,24 @@ body {
     margin: 50px;
     margin-top: 30px;
     cursor: pointer;
+}
+.btnrndmmsck {
+    width: 15%;
+    margin: 10px;
+    padding: 12px;
+    outline: none;
+    background-color: white;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    color: rgb(5, 5, 5);
+    box-sizing: border-box;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    cursor: pointer;
+}
+.btnrndmmsck:hover {
+    background-color: transparent;
+    border-color: white;
+    color: white;
 }
 .fttr {
     font-size: 12px;
@@ -149,14 +188,10 @@ body {
         box-sizing: border-box;
         transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
     }
-    .divsm button:hover {
-        background-color: transparent;
-        border-color: white;
-        color: white;
-    }
     #imgindetailrs {
         width: 250px;
         margin: 20px;
+        margin-top: 30px;
         border-radius: 6px;
     }
     #closedetailrs {
@@ -166,6 +201,12 @@ body {
         font-size: 24px;
         margin: 20px;
         margin-top: 15px;
-        cursor: pointer;
+    }
+    .btnrndmmsck {
+        width: 40%;
+        margin: 10px;
+        padding: 12px;
+        border: 1px solid transparent;
+        border-radius: 30px;
     }
 }

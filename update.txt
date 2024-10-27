@@ -1,0 +1,20 @@
+==========================
+SCROLL TO SEE LAST UPDATE
+==========================
+
+# Deaditya v1.0.0 | 25-10-2024
+- Rilis
+
+# Deaditya v1.0.8 | 26-10-2024
+- Penambahan gambar pada detail riwayat sekolah
+- Transisi gambar pada detail riwayat sekolah
+- Scroll behavior jadi smooth
+- Sedikit pengubahan tata letak
+- Fix typo
+
+# Deaditya v1.1.3 | 27-10-2024
+- Penambahan fitur random music
+
+
+
+Web by Dyn Crazy | Deaditya
