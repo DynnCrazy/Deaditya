@@ -20,6 +20,11 @@ SCROLL TO SEE LAST UPDATE
 # Deaditya v1.1.5 | 28-10-2024
 - Penambahan animasi pada saat scroll
 
+# Deaditya v1.2.1 | 28-10-2024
+- Penambahan judul lagu saat lagu di mainkan
+- Sistem pause musik berubah
+- Lagu bertambah
+
 
 
 Web by Dyn Crazy | Deaditya

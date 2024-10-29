@@ -23,7 +23,11 @@ const audio = document.getElementById('rndmMusic');
 let intervalId;
 const musicRandomList = [
     'Audio/manonawire.mp3',
-    'Audio/nightchanges.mp3'
+    'Audio/nightchanges.mp3',
+    'Audio/nina.mp3',
+    'Audio/hero.mp3',
+    'Audio/jakartahariini.mp3',
+    'Audio/thenightwemeet.mp3',
 ];
 let isPlaying = false;
 var whatMusicPlay = "";
@@ -191,6 +195,18 @@ function playRndmMusic() {
         document.getElementById("musicnowplay").innerHTML = nowplay + whatMusicPlay;
     } else if (selectedMusic === "Audio/nightchanges.mp3") {
         whatMusicPlay = "One Direction - Night Changes";
+        document.getElementById("musicnowplay").innerHTML = nowplay + whatMusicPlay;
+    } else if (selectedMusic === "Audio/nina.mp3") {
+        whatMusicPlay = ".Feast - Nina";
+        document.getElementById("musicnowplay").innerHTML = nowplay + whatMusicPlay;
+    } else if (selectedMusic === "Audio/hero.mp3") {
+        whatMusicPlay = "Cash Cash - Hero (ft. Christina Perri)";
+        document.getElementById("musicnowplay").innerHTML = nowplay + whatMusicPlay;
+    } else if (selectedMusic === "Audio/jakartahariini.mp3") {
+        whatMusicPlay = "For Revenge - Jakarta Hari Ini (ft. Stereowall)";
+        document.getElementById("musicnowplay").innerHTML = nowplay + whatMusicPlay;
+    } else if (selectedMusic === "Audio/thenightwemeet.mp3") {
+        whatMusicPlay = "Lord Huron -  The Night We Met";
         document.getElementById("musicnowplay").innerHTML = nowplay + whatMusicPlay;
     }
 }
