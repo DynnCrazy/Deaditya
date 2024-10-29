@@ -17,6 +17,31 @@ body {
     background-size: 4em 4em;
 }
 
+.marquee-container {
+    width: 35%;
+    overflow: hidden;
+    border: 1px solid #ffffff;
+    margin: 10px auto;
+    padding: 12px;
+    border-radius: 30px;
+}
+
+.marquee {
+    display: inline-block;
+    white-space: nowrap;
+    animation: slide 10s linear infinite;
+    font-size: 14px;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(150%);
+    }
+    100% {
+        transform: translateX(-150%);
+    }
+}
+
 .link1 {
     color: white;
     text-decoration: none;
@@ -239,5 +264,19 @@ body {
     #conttxtdescondetlrs {
         width: 90%;
         text-align: justify;
+    }
+    .marquee-container {
+        width: 90%;
+        overflow: hidden;
+        border: 1px solid #ffffff;
+        margin: 10px auto;
+        padding: 12px;
+        border-radius: 30px;
+    }
+    .marquee {
+        display: inline-block;
+        white-space: nowrap;
+        animation: slide 10s linear infinite;
+        font-size: 14px;
     }
 }

@@ -60,11 +60,14 @@
     <div class="divplymsck">
         <p class="subttl" data-aos="fade-down">Random Music:</p>
         <audio id="rndmMusic" loop>
-            <source src="Audio/randomaudio_manonawire.mp3" type="audio/mp3">
+            <source src="" type="audio/mp3">
         </audio>
         <div class="mybuutonatplymsck">
             <button onclick="playRndmMusic()" class="btnrndmmsck" id="btnpm1" data-aos="fade-right">Play</button>
-            <button onclick="pauseRndmMusic()" class="btnrndmmsck" id="btnpm2" disabled style="cursor: not-allowed;" data-aos="fade-left">Pause</button>
+            <button onclick="pauseRndmMusic()" class="btnrndmmsck" id="btnpm2" disabled style="cursor: not-allowed;" data-aos="fade-left">Pause</button>     
+        </div>
+        <div class="marquee-container" data-aos="fade-up">
+            <div class="marquee" id="musicnowplay">Tidak ada musik yang diputar sekarang!</div>
         </div>
     </div>
 

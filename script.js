@@ -21,6 +21,13 @@ const lastsekolahnow = "(Now)";
 let currentImageIndex = 0;
 const audio = document.getElementById('rndmMusic');
 let intervalId;
+const musicRandomList = [
+    'Audio/manonawire.mp3',
+    'Audio/nightchanges.mp3'
+];
+let isPlaying = false;
+var whatMusicPlay = "";
+var nowplay = "Now playing: "
 
 if (!mytk) {
     document.getElementById("tk").style.display = "none";
@@ -169,16 +176,44 @@ function closedtlrs() {
 }
 
 function playRndmMusic() {
+    const randomIndex = Math.floor(Math.random() * musicRandomList.length);
+    const selectedMusic = musicRandomList[randomIndex];
+
+    audio.src = selectedMusic;
     audio.play();
+    document.getElementById("btnpm1").innerHTML = "Play Another"
     document.getElementById("btnpm2").disabled = false;
     document.getElementById("btnpm2").style.cursor = "pointer";
+    isPlaying = true;
+
+    if (selectedMusic === "Audio/manonawire.mp3") {
+        whatMusicPlay = "The Script - Man On A Wire";
+        document.getElementById("musicnowplay").innerHTML = nowplay + whatMusicPlay;
+    } else if (selectedMusic === "Audio/nightchanges.mp3") {
+        whatMusicPlay = "One Direction - Night Changes";
+        document.getElementById("musicnowplay").innerHTML = nowplay + whatMusicPlay;
+    }
 }
 
 function pauseRndmMusic() {
-    audio.pause();
-    document.getElementById("btnpm2").disabled = true;
-    document.getElementById("btnpm2").style.cursor = "not-allowed";
+    if (isPlaying) {
+        audio.pause();
+        document.getElementById("musicnowplay").innerHTML = "Now pause: " + whatMusicPlay;
+    } else {
+        if (audio.src) {
+            audio.play();
+            document.getElementById("musicnowplay").innerHTML = nowplay + whatMusicPlay;
+        } else {
+            playRndmMusic();
+            document.getElementById("musicnowplay").innerHTML = nowplay + whatMusicPlay;
+        }
+    }
+    isPlaying = !isPlaying;
 }
+
+audio.addEventListener('ended', () => {
+    isPlaying = false;
+});
 
 function terjadiKesalahan() {
     alert("Terjadi Kesalahan Dalam Proses!");
