@@ -1,78 +1,99 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5, minimum-scale=0.5">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Deaditya</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <center>
+    <div data-aos="fade-in">
     <h1 class="titleweb" id="deaditya">DEADITYA</h1>
 
     <div id="contprofimg">
-        <img src="https://i.ibb.co.com/Qk5qTY1/IMG-20231212-142221-0597.jpg">
+        <img src="https://i.ibb.co.com/Qk5qTY1/IMG-20231212-142221-0597.jpg" >
     </div>
 
-    <p class="descweb">Live in <a href="https://maps.app.goo.gl/np5y9ueUrj8DUDRE9" class="normaltxt">Gianyar, Bali.</a></p>
+    <p class="descweb">Live in <a href="https://maps.app.goo.gl/np5y9ueUrj8DUDRE9" target="_blank" class="normaltxt">Gianyar, Bali.</a></p>
     
-    <div class="divsm">
+    </div>
+
+    <div class="divsm"  data-aos="fade-up">
         <p class="subttl">Social Media:</p>
         <button onclick="goToLink('ig')">Instagram</button>
         <button onclick="goToLink('yt')">YouTube</button>
         <button onclick="goToLink('fb')">Facebook</button>
         <button onclick="goToLink('tt')">TikTok</button>
     </dib>
-    <div class="divsm">
+    <div class="divsm"  data-aos="fade-up">
         <p class="subttl">My Website:</p>
         <button onclick="goToLink('mw-ka')">Kerang Ajaib</button>
-        <button onclick="goToLink('mw-hbd')">Happpy Birthday</button>
+        <button onclick="goToLink('mw-hbd')">Happy Birthday</button>
         <button onclick="goToLink('mw-kkhi')">Kata-Kata Hari Ini</button>
         <button onclick="goToLink('mw-hm')">Hitung Mundur</button>
         <button onclick="goToLink('mw-dcfg')">DC Finder (Game)</button>
     </div>
+
     <br><br>
+
     <div class="divps">
-        <p class="subttl">Riwayat Sekolah:</p>
-        <p id="tk" onclick="detailRiwayatSekolah('TK')">TK</p>
+        <p class="subttl" data-aos="fade-down">Riwayat Sekolah:</p>
+        <p id="tk" onclick="detailRiwayatSekolah('TK')" data-aos="fade-down">TK</p>
         <div class="contdivps" id="grsps1">
-            <div class="garisdidivps">.</div>
+            <div class="garisdidivps" data-aos="fade-down">.</div>
         </div>
-        <p id="sd" onclick="detailRiwayatSekolah('SD')">SD</p>
+        <p id="sd" onclick="detailRiwayatSekolah('SD')" data-aos="fade-down">SD</p>
         <div class="contdivps" id="grsps2">
-            <div class="garisdidivps">.</div>
+            <div class="garisdidivps" data-aos="fade-down">.</div>
         </div>
-        <p id="smp" onclick="detailRiwayatSekolah('SMP')">SMP</p>
+        <p id="smp" onclick="detailRiwayatSekolah('SMP')" data-aos="fade-down">SMP</p>
         <div class="contdivps" id="grsps3">
-            <div class="garisdidivps">.</div>
+            <div class="garisdidivps" data-aos="fade-down">.</div>
         </div>
-        <p id="smasmk" onclick="detailRiwayatSekolah('SMASMK')">SMA/SMK</p>
+        <p id="smasmk" onclick="detailRiwayatSekolah('SMASMK')" data-aos="fade-down">SMA/SMK</p>
     </div>
+
+    <div class="divplymsck">
+        <p class="subttl" data-aos="fade-down">Random Music:</p>
+        <audio id="rndmMusic" loop>
+            <source src="Audio/randomaudio_manonawire.mp3" type="audio/mp3">
+        </audio>
+        <div class="mybuutonatplymsck">
+            <button onclick="playRndmMusic()" class="btnrndmmsck" id="btnpm1" data-aos="fade-right">Play</button>
+            <button onclick="pauseRndmMusic()" class="btnrndmmsck" id="btnpm2" disabled style="cursor: not-allowed;" data-aos="fade-left">Pause</button>
+        </div>
+    </div>
+
+    </center>
 
     <div id="contdetailrs" style="display: none;">
         <div id="subcontdetailrs">
+            <center>
             <img src="" id="imgindetailrs" alt="Gambar">
             <p class="subttl" id="descrsdetlincntdetailrs">Deskripsi:</p>
             <p id="descindetailrs">Deskripsi</p>
             <p class="subttl" id="locrsdetlincntdetailrs">Lokasi:</p>
             <p><a href="" class="link1" id="linkindetailrs"><u>Klik disini</u> untuk melihat lokasi!</a></p>
+            </center>
             <p id="closedetailrs" onclick="closedtlrs()"><i class="fas fa-times"></i></p>
         </div>
     </div>
-    </div>
 
-    <div class="divplymsck">
-        <p class="subttl">Random Music:</p>
-        <audio id="rndmMusic" loop>
-            <source src="Audio/randomaudio_manonawire.mp3" type="audio/mp3">
-        </audio>
-        <button onclick="playRndmMusic()" class="btnrndmmsck" id="btnpm1">Play</button>
-        <button onclick="pauseRndmMusic()" class="btnrndmmsck" id="btnpm2" disabled style="cursor: not-allowed;">Pause</button>
-    </dib>
+    <footer>
+        <p class="fttr">Web by <a href="#deaditya" style="text-decoration: none; color: rgba(255, 255, 255, 0.301);">Deaditya</a></p>
+    </footer>
 
-<footer>
-    <p class="fttr">Web by <a href="#deaditya" style="text-decoration: none; color: rgba(255, 255, 255, 0.301);">Deaditya</a></p>
-</footer>
+<script src="script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1500,  
+        once: true
+});
+</script>
 </body>
 </html>

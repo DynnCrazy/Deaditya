@@ -1,17 +1,17 @@
 var mytk = "TK Budhi Dharma Pering";
-var descmytk = "TK Budhi Dharma Pering, saya bersekolah disini pada tahun ajaran 2014/2015.";
+var descmytk = "TK Budhi Dharma Pering, saya bersekolah disini pada tahun ajaran 2014/2015. Di sekolah ini saya mendapatkan kelas B2. Fun fact: Saya juara 1 di TK 😎.";
 var locmytk = "https://maps.app.goo.gl/zu4t6VaVE5qmREkL9";
 var imgmytk = ["Image/love.png", "Image/love.png"];
 var mysd = "SD Negeri 4 Pering";
-var descmysd = "SD Negeri 4 Pering (Fouring), saya bersekolah disini pada tahun ajaran 2015-2021.";
+var descmysd = "SD Negeri 4 Pering (Fouring), saya bersekolah disini pada tahun ajaran 2015-2021. Dari semua masa yang saya alami, ini yang paling seru karena dapat bermain dan bersenang-senang dengan teman-teman. Fun fact: Kita pernah belajar daring (online) pada semester 2 kelas 5 sampai kelas 6 dikarenakan ada PPKM yang disebabkan oleh virus covid-19.";
 var locmysd = "https://maps.app.goo.gl/4QXdaeDkbppKybP37";
 var imgmysd = ["Image/sd_1.png", "Image/sd_2.png"];
 var mysmp = "SMP Negeri 2 Blahbatuh";
-var descmysmp = "SMP Negeri 2 Blahbatuh (Blaspentwo), saya bersekolah disini pada tahun ajaran 2021-2024.";
+var descmysmp = "SMP Negeri 2 Blahbatuh (Blaspentwo), saya bersekolah disini pada tahun ajaran 2021-2024. Saya bersekolah disini melalui jalur zonasi. Saat bersekolah disini, saya mendapatkan/menjadi siswa kelas J (kelas terakhir di sekolah ini). Fun fact: pada saat kelas 7, kelas J dibagi jadi 2 sesi, dikarenakan pada saat itu sedang maraknya virus covid-19.";
 var locmysmp = "https://maps.app.goo.gl/oBwFK9ssHA48NApX7";
 var imgmysmp = ["Image/smp_1.png", "Image/smp_2.png", "Image/smp_3.png", "Image/smp_4.png", "Image/smp_5.png"];
 var mysmasmk = "SMA Negeri 1 Blahbatuh";
-var descmysmasmk = "SMA Negeri 1 Blahbatuh, saya bersekolah disini pada tahun ajaran 2024-2027.";
+var descmysmasmk = "SMA Negeri 1 Blahbatuh, saya bersekolah disini pada tahun ajaran 2024-2027. Pada saat MPLS (masa pengenalan lingkungan sekolah) saya bergabung pada MPLS kelas C. Lalu setelah selesai MPLS, saya bergabung pada kelas X.I (10 I).";
 var locmysmasmk = "https://maps.app.goo.gl/pZickYQ4qUirGTHg9";
 var imgmysmasmk = ["Image/sma_1.png", "Image/sma_1.png"];
 var sekolahnow = "";
@@ -20,6 +20,7 @@ var isDetailrsopen = false;
 const lastsekolahnow = "(Now)";
 let currentImageIndex = 0;
 const audio = document.getElementById('rndmMusic');
+let intervalId;
 
 if (!mytk) {
     document.getElementById("tk").style.display = "none";
@@ -51,8 +52,6 @@ if (!mysmasmk) {
     document.getElementById("smasmk").innerHTML = mysmasmk;
     sekolahnow = "SMASMK";
 }
-
-sekolahnow = sekolahnow;
 
 if (sekolahnow === "TK") {
     document.getElementById("tk").innerHTML = mytk + " " + lastsekolahnow;
@@ -94,17 +93,16 @@ function goToLink(to) {
     }
 
     if (adaLink === true) {
-        // window.location.href = link;
         window.open(link, '_blank');
     } else {
         console.log("Link tidak ditemukan!");
     }
-
 }
 
 function detailRiwayatSekolah(whatSch) {
     document.getElementById("contdetailrs").style.display = "block";
     document.body.style.overflow = 'hidden';
+    isDetailrsopen = true;
 
     if (whatSch === "TK") {
         document.getElementById("descindetailrs").innerHTML = descmytk;
@@ -129,39 +127,45 @@ function detailRiwayatSekolah(whatSch) {
     }
 
     changeImage();
+
+    if (!intervalId) {
+        intervalId = setInterval(changeImage, 5000);
+    }
 }
+
 
 function changeImage() {
-    isDetailrsopen = true;
-    var imagesx = "";
+    if (isDetailrsopen) {
+        var imagesx = "";
 
-    if (imageNow === "TK") {
-        imagesx = imgmytk;
-    } else if (imageNow === "SD") {
-        imagesx = imgmysd;
-    } else if (imageNow === "SMP") {
-        imagesx = imgmysmp;
-    } else if (imageNow === "SMASMK") {
-        imagesx = imgmysmasmk;
+        if (imageNow === "TK") {
+            imagesx = imgmytk;
+        } else if (imageNow === "SD") {
+            imagesx = imgmysd;
+        } else if (imageNow === "SMP") {
+            imagesx = imgmysmp;
+        } else if (imageNow === "SMASMK") {
+            imagesx = imgmysmasmk;
+        }
+
+        currentImageIndex = (currentImageIndex + 1) % imagesx.length;
+        document.getElementById("imgindetailrs").style.opacity = 0;
+
+        setTimeout(() => {
+            document.getElementById("imgindetailrs").src = imagesx[currentImageIndex];
+            document.getElementById("imgindetailrs").style.opacity = 1;
+        }, 1000);
     }
-
-    currentImageIndex = (currentImageIndex + 1) % imagesx.length;
-    document.getElementById("imgindetailrs").style.opacity = 0;
-
-    setTimeout(() => {
-        document.getElementById("imgindetailrs").src = imagesx[currentImageIndex];
-        document.getElementById("imgindetailrs").style.opacity = 1;
-    }, 1000);
-
 }
-
-setInterval(changeImage, 5000);
 
 function closedtlrs() {
     isDetailrsopen = false;
     document.body.style.overflow = 'auto';
     document.getElementById("contdetailrs").style.display = "none";
     document.getElementById("imgindetailrs").src = "";
+
+    clearInterval(intervalId);
+    intervalId = null;
 }
 
 function playRndmMusic() {
@@ -177,6 +181,5 @@ function pauseRndmMusic() {
 }
 
 function terjadiKesalahan() {
-    alert("Terjadi kesalahan!");
-    console.log("Error!");
+    alert("Terjadi Kesalahan Dalam Proses!");
 }
