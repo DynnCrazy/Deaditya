@@ -182,6 +182,48 @@ body {
     border-color: white;
     color: white;
 }
+#mvntButton {
+    margin: 10px;
+    outline: none;
+    background-color: white;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    color: rgb(5, 5, 5);
+    box-sizing: border-box;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    cursor: pointer;
+    width: 15%;
+    padding: 15px;
+}
+/*
+#mvntButton:hover {
+    background-color: transparent;
+    border-color: white;
+    color: white;
+}
+*/
+#contact-btn-send {
+    width: 15%;
+    padding: 15px;
+    border-radius: 30px;
+}
+#contact-username {
+    margin: 10px;
+    width: 30%;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    padding: 15px;
+    font-family: "Poppins", sans-serif;
+}
+#contact-message {
+    width: 30%;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    padding: 15px;
+    font-family: "Poppins", sans-serif;
+}
 .fttr {
     font-size: 12px;
     color: rgba(255, 255, 255, 0.301);
@@ -278,5 +320,34 @@ body {
         white-space: nowrap;
         animation: slide 10s linear infinite;
         font-size: 14px;
+    }
+    #mvntButton {
+        margin: 10px;
+        outline: none;
+        background-color: white;
+        border: 1px solid transparent;
+        border-radius: 30px;
+        color: rgb(5, 5, 5);
+        box-sizing: border-box;
+        transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+        cursor: pointer;
+        width: 40%;
+        padding: 15px;
+    }
+    #contact-btn-send {
+        width: 40%;
+        padding: 15px;
+        border-radius: 30px;
+    }
+    #contact-username {
+        margin: 10px;
+        width: 80%;
+        border-radius: 20px;
+        padding: 15px;
+    }
+    #contact-message {
+        width: 80%;
+        border-radius: 20px;
+        padding: 15px;
     }
 }

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
     <center>
@@ -57,6 +58,14 @@
         <p id="smasmk" onclick="detailRiwayatSekolah('SMASMK')" data-aos="fade-down">SMA/SMK</p>
     </div>
 
+    <div class="divps" data-aos="fade-up">
+        <p class="subttl">Prestasi:</p>
+        <!-- Gak ada prestasi :) -->
+        <button id="mvntButton" onclick="moveButton()">Lihat</button>
+    </div>
+
+    <br>
+
     <div class="divplymsck">
         <p class="subttl" data-aos="fade-down">Random Music:</p>
         <audio id="rndmMusic" loop>
@@ -70,6 +79,44 @@
             <div class="marquee" id="musicnowplay">Tidak ada musik yang diputar sekarang!</div>
         </div>
     </div>
+
+    <div class="divps" data-aos="fade-up">
+        <p class="subttl">Contact:</p>
+
+    <form id="contact-form">
+        <input type="text" id="contact-username" placeholder="Your Name" required><br><br>
+        <textarea id="contact-message" placeholder="Your Message" required></textarea><br><br>
+        <button type="button" onclick="sendEmail()" id="contact-btn-send">Send</button>
+    </form>
+    <div id="response"></div>
+    </div>
+
+    <script>
+        function sendEmail() {
+            var data = {
+                service_id: 'deaditya',
+                template_id: 'temp_email',
+                user_id: '3rOnyc1hK0Q6qfdk_',
+                template_params: {
+                    'username': document.getElementById('contact-username').value,
+                    'message': document.getElementById('contact-message').value
+                }
+            };
+
+            $.ajax('https://api.emailjs.com/api/v1.0/email/send', {
+                type: 'POST',
+                data: JSON.stringify(data),
+                contentType: 'application/json'
+            }).done(function() {
+                // document.getElementById("response").innerText = "Your message has been sent!";
+                alert('Pesan kamu telah terkirim');
+                document.getElementById("contact-form").reset();
+            }).fail(function(error) {
+                // document.getElementById("response").innerText = "Oops... " + JSON.stringify(error);
+                alert('Oops... ' + JSON.stringify(error));
+            });
+        }
+    </script>
 
     </center>
 
@@ -87,6 +134,7 @@
             <p id="closedetailrs" onclick="closedtlrs()"><i class="fas fa-times"></i></p>
         </div>
     </div>
+
 
     <footer>
         <p class="fttr">Web by <a href="#deaditya" style="text-decoration: none; color: rgba(255, 255, 255, 0.301);">Deaditya</a></p>

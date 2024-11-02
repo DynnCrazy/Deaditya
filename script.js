@@ -32,6 +32,7 @@ const musicRandomList = [
 let isPlaying = false;
 var whatMusicPlay = "";
 var nowplay = "Now playing: "
+const mvntButton = document.getElementById("mvntButton");
 
 if (!mytk) {
     document.getElementById("tk").style.display = "none";
@@ -234,3 +235,12 @@ audio.addEventListener('ended', () => {
 function terjadiKesalahan() {
     alert("Terjadi Kesalahan Dalam Proses!");
 }
+
+function moveButton() {
+    const xOffset = Math.random() * 250 - 100;
+    const yOffset = Math.random() * 200 - 100;
+
+    mvntButton.style.transform = `translate(${xOffset}px, ${yOffset}px)`;
+}
+
+mvntButton.addEventListener("mouseover", moveButton);
