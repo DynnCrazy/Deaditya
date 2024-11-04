@@ -21,6 +21,8 @@ const lastsekolahnow = "(Now)";
 let currentImageIndex = 0;
 const audio = document.getElementById('rndmMusic');
 let intervalId;
+const cooldownTimeRndmMusic = 60000;
+let lastCalledRndmMusic = 0;
 const musicRandomList = [
     'Audio/manonawire.mp3',
     'Audio/nightchanges.mp3',
@@ -181,6 +183,14 @@ function closedtlrs() {
 }
 
 function playRndmMusic() {
+    const nowDate = Date.now();
+
+    if (nowDate - lastCalledRndmMusic < cooldownTimeRndmMusic) {
+        alert("Sedang cooldown, mohon tunggu!");
+        return;
+    }
+
+    lastCalledRndmMusic = nowDate;
     const randomIndex = Math.floor(Math.random() * musicRandomList.length);
     const selectedMusic = musicRandomList[randomIndex];
 

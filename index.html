@@ -5,6 +5,7 @@
     <title>Deaditya</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
@@ -13,7 +14,7 @@
 <body>
     <center>
     <div data-aos="fade-in">
-    <h1 class="titleweb" id="deaditya">DEADITYA</h1>
+    <h1 id="deaditya" class="titleweb" data-toggle="tooltip" title="I Gede Aditya Pramana">DEADITYA</h1>
 
     <div id="contprofimg">
         <img src="https://i.ibb.co.com/Qk5qTY1/IMG-20231212-142221-0597.jpg" alt="Love You ❤">
@@ -93,29 +94,35 @@
 
     <script>
         function sendEmail() {
-            var data = {
-                service_id: 'deaditya',
-                template_id: 'temp_email',
-                user_id: '3rOnyc1hK0Q6qfdk_',
-                template_params: {
-                    'username': document.getElementById('contact-username').value,
-                    'message': document.getElementById('contact-message').value
-                }
-            };
+    var username = document.getElementById('contact-username').value.trim();
+    var message = document.getElementById('contact-message').value.trim();
 
-            $.ajax('https://api.emailjs.com/api/v1.0/email/send', {
-                type: 'POST',
-                data: JSON.stringify(data),
-                contentType: 'application/json'
-            }).done(function() {
-                // document.getElementById("response").innerText = "Your message has been sent!";
-                alert('Pesan kamu telah terkirim');
-                document.getElementById("contact-form").reset();
-            }).fail(function(error) {
-                // document.getElementById("response").innerText = "Oops... " + JSON.stringify(error);
-                alert('Oops... ' + JSON.stringify(error));
-            });
+    if (username === "" || message === "") {
+        alert('Harap isi username dan pesan terlebih dahulu!');
+        return;
+    }
+
+    var data = {
+        service_id: 'deaditya',
+        template_id: 'temp_email',
+        user_id: '3rOnyc1hK0Q6qfdk_',
+        template_params: {
+            'username': username,
+            'message': message
         }
+    };
+
+    $.ajax('https://api.emailjs.com/api/v1.0/email/send', {
+        type: 'POST',
+        data: JSON.stringify(data),
+        contentType: 'application/json'
+    }).done(function() {
+        alert('Pesan kamu telah terkirim');
+        document.getElementById("contact-form").reset();
+    }).fail(function(error) {
+        alert('Oops... ' + JSON.stringify(error));
+    });
+}
     </script>
 
     </center>
@@ -124,7 +131,7 @@
         <div id="subcontdetailrs">
             <center>
             <img src="" id="imgindetailrs" alt="Gambar">
-            <p class="subttl" id="descrsdetlincntdetailrs">Deskripsi:</p>
+            <p class="subttl subttl1" id="descrsdetlincntdetailrs">Deskripsi:</p>
             <div id="conttxtdescondetlrs">
                 <p id="descindetailrs">Deskripsi</p>
             </div>
@@ -142,11 +149,21 @@
 
 <script src="script.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script>
     AOS.init({
         duration: 1500,  
         once: true
 });
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-toggle="tooltip"]'))
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+      })
+    });
 </script>
 </body>
 </html>

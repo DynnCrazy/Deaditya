@@ -29,6 +29,10 @@ SCROLL TO SEE LAST UPDATE
 # Deaditya v1.2.7 | 02-11-2024
 - Penambahan fitur contact (send message)
 
+# Deaditya v1.2.9 | 04-11-2024
+- Penambahan tooltip
+- Cooldown pada playmusic
+
 
 
 Web by Dyn Crazy | Deaditya

@@ -53,6 +53,7 @@ body {
 }
 .titleweb {
     text-align: center;
+    margin: 25px;
 }
 .descweb {
     padding:20px;
@@ -110,6 +111,9 @@ body {
 .subttl {
     margin-bottom: 5px;
     font-weight: bold;
+}
+.subttl1 {
+    margin-top: 20px;
 }
 #contprofimg {
     display: flex;
