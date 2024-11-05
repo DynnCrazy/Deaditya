@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <center>
@@ -60,9 +60,8 @@
     </div>
 
     <div class="divps" data-aos="fade-up">
-        <p class="subttl">Prestasi:</p>
-        <!-- Gak ada prestasi :) -->
-        <button id="mvntButton" onclick="moveButton()">Lihat</button>
+        <p class="subttl">Statistik:</p>
+        <button id="mvntButton" onclick="lihatStatistik()" class="btnstyle1">Lihat</button>
     </div>
 
     <br>
@@ -92,39 +91,6 @@
     <div id="response"></div>
     </div>
 
-    <script>
-        function sendEmail() {
-    var username = document.getElementById('contact-username').value.trim();
-    var message = document.getElementById('contact-message').value.trim();
-
-    if (username === "" || message === "") {
-        alert('Harap isi username dan pesan terlebih dahulu!');
-        return;
-    }
-
-    var data = {
-        service_id: 'deaditya',
-        template_id: 'temp_email',
-        user_id: '3rOnyc1hK0Q6qfdk_',
-        template_params: {
-            'username': username,
-            'message': message
-        }
-    };
-
-    $.ajax('https://api.emailjs.com/api/v1.0/email/send', {
-        type: 'POST',
-        data: JSON.stringify(data),
-        contentType: 'application/json'
-    }).done(function() {
-        alert('Pesan kamu telah terkirim');
-        document.getElementById("contact-form").reset();
-    }).fail(function(error) {
-        alert('Oops... ' + JSON.stringify(error));
-    });
-}
-    </script>
-
     </center>
 
     <div id="contdetailrs" style="display: none;">
@@ -138,7 +104,26 @@
             <p class="subttl" id="locrsdetlincntdetailrs">Lokasi:</p>
             <p><a href="" class="link1" id="linkindetailrs"><u>Klik disini</u> untuk melihat lokasi!</a></p>
             </center>
-            <p id="closedetailrs" onclick="closedtlrs()"><i class="fas fa-times"></i></p>
+            <p id="closedetailrs" onclick="closedtlrs()" class="closexindivz"><i class="fas fa-times"></i></p>
+        </div>
+    </div>
+
+    <div id="contstats" style="display: none;">
+        <div id="subcontstats">
+            <center>
+                <h3 style="margin: 25px;">Statistik:</h3>
+
+                <div class="subcontstatssub1">
+                    <p id="statswaktuhidup">Waktu bertahan hidup: 16 Tahun 00 Jam 00 Hari</p>
+                    <p>Pencapaian didapatkan: 16 Tahun 00 Jam 00 Hari</p>
+                    <p>Waktu bertahan hidup: 16 Tahun 00 Jam 00 Hari</p>
+                    <p>Tingkat kebahagiaan:</p>
+                </div>
+                <div class="subcontstatssub2">
+                    <canvas id="myChart" width="300" height="100"></canvas>
+                </div>
+            </center>
+            <p id="closelihatstats" onclick="closelhtstats()" class="closexindivz"><i class="fas fa-times"></i></p>
         </div>
     </div>
 
@@ -147,23 +132,35 @@
         <p class="fttr">Web by <a href="#deaditya" style="text-decoration: none; color: rgba(255, 255, 255, 0.301);">Deaditya</a></p>
     </footer>
 
-<script src="script.js"></script>
+
+<!-- # EXTERNAL SCRIPT -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- # INTERNAL SCRIPT | LIBRARY -->
+<script src="Script/chart.js"></script>
+<script src="Script/email.js"></script>
+<!-- # INTERNAL SCRIPT | NORMAL -->
+<script src="Script/deaditya-link.js"></script>
+<script src="Script/deaditya-stats.js"></script>
+<script src="Script/deaditya-randommusic.js"></script>
+<script src="Script/deaditya-riwayatsekolah.js"></script>
 <script>
     AOS.init({
         duration: 1500,  
         once: true
-});
-</script>
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-      var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-toggle="tooltip"]'))
-      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-        return new bootstrap.Tooltip(tooltipTriggerEl)
-      })
     });
+
+    document.addEventListener('DOMContentLoaded', function () {
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    });
+
+    function terjadiKesalahan() {
+        alert("Terjadi Kesalahan!");
+    }
 </script>
 </body>
 </html>
