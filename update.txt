@@ -37,6 +37,12 @@ SCROLL TO SEE LAST UPDATE
 - Penambahan fitur statistik
 - Optimisasi pada code
 
+# Deaditya v1.3.7 | 06-11-2024
+- Update data statistik
+- Penambahan fitur projek
+- Fitur link untuk website dihapus dan dipindahkan ke fitur projek
+- Penambahan hal kecil lainnya
+
 
 
 Web by Dyn Crazy | Deaditya

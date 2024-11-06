@@ -4,9 +4,11 @@ function lihatStatistik() {
     if (isMyStatsOpen === false) {
         isMyStatsOpen = true;
         document.getElementById("contstats").style.display = 'block';
+        document.body.style.overflow = 'hidden';
     } else {
         isMyStatsOpen = false;
         document.getElementById("contstats").style.display = 'none';
+        document.body.style.overflow = 'auto';
     }
 }
 
