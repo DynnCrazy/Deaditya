@@ -70,6 +70,48 @@ function pauseRndmMusic() {
     isPlaying = !isPlaying;
 }
 
+function anotherMusic() {
+    const nowDate = Date.now();
+
+    /*
+    if (nowDate - lastCalledRndmMusic < cooldownTimeRndmMusic) {
+        alert("Sedang cooldown, mohon tunggu!");
+        return;
+    }
+    */
+
+    lastCalledRndmMusic = nowDate;
+    const randomIndex = Math.floor(Math.random() * musicRandomList.length);
+    const selectedMusic = musicRandomList[randomIndex];
+
+    audio.src = selectedMusic;
+    audio.play();
+    document.getElementById("btnpm1").innerHTML = "Play Another"
+    document.getElementById("btnpm2").disabled = false;
+    document.getElementById("btnpm2").style.cursor = "pointer";
+    isPlaying = true;
+
+    if (selectedMusic === "Audio/manonawire.mp3") {
+        whatMusicPlay = "The Script - Man On A Wire";
+        document.getElementById("musicnowplay").innerHTML = nowplay + whatMusicPlay;
+    } else if (selectedMusic === "Audio/nightchanges.mp3") {
+        whatMusicPlay = "One Direction - Night Changes";
+        document.getElementById("musicnowplay").innerHTML = nowplay + whatMusicPlay;
+    } else if (selectedMusic === "Audio/nina.mp3") {
+        whatMusicPlay = ".Feast - Nina";
+        document.getElementById("musicnowplay").innerHTML = nowplay + whatMusicPlay;
+    } else if (selectedMusic === "Audio/hero.mp3") {
+        whatMusicPlay = "Cash Cash - Hero (ft. Christina Perri)";
+        document.getElementById("musicnowplay").innerHTML = nowplay + whatMusicPlay;
+    } else if (selectedMusic === "Audio/jakartahariini.mp3") {
+        whatMusicPlay = "For Revenge - Jakarta Hari Ini (ft. Stereowall)";
+        document.getElementById("musicnowplay").innerHTML = nowplay + whatMusicPlay;
+    } else if (selectedMusic === "Audio/thenightwemeet.mp3") {
+        whatMusicPlay = "Lord Huron -  The Night We Met";
+        document.getElementById("musicnowplay").innerHTML = nowplay + whatMusicPlay;
+    }
+}
+
 audio.addEventListener('ended', () => {
     isPlaying = false;
 });

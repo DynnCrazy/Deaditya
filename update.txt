@@ -43,6 +43,10 @@ SCROLL TO SEE LAST UPDATE
 - Fitur link untuk website dihapus dan dipindahkan ke fitur projek
 - Penambahan hal kecil lainnya
 
+# Deaditya v1.3.9 | 07-11-2024
+- Image pada projek diubah
+- Statistik coding dihapus (disembunyikan)
+
 
 
 Web by Dyn Crazy | Deaditya
