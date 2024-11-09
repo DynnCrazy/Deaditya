@@ -167,6 +167,20 @@ body {
     width: 50%;
     height: auto;
 }
+#contmywebproject {
+    width: 100%;
+    height: 100%;
+    z-index: 99999999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 13, 24, 0.981);
+}
+#subcontmywebproject {
+    padding-left: 4%;
+    padding-right: 4%;
+    position: relative;
+}
 #contdetailrs {
     width: 100%;
     height: 100%;
@@ -364,6 +378,21 @@ body {
     color: white !important;
 }
 
+/* === */
+    
+.if-ka {
+    height: 540px;
+    width:70%;
+    margin: 25px;
+    border-radius: 10px;
+}
+.if-mmz {
+    height: 540px;
+    width:70%;
+    margin: 25px;
+    border-radius: 10px;
+}
+
 @media (max-width: 600px) {
     .swiper-image {
         width: 100%;
@@ -478,5 +507,22 @@ body {
     #myChart {
         width: 100%;
         height: auto;
+    }
+
+    /* === */
+
+    .if-ka {
+        height: 500px;
+        width: 94%;
+        margin: 0px;
+        margin-top: 50px;
+        border-radius: 10px;
+    }
+    .if-mmz {
+        height: 500px;
+        width: 94%;
+        margin: 0px;
+        margin-top: 50px;
+        border-radius: 10px;
     }
 }
