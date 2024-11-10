@@ -1,3 +1,5 @@
+// Baru bisa If Else bang...
+
 function goToLink(to) {
     var link = "";
     var adaLink = true;

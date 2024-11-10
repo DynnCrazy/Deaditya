@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
+    <!-- HALO BANG! -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Deaditya</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Style/style.css">
+    <link rel="stylesheet" href="Style/iframe.css">
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -101,7 +103,12 @@
 
     <div class="divps" data-aos="fade-up">
         <p class="subttl">Statistik:</p>
-        <button id="mvntButton" onclick="lihatStatistik()" class="btnstyle1">Lihat</button>
+        <button onclick="lihatStatistik()" class="btnstyle2">Lihat</button>
+    </div>
+
+    <div class="divps" data-aos="fade-up">
+        <p class="subttl">My Website (<span style="color: yellow;">Beta</span>):</p>
+        <button onclick="lihatWebku()" class="btnstyle2">Lihat</button>
     </div>
 
     <br>
@@ -193,13 +200,16 @@
         </div>
     </div>
 
-    <div id="contmywebproject" style="display: block;">
+    <div id="contmywebproject" style="display: none;">
         <div id="subcontmywebproject">
             <center>
-                <iframe src="https://kerang-ajaib.netlify.app" class="if-ka" title="Kerang Ajaib" id="if_ka" style="display: none; overflow: hidden;" srolling="no"></iframe>
-                <iframe src="https://memeinz.netlify.app" class="if-mmz" title="Memeinz" id="if_mmz" style="display: block; overflow: hidden;" srolling="no"></iframe>
+                <!-- Masih banyak yang belum ditambahkan, karena memang masih beta sih.. -->
+                <iframe src="https://kerang-ajaib.netlify.app/" class="if-ka" title="Kerang Ajaib" id="if_ka" style="display: none; overflow: hidden;" srolling="no"></iframe>
+                <iframe src="https://memeinz.netlify.app/" class="if-mmz" title="Memeinz" id="if_mmz" style="display: none; overflow: hidden;" srolling="no"></iframe>
+                <iframe src="https://hbdtoyou.netlify.app/" class="if-hbdty" title="Happy Birthday" id="if_hbdty" style="display: block; overflow: hidden;" srolling="no"></iframe>
             </center>
-            <p id="closemywebproject" onclick="closedtlrs()" class="closexindivz"><i class="fas fa-times"></i></p>
+            <p id="closemywebproject" onclick="closewebkudtl()" class="closexindivz"><i class="fas fa-times"></i></p>
+            <p id="pforwarnexphp" style="text-align: center;">Untuk pengalaman yang lebih baik, kalian bisa pergi ke website originalnya! (<a href="#" style="color: white;">Klik disini!</a>)</p>
         </div>
     </div>
 
@@ -208,6 +218,9 @@
     </footer>
 
 
+<script>
+    console.log('Tutor debugging bang');
+</script>
 <!-- # EXTERNAL SCRIPT -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
@@ -215,6 +228,7 @@
 <!-- # INTERNAL SCRIPT | NORMAL -->
 <script src="Script/deaditya-link.js"></script>
 <script src="Script/deaditya-stats.js"></script>
+<script src="Script/deaditya-webku.js"></script>
 <script src="Script/deaditya-randommusic.js"></script>
 <script src="Script/deaditya-riwayatsekolah.js"></script>
 <!-- # INTERNAL SCRIPT | LIBRARY -->

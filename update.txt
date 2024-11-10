@@ -47,6 +47,13 @@ SCROLL TO SEE LAST UPDATE
 - Image pada projek diubah
 - Statistik coding dihapus (disembunyikan)
 
+# Deaditya v1.4.3 | 09-11-2024
+- Penambahan iframe website/projek yang sudah saya buat
+- Memperbarui data
+
+# Deaditya v1.4.1 | 10-11-2024
+- Optimisasi
+
 
 
 Web by Dyn Crazy | Deaditya

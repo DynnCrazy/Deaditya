@@ -1,0 +1,55 @@
+iframe {
+    overflow: hidden !important;
+    border: none !important;
+} 
+.if-ka {
+    height: 540px;
+    width:70%;
+    margin: 25px;
+    border-radius: 10px;
+}
+.if-mmz {
+    height: 540px;
+    width:70%;
+    margin: 25px;
+    border-radius: 10px;
+}
+.if-hbdty {
+    height: 540px;
+    width:70%;
+    margin: 25px;
+    border-radius: 10px;
+}
+#pforwarnexphp {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    #pforwarnexphp {
+        display: block;
+    }
+    .if-ka {
+        height: 410px;
+        width: 94%;
+        margin: 0px;
+        margin-top: 55px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+    }
+    .if-mmz {
+        height: 410px;
+        width: 94%;
+        margin: 0px;
+        margin-top: 55px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+    }
+    .if-hbdty {
+        height: 410px;
+        width: 94%;
+        margin: 0px;
+        margin-top: 55px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+    }
+}

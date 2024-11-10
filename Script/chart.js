@@ -1,11 +1,14 @@
+const labels = ['21 Nov 24', '18 Nov 24', '15 Nov 24', '12 Nov 24', '9 Nov 24', '6 Nov 24', '3 Nov 24', '31 Okt 24', '28 Okt 24', '25 Okt 24', '22 Okt 24'];
+const dataPoints = [0, 0, 0, 0, 5, 6, 7, 6, 7, 5, 6];
+
 const ctx = document.getElementById('myChart').getContext('2d');
 const myChart = new Chart(ctx, {
     type: 'line',
     data: {
-        labels: ['22 Okt 24', '25 Okt 24', '28 Okt 24', '31 Okt 24', '3 Nov 24', '6 Nov 24', '9 Nov 24', '12 Nov 24', '15 Nov 24', '18 Nov 24', '21 Nov 24'],
+        labels: labels.slice().reverse(),
         datasets: [{
             label: 'Tingkat kebahagiaan',
-            data: [6, 5, 7, 6, 7, 6, 0, 0, 0, 0, 0],
+            data: dataPoints.slice().reverse(),
             borderColor: '#0088ff',
             backgroundColor: '#0088ff39',
             borderWidth: 2,
@@ -26,21 +29,8 @@ const myChart = new Chart(ctx, {
             },
             legend: { display: false },
             zoom: {
-                pan: {
-                    enabled: true,
-                    mode: 'x',
-                    speed: 20,
-                },
-                zoom: {
-                    wheel: {
-                        enabled: true,
-                        speed: 0.1,
-                    },
-                    pinch: {
-                        enabled: true
-                    },
-                    mode: 'x',
-                }
+                pan: { enabled: true, mode: 'x', speed: 20 },
+                zoom: { wheel: { enabled: true, speed: 0.1 }, pinch: { enabled: true }, mode: 'x' }
             }
         },
         scales: {
