@@ -51,8 +51,9 @@ SCROLL TO SEE LAST UPDATE
 - Penambahan iframe website/projek yang sudah saya buat
 - Memperbarui data
 
-# Deaditya v1.4.1 | 10-11-2024
+# Deaditya v1.4.3 | 10-11-2024
 - Optimisasi
+- Penambahan mode admin dan mode biasa
 
 
 

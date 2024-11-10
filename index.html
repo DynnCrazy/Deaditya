@@ -48,7 +48,7 @@
     </div>
     -->
 
-    <div class="divsm"  data-aos="fade-up">
+    <div class="divsm" id="subtitleadmin1" data-aos="fade-up">
         <p class="subttl" style="margin: 15px;">Project:</p>
         <div class="swiper-container" style="justify-content: center; text-align: center; overflow-x: hidden;">
             <div class="swiper-wrapper">
@@ -84,7 +84,7 @@
 
     <br>
 
-    <div class="divps">
+    <div class="divps" id="subtitleadmin2">
         <p class="subttl" data-aos="fade-down">Riwayat Sekolah:</p>
         <p id="tk" onclick="detailRiwayatSekolah('TK')" data-aos="fade-down">TK</p>
         <div class="contdivps" id="grsps1">
@@ -106,14 +106,14 @@
         <button onclick="lihatStatistik()" class="btnstyle2">Lihat</button>
     </div>
 
-    <div class="divps" data-aos="fade-up">
+    <div class="divps" data-aos="fade-up" id="subtitleadmin3">
         <p class="subttl">My Website (<span style="color: yellow;">Beta</span>):</p>
         <button onclick="lihatWebku()" class="btnstyle2">Lihat</button>
     </div>
 
     <br>
 
-    <div class="divplymsck">
+    <div class="divplymsck" id="subtitleadmin4">
         <p class="subttl" data-aos="fade-down">Random Music:</p>
         <audio id="rndmMusic" loop>
             <source src="" type="audio/mp3">
@@ -246,6 +246,20 @@
             return new bootstrap.Tooltip(tooltipTriggerEl)
         })
     });
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const admin = urlParams.get('admin');
+
+    if (admin === '180708') {
+        console.log('Admin Mode = True');
+    } else {
+        console.log('Admin Mode = False');
+        document.getElementById('subtitleadmin1').style.display = 'none';
+        document.getElementById('subtitleadmin2').style.display = 'none';
+        document.getElementById('subtitleadmin3').style.display = 'none';
+        document.getElementById('subtitleadmin4').style.display = 'none';
+    }
+
 
     function terjadiKesalahan() {
         alert("Terjadi Kesalahan!");

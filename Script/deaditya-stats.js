@@ -53,7 +53,7 @@ function updateAgeDisplay() {
     const birthDate = "2008-07-18";
     const age = calculateAge(birthDate);
 
-    document.getElementById('statswaktuhidup').innerHTML = `Kamu telah hidup selama: ${age.years} tahun, ${age.days} hari, ${age.hours} jam, ${age.minutes} menit, dan ${age.seconds} detik.`;
+    document.getElementById('statswaktuhidup').innerHTML = `Waktu hidup: ${age.years} tahun, ${age.days} hari, ${age.hours} jam, ${age.minutes} menit, dan ${age.seconds} detik.`;
 }
 
 
