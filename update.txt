@@ -55,6 +55,10 @@ SCROLL TO SEE LAST UPDATE
 - Optimisasi
 - Penambahan mode admin dan mode biasa
 
+# Deaditya v1.4.5 | 10-11-2024
+- Penambahan efek loading
+- Sedikit penambahan kecil
+
 
 
 Web by Dyn Crazy | Deaditya

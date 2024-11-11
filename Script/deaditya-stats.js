@@ -1,14 +1,29 @@
 var isMyStatsOpen = false;
+var isMyStatsOpenFirstTime = false;
+var isMyStatsOpenFirstTimeFinish = false;
+let minTC = 5000;
+let maxTC = 10000;
+let randomTimeToChange = Math.floor(Math.random() * (maxTC - minTC + 1)) + minTC;
+
 
 function lihatStatistik() {
     if (isMyStatsOpen === false) {
         isMyStatsOpen = true;
         document.getElementById("contstats").style.display = 'block';
         document.body.style.overflow = 'hidden';
+        isMyStatsOpenFirstTime = true;
     } else {
         isMyStatsOpen = false;
         document.getElementById("contstats").style.display = 'none';
         document.body.style.overflow = 'auto';
+    }
+
+    if (isMyStatsOpenFirstTime === true && isMyStatsOpenFirstTimeFinish === false) {
+        setTimeout(function() {
+            document.getElementById('valuepencapaiandidapatkan').innerText = 'Not found!';
+            document.getElementById('valuepencapaiandidapatkan').style.color = 'red';
+        }, randomTimeToChange);
+        isMyStatsOpenFirstTimeFinish = true;
     }
 }
 

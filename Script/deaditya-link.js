@@ -12,6 +12,14 @@ function goToLink(to) {
         link = "https://www.facebook.com/gede.aditya.777158?mibextid=ZbWKwL";
     } else if (to === "tt") {
         link = "https://tiktok.com/@deaditya.xyz";
+    } else if (to === "th") {
+        link = "https://www.threads.net/@deaditya.xyz";
+    } else if (to === "tt") {
+        link = "https://tiktok.com/@deaditya.xyz";
+    } else if (to === "tt") {
+        link = "https://tiktok.com/@deaditya.xyz";
+    } else if (to === "tt") {
+        link = "https://tiktok.com/@deaditya.xyz";
     } else if (to === "mw-ka") {
         link = "https://kerang-ajaib.netlify.app/";
     } else if (to === "mw-hbd") {
