@@ -14,8 +14,10 @@ function goToLink(to) {
         link = "https://tiktok.com/@deaditya.xyz";
     } else if (to === "th") {
         link = "https://www.threads.net/@deaditya.xyz";
-    } else if (to === "tt") {
-        link = "https://tiktok.com/@deaditya.xyz";
+    } else if (to === "wa") {
+        window.location.href = "#contact";
+        adaLink = false;
+        alert('Mohon kirim pesan (permohonan) dulu!');
     } else if (to === "tt") {
         link = "https://tiktok.com/@deaditya.xyz";
     } else if (to === "tt") {

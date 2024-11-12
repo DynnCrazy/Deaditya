@@ -5,23 +5,24 @@ let minTC = 5000;
 let maxTC = 10000;
 let randomTimeToChange = Math.floor(Math.random() * (maxTC - minTC + 1)) + minTC;
 
-
 function lihatStatistik() {
     if (isMyStatsOpen === false) {
         isMyStatsOpen = true;
-        document.getElementById("contstats").style.display = 'block';
         document.body.style.overflow = 'hidden';
         isMyStatsOpenFirstTime = true;
+        id_contstats.style.opacity = 1;
+        id_contstats.style.zIndex = 9999999;
     } else {
         isMyStatsOpen = false;
-        document.getElementById("contstats").style.display = 'none';
-        document.body.style.overflow = 'auto';
+        document.body.style.overflow = 'hidden';
+        id_contstats.style.opacity = 1;
+        id_contstats.style.zIndex = 9999999;
     }
 
     if (isMyStatsOpenFirstTime === true && isMyStatsOpenFirstTimeFinish === false) {
         setTimeout(function() {
-            document.getElementById('valuepencapaiandidapatkan').innerText = 'Not found!';
-            document.getElementById('valuepencapaiandidapatkan').style.color = 'red';
+            id_valuepencapaiandidapatkan.innerText = 'Not found!';
+            id_valuepencapaiandidapatkan.style.color = 'red';
         }, randomTimeToChange);
         isMyStatsOpenFirstTimeFinish = true;
     }
@@ -30,23 +31,21 @@ function lihatStatistik() {
 function closelhtstats() {
     isMyStatsOpen = false;
     document.body.style.overflow = 'auto';
-    document.getElementById("contstats").style.display = 'none';
+    id_contstats.style.opacity = 0;
+    id_contstats.style.zIndex = -1;
 }
 
 function calculateAge(birthDate) {
     const now = new Date();
     const birth = new Date(birthDate);
 
-    // Menghitung umur dalam tahun
     let ageInYears = now.getFullYear() - birth.getFullYear();
 
-    // Mengecek apakah ulang tahun sudah lewat di tahun ini
     const birthdayThisYear = new Date(now.getFullYear(), birth.getMonth(), birth.getDate(), 21, 10);  // 21:10 WITA
     if (now < birthdayThisYear) {
-        ageInYears--;  // Kurangi 1 tahun jika ulang tahun belum lewat
+        ageInYears--;
     }
 
-    // Menghitung waktu sejak ulang tahun terakhir pada pukul 21:10 WITA
     const lastBirthday = new Date(now.getFullYear() - (now < birthdayThisYear ? 1 : 0), birth.getMonth(), birth.getDate(), 21, 10);
     const totalSeconds = Math.floor((now - lastBirthday) / 1000);
 
@@ -68,7 +67,7 @@ function updateAgeDisplay() {
     const birthDate = "2008-07-18";
     const age = calculateAge(birthDate);
 
-    document.getElementById('statswaktuhidup').innerHTML = `Waktu hidup: ${age.years} tahun, ${age.days} hari, ${age.hours} jam, ${age.minutes} menit, dan ${age.seconds} detik.`;
+    id_statswaktuhidup.innerHTML = `Waktu hidup: ${age.years} tahun, ${age.days} hari, ${age.hours} jam, ${age.minutes} menit, dan ${age.seconds} detik.`;
 }
 
 

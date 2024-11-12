@@ -55,9 +55,15 @@ SCROLL TO SEE LAST UPDATE
 - Optimisasi
 - Penambahan mode admin dan mode biasa
 
-# Deaditya v1.4.5 | 10-11-2024
+# Deaditya v1.4.5 | 11-11-2024
 - Penambahan efek loading
 - Sedikit penambahan kecil
+- Bug fix pada tooltip
+
+# Deaditya v1.4.9 | 12-11-2024
+- Penambahan navbar
+- Perubahan pada perpindahan frame
+- Pengoptimalan
 
 
 
