@@ -65,6 +65,10 @@ SCROLL TO SEE LAST UPDATE
 - Perubahan pada perpindahan frame
 - Pengoptimalan
 
+# Deaditya v1.5.1 | 16-11-2024
+- Perubahan pada icon dan pada beberapa margin
+- Update data
+
 
 
 Web by Dyn Crazy | Deaditya

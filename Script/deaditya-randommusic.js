@@ -18,19 +18,6 @@ function lihatmskrndm() {
     document.body.style.overflow = 'hidden';
     document.getElementById("contmusicc").style.opacity = 1;
     document.getElementById("contmusicc").style.zIndex = 99999999;
-
-    if (menu.classList.contains("show")) {
-        menu.classList.remove("show");
-        menu.classList.add("back");
-        bgnbb.style.opacity = 0;
-        bgnbb.style.zIndex = -1;
-
-    } else {
-        menu.classList.add("show");
-        menu.classList.remove("back");
-        bgnbb.style.opacity = 1;
-        bgnbb.style.zIndex = 99998;
-    }
 }
 
 function closecntmusik() {

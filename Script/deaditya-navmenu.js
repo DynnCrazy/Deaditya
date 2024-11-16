@@ -1,34 +1,32 @@
-// Ambil elemen tombol dan menu
-const menuBtn = document.getElementById("btnbar");
-const menu = document.getElementById("menunb");
-const bgnbb = document.getElementById("contdivmenud");
+var id_btnbar = document.getElementById("btnbar");
+var id_menunb = document.getElementById("menunb");
+var id_contdivmenud = document.getElementById("contdivmenud");
 
-// Fungsi untuk menampilkan atau menyembunyikan menu
-menuBtn.addEventListener("click", (event) => {
-    // Prevent event bubbling agar tidak tertangkap oleh event listener click di luar menu
+id_btnbar.addEventListener("click", (event) => {
     event.stopPropagation();
 
-    // Toggle kelas display
-    if (menu.classList.contains("show")) {
-        menu.classList.remove("show");
-        menu.classList.add("back");
-        bgnbb.style.opacity = 0;
-        bgnbb.style.zIndex = -1;
+    if (id_menunb.classList.contains("show")) {
+        id_menunb.classList.remove("show");
+        id_menunb.classList.add("back");
+        id_contdivmenud.style.opacity = 0;
+        id_contdivmenud.style.zIndex = -1;
+        // document.body.style.overflow = 'auto';
 
     } else {
-        menu.classList.add("show");
-        menu.classList.remove("back");
-        bgnbb.style.opacity = 1;
-        bgnbb.style.zIndex = 99998;
+        id_menunb.classList.add("show");
+        id_menunb.classList.remove("back");
+        id_contdivmenud.style.opacity = 1;
+        id_contdivmenud.style.zIndex = 99998;
+        // document.body.style.overflow = 'hidden';
     }
 });
 
-// Menutup menu ketika klik di luar menu
 document.addEventListener("click", (event) => {
-    if (!menu.contains(event.target) && event.target !== menuBtn) {
-        menu.classList.remove("show");
-        menu.classList.add("back");
-        bgnbb.style.opacity = 0;
-        bgnbb.style.zIndex = -1;
+    if (!id_menunb.contains(event.target) && event.target !== id_btnbar) {
+        id_menunb.classList.remove("show");
+        id_menunb.classList.add("back");
+        id_contdivmenud.style.opacity = 0;
+        id_contdivmenud.style.zIndex = -1;
+        // document.body.style.overflow = 'auto';
     }
 });

@@ -63,9 +63,23 @@ if (sekolahnow === "TK") {
     console.log("Orang ini telah lulus sekolah");
 }
 
-function detailRiwayatSekolah(whatSch) {
-    document.getElementById("contdetailrs").style.display = "block";
+function lihatrwytsklh() {
     document.body.style.overflow = 'hidden';
+    document.getElementById("contdetailrsselect").style.opacity = 1;
+    document.getElementById("contdetailrsselect").style.zIndex = 99999999;
+}
+
+function closedtlrsselect() {
+    document.body.style.overflow = 'auto';
+    document.getElementById("contdetailrsselect").style.opacity = 0;
+    document.getElementById("contdetailrsselect").style.zIndex = -2;
+}
+
+function detailRiwayatSekolah(whatSch) {
+    document.body.style.overflow = 'hidden';
+    document.getElementById("contdetailrs").style.opacity = 1;
+    document.getElementById("contdetailrs").style.zIndex = 99999999;
+    closedtlrsselect();
     isDetailrsopen = true;
 
     if (whatSch === "TK") {
@@ -125,7 +139,8 @@ function changeImage() {
 function closedtlrs() {
     isDetailrsopen = false;
     document.body.style.overflow = 'auto';
-    document.getElementById("contdetailrs").style.display = "none";
+    document.getElementById("contdetailrs").style.opacity = 0;
+    document.getElementById("contdetailrs").style.zIndex = -2;
     document.getElementById("imgindetailrs").src = "";
 
     clearInterval(intervalId);
