@@ -1,5 +1,5 @@
 const labels = ['18 Nov 24', '15 Nov 24', '12 Nov 24', '9 Nov 24', '6 Nov 24', '3 Nov 24', '31 Okt 24', '28 Okt 24', '25 Okt 24', '22 Okt 24'];
-const dataPoints = [0, 7, 6, 5, 6, 7, 6, 7, 5, 6];
+const dataPoints = [7, 7, 6, 5, 6, 7, 6, 7, 5, 6];
 
 const ctx = document.getElementById('myChart').getContext('2d');
 const myChart = new Chart(ctx, {

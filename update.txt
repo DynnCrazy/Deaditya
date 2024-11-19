@@ -69,6 +69,8 @@ SCROLL TO SEE LAST UPDATE
 - Perubahan pada icon dan pada beberapa margin
 - Update data
 
-
+# Deaditya v1.5.5 | 19-11-2024
+- Penambahan fitur my website (beta) 
+- Perbaikan dan menghapus hal yang tidak perlu
 
 Web by Dyn Crazy | Deaditya

@@ -20,6 +20,18 @@ iframe {
     margin: 25px;
     border-radius: 10px;
 }
+.if-dcf {
+    height: 540px;
+    width:70%;
+    margin: 25px;
+    border-radius: 10px;
+}
+.if-hm {
+    height: 540px;
+    width:70%;
+    margin: 25px;
+    border-radius: 10px;
+}
 #pforwarnexphp {
     display: none;
 }
@@ -45,6 +57,22 @@ iframe {
         border-radius: 10px;
     }
     .if-hbdty {
+        height: 410px;
+        width: 94%;
+        margin: 0px;
+        margin-top: 55px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+    }
+    .if-dcf {
+        height: 410px;
+        width: 94%;
+        margin: 0px;
+        margin-top: 55px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+    }
+    .if-hm {
         height: 410px;
         width: 94%;
         margin: 0px;
