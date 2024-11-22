@@ -13,6 +13,7 @@ body {
     overflow-x: hidden;
 
     background: #0088ff;
+    background: #0f0f0f;
     background-image: linear-gradient(#ffffff07 .1em, transparent .1em), linear-gradient(90deg, #ffffff07 .1em, transparent .1em);
     background-size: 4em 4em;
     overflow-x: hidden;
@@ -20,4 +21,8 @@ body {
 
 @media (max-width: 600px) {
     
+}
+
+::placeholder {
+    color: white;
 }

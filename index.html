@@ -19,8 +19,21 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-zoom@1.2.0"></script>
+    <style>
+    #particles-js {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background-color: #0088ff;
+        background-color: #0f0f0f;
+    }
+    </style>
 </head>
 <body>
+    <div id="particles-js"></div>
     <div id="btnbar">☰</div>
     <div id="menunb" class="dropdown-menu">
         <a href="#" onclick="lihatmskrndm()"><i class='fas fa-music'></i>&emsp;Lagu</a>
@@ -30,9 +43,9 @@
         <a href="#" onclick="segeraHadir()"><i class='fas fa-moon'></i>&emsp;Tema Website</a>
     </div>
 
-    <center>
-    <div data-aos="fade-in">
-    <h1 id="deaditya" class="titleweb" data-toggle="tooltip" title="I Gede Aditya Pramana">DEADITYA</h1>
+    <center data-aos="fade-in">    
+    <div>
+    <h1 id="deaditya" class="titleweb" data-toggle="tooltip" title="I Gede Aditya Pramana">DE<span class="ttlweb2">ADITYA</span></h1>
 
     <div id="contprofimg">
         <img src="https://i.ibb.co.com/Qk5qTY1/IMG-20231212-142221-0597.jpg" alt="Love You ❤" class="imgLoad">
@@ -42,7 +55,7 @@
     
     </div>
 
-    <div class="divsm"  data-aos="fade-up">
+    <div class="divsm">
         <p class="subttl">Sosial Media:</p>
         <button onclick="goToLink('ig')">Instagram</button>
         <button onclick="goToLink('yt')">YouTube</button>
@@ -65,19 +78,19 @@
 
     <br>
 
-    <div class="divps" data-aos="fade-up">
+    <div class="divps">
         <p class="subttl">Statistik:</p>
         <button onclick="lihatStatistik()" class="btnstyle2">Lihat</button>
     </div>
 
-    <div class="divps" data-aos="fade-up">
+    <div class="divps">
         <p class="subttl">My Website (<span style="color: yellow;">Beta</span>):</p>
         <button onclick="lihatPWebku()" class="btnstyle2">Lihat</button>
     </div>
 
     <br>
 
-    <div class="divps" data-aos="fade-up" id="contact">
+    <div class="divps" id="contact">
         <p class="subttl">Kontak:</p>
 
     <form id="contact-form">
@@ -252,6 +265,7 @@
     console.log('Tutor debugging bang');
 </script>
 <!-- # EXTERNAL SCRIPT -->
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -270,16 +284,58 @@
 <script src="Script/chart.js"></script>
 <script src="Script/email.js"></script>
 <script>
+    particlesJS("particles-js", {
+        particles: {
+            number: { value: 50, density: { enable: true, value_area: 800 } },
+            color: { value: "#ffffff" },
+            shape: { type: "circle" },
+            opacity: { value: 0.1, random: false },
+            size: { value: 3, random: true },
+            line_linked: {
+                enable: true,
+                distance: 150,
+                color: "#ffffff",
+                opacity: 0.1,
+                width: 1
+            },
+            move: {
+                enable: true,
+                speed: 2,
+                direction: "none",
+                random: false,
+                straight: false,
+                out_mode: "out",
+                bounce: false
+            }
+        },
+        interactivity: {
+            detect_on: "canvas",
+            events: {
+                onhover: { enable: true, mode: "repulse" },
+                onclick: { enable: true, mode: "push" },
+                resize: true
+            },
+            modes: {
+                grab: { distance: 400, line_linked: { opacity: 1 } },
+                bubble: { distance: 400, size: 40, duration: 2, opacity: 8 },
+                repulse: { distance: 200, duration: 0.4 },
+                push: { particles_nb: 4 },
+                remove: { particles_nb: 2 }
+            }
+        },
+        retina_detect: true
+    });
+
     AOS.init({
-        duration: 1500,  
+        duration: 1500,
         once: true
     });
 
     document.addEventListener('DOMContentLoaded', function () {
-        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-toggle="tooltip"]'))
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-toggle="tooltip"]'));
         var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-            return new bootstrap.Tooltip(tooltipTriggerEl)
-        })
+            return new bootstrap.Tooltip(tooltipTriggerEl);
+        });
     });
 
     const urlParams = new URLSearchParams(window.location.search);

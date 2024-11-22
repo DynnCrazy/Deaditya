@@ -73,4 +73,8 @@ SCROLL TO SEE LAST UPDATE
 - Penambahan fitur my website (beta) 
 - Perbaikan dan menghapus hal yang tidak perlu
 
+# Deaditya v1.5.9 | 22-11-2024
+- Perubahan tema web 
+- Perubahan background
+
 Web by Dyn Crazy | Deaditya
