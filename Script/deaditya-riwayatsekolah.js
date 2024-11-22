@@ -67,6 +67,7 @@ function lihatrwytsklh() {
     document.body.style.overflow = 'hidden';
     document.getElementById("contdetailrsselect").style.opacity = 1;
     document.getElementById("contdetailrsselect").style.zIndex = 99999999;
+    closeTheNavMenu();
 }
 
 function closedtlrsselect() {
@@ -76,6 +77,7 @@ function closedtlrsselect() {
 }
 
 function detailRiwayatSekolah(whatSch) {
+    closeTheNavMenu();
     document.body.style.overflow = 'hidden';
     document.getElementById("contdetailrs").style.opacity = 1;
     document.getElementById("contdetailrs").style.zIndex = 99999999;

@@ -19,6 +19,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-zoom@1.2.0"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded/imagesloaded.pkgd.min.js"></script>
     <style>
     #particles-js {
         position: fixed;
@@ -34,17 +36,23 @@
 </head>
 <body>
     <div id="particles-js"></div>
-    <div id="btnbar">☰</div>
+    <div id="btnbar">
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
     <div id="menunb" class="dropdown-menu">
         <a href="#" onclick="lihatmskrndm()"><i class='fas fa-music'></i>&emsp;Lagu</a>
-        <!-- <a href="#" onclick="lihatrwytsklh()"><i class='fas fa-book-open'></i>&emsp;Sekolah</a> -->
+        <!-- <a href="#" onclick="lihatrwytsklh()"><i class='fas fa-book-open'></i>&emsp;Sekolah (Alpha)</a> -->
         <a href="#" onclick="segeraHadir()"><i class='fas fa-book-open'></i>&emsp;Sekolah</a>
         <a href="#" onclick="segeraHadir()"><i class='fas fa-exclamation-circle'></i>&emsp;Info</a>
         <a href="#" onclick="segeraHadir()"><i class='fas fa-moon'></i>&emsp;Tema Website</a>
     </div>
 
     <center data-aos="fade-in">    
-    <div>
+    <div>         
     <h1 id="deaditya" class="titleweb" data-toggle="tooltip" title="I Gede Aditya Pramana">DE<span class="ttlweb2">ADITYA</span></h1>
 
     <div id="contprofimg">
@@ -244,6 +252,7 @@
                         <button onclick="openContImywp('hm')">Hitung Mundur</button>
                     </div>
                 </div>
+                
             </center>
             <p id="closeprojectweb" onclick="closetheprojectweb()" class="closexindivz"><i class="fas fa-times"></i></p>
         </div>

@@ -73,8 +73,10 @@ SCROLL TO SEE LAST UPDATE
 - Penambahan fitur my website (beta) 
 - Perbaikan dan menghapus hal yang tidak perlu
 
-# Deaditya v1.5.9 | 22-11-2024
+# Deaditya v1.6.1 | 22-11-2024
 - Perubahan tema web 
 - Perubahan background
+- Animasi pada tombol navbar
+- Otomatis pindah ke halaman menu jika halaman tidak ditemukan (redirect)
 
 Web by Dyn Crazy | Deaditya
