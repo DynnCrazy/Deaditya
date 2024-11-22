@@ -1,4 +1,4 @@
-function sendEmail(event) {
+document.getElementById('contact-form').addEventListener('submit', function(event) {
     event.preventDefault();
 
     var username = document.getElementById('contact-username').value.trim();
@@ -31,5 +31,7 @@ function sendEmail(event) {
         }).fail(function(error) {
             alert('Oops... ' + JSON.stringify(error));
         });
+    }).catch(function(error) {
+        alert('reCAPTCHA failed: ' + error);
     });
-}
+});
