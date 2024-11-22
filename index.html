@@ -21,6 +21,7 @@
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-zoom@1.2.0"></script>
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
     <script src="https://unpkg.com/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="https://www.google.com/recaptcha/enterprise.js?render=6Le2xYYqAAAAALl5p4hUU-NUT3mdVUdgAjZIL_QU"></script>
     <style>
     #particles-js {
         position: fixed;
@@ -104,7 +105,7 @@
     <form id="contact-form">
         <input type="text" id="contact-username" placeholder="Nama kamu" required><br>
         <textarea id="contact-message" placeholder="Pesan kamu" required></textarea><br>
-        <button type="button" onclick="sendEmail()" id="contact-btn-send">Kirim</button>
+        <button type="submit" onclick="sendEmail(event)" id="contact-btn-send">Kirim</button>
     </form>
     <div id="response"></div>
     </div>
