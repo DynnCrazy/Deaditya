@@ -32,6 +32,8 @@ function goToLink(to) {
         link = "https://hitungmundur.netlify.app/";
     } else if (to === "mw-dcfg") {
         link = "https://dcfinder.netlify.app/";
+    } else if (to === "cmdchatinfo") {
+        link = "/cmd-chat-info.txt";
     } else {
         terjadiKesalahan();
         adaLink = false;

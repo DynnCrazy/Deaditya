@@ -80,4 +80,7 @@ SCROLL TO SEE LAST UPDATE
 - Otomatis pindah ke halaman menu jika halaman tidak ditemukan (redirect)
 - Cooldown saat mengirim pesan
 
+# Deaditya v1.6.7 | 27-11-2024
+- Fitur baru command message
+
 Web by Dyn Crazy | Deaditya

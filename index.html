@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="Style/main.css">
     <link rel="stylesheet" href="Style/text.css">
     <link rel="stylesheet" href="Style/style.css">
+    <link rel="stylesheet" href="Style/chatcmd.css">
     <link rel="stylesheet" href="Style/iframe.css">
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -43,6 +44,7 @@
     </div>
     <div id="menunb" class="dropdown-menu">
         <a href="#" onclick="lihatmskrndm()"><i class='fas fa-music'></i>&emsp;Lagu</a>
+        <a href="#" onclick="lihatcmdchat()"><i class='fas fa-paper-plane'></i>&emsp;Command Chat</a>
         <!-- <a href="#" onclick="lihatrwytsklh()"><i class='fas fa-book-open'></i>&emsp;Sekolah (Alpha)</a> -->
         <a href="#" onclick="segeraHadir()"><i class='fas fa-book-open'></i>&emsp;Sekolah</a>
         <a href="#" onclick="segeraHadir()"><i class='fas fa-exclamation-circle'></i>&emsp;Info</a>
@@ -70,17 +72,6 @@
         <button onclick="goToLink('th')">Threads</button>
         <button onclick="goToLink('wa')">WhatsApp</button>
     </div>
-
-    <!--
-    <div class="divsm"  data-aos="fade-up">
-        <p class="subttl">My Website:</p>
-        <button onclick="goToLink('mw-ka')">Kerang Ajaib</button>
-        <button onclick="goToLink('mw-hbd')">Happy Birthday</button>
-        <button onclick="goToLink('mw-kkhi')">Kata-Kata Hari Ini</button>
-        <button onclick="goToLink('mw-hm')">Hitung Mundur</button>
-        <button onclick="goToLink('mw-dcfg')">DC Finder (Game)</button>
-    </div>
-    -->
 
     <br>
 
@@ -237,6 +228,23 @@
         </div>
     </div>
 
+    <div id="contcmdchat" style="display: block; opacity: 1;">
+        <div id="subcontcmdchat">
+            <center>
+                <h3 style="margin: 25px;">Command Chat <span id="infocmdmsg" onclick="goToLink('cmdchatinfo')"><i class='far fa-question-circle'></i></span></h3>
+                <div class="chat-container">
+                    <div id="chat-box" class="chat-box">
+                    </div>
+                    <div class="chat-input">
+                        <input id="msg-input" type="text" placeholder="Ketik pesan..." autocomplete="off">
+                        <button id="send-btn">Kirim</button>
+                    </div>
+                </div>
+            </center>
+            <p id="closecmdchat" onclick="closedivcmdchat()" class="closexindivz"><i class="fas fa-times"></i></p>
+        </div>
+    </div>
+
     <div id="contprojectweb">
         <div id="subcontprojectweb">
             <center>
@@ -284,6 +292,7 @@
 <script src="Script/deaditya-stats.js"></script>
 <script src="Script/deaditya-webku.js"></script>
 <script src="Script/deaditya-navmenu.js"></script>
+<script src="Script/deaditya-cmdchat.js"></script>
 <script src="Script/deaditya-projectweb.js"></script>
 <script src="Script/deaditya-randommusic.js"></script>
 <script src="Script/deaditya-riwayatsekolah.js"></script>
