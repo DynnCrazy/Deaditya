@@ -9,7 +9,7 @@
 }
 
 #contact-message {
-    margin: 10px;
+    margin: 7px;
 }
 
 .dropdown-menu {
@@ -50,7 +50,7 @@
 }
 
 .marquee-container {
-    width: 35%;
+    width: 32%;
     overflow: hidden;
     border: 1px solid #ffffff;
     margin: 10px auto;
@@ -63,6 +63,7 @@
     white-space: nowrap;
     animation: slide 10s linear infinite;
     font-size: 14px;
+    color: white;
 }
 
 @keyframes slide {
@@ -368,9 +369,11 @@
     margin: 10px;
     outline: none;
     background-color: white;
+    background-color: #00a2ff;
     border: 1px solid transparent;
     border-radius: 30px;
     color: rgb(5, 5, 5);
+    color: white;
     box-sizing: border-box;
     transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease !important;
     cursor: pointer;

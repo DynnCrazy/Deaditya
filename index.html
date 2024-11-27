@@ -20,6 +20,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-zoom@1.2.0"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <style>
     #particles-js {
         position: fixed;
@@ -44,11 +45,11 @@
     </div>
     <div id="menunb" class="dropdown-menu">
         <a href="#" onclick="lihatmskrndm()"><i class='fas fa-music'></i>&emsp;Lagu</a>
-        <a href="#" onclick="lihatcmdchat()"><i class='fas fa-paper-plane'></i>&emsp;Command Chat</a>
         <!-- <a href="#" onclick="lihatrwytsklh()"><i class='fas fa-book-open'></i>&emsp;Sekolah (Alpha)</a> -->
         <a href="#" onclick="segeraHadir()"><i class='fas fa-book-open'></i>&emsp;Sekolah</a>
-        <a href="#" onclick="segeraHadir()"><i class='fas fa-exclamation-circle'></i>&emsp;Info</a>
-        <a href="#" onclick="segeraHadir()"><i class='fas fa-moon'></i>&emsp;Tema Website</a>
+        <!-- <a href="#" onclick="segeraHadir()"><i class='fas fa-exclamation-circle'></i>&emsp;Info</a> -->
+        <a href="#" onclick="lihatcmdchat()"><i class='fas fa-paper-plane'></i>&emsp;Command Chat</a>
+        <a href="#" onclick="segeraHadir()"><i class='fas fa-moon'></i>&emsp;Tampilan Website</a>
     </div>
 
     <center data-aos="fade-in">    
@@ -93,6 +94,7 @@
     <form id="contact-form">
         <input type="text" id="contact-username" placeholder="Nama kamu" required><br>
         <textarea id="contact-message" placeholder="Pesan kamu" required></textarea><br>
+        <div class="g-recaptcha" data-sitekey="6LcMjosqAAAAANKzvOXywn6wCn3GFexz5DfD_1f6"></div>
         <button type="button" onclick="sendEmail()" id="contact-btn-send">Kirim</button>
     </form>
     <div id="response"></div>
@@ -248,7 +250,7 @@
     <div id="contprojectweb">
         <div id="subcontprojectweb">
             <center>
-                <h3 style="margin: 25px;">My Website:</h3>
+                <h3 style="margin: 25px;">Website Saya:</h3>
                 <div class="contmyweb1">
                     <div class="contmyweb2">
                         <button onclick="openContImywp('ka')">Kerang Ajaib</button>

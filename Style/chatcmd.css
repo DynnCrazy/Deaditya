@@ -21,6 +21,8 @@
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     background-color: #383838fe;
+    background-color: #73ccff;
+    background-color: rgb(15, 15, 15);
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -30,6 +32,7 @@
     flex: 1;
     padding: 15px;
     overflow-y: auto;
+    overflow-x: hidden;
     display: flex;
     flex-direction: column;
 }
@@ -59,7 +62,7 @@
 }
 
 .chat-bubble {
-    max-width: 70%;
+    max-width: 80%;
     padding: 10px 15px;
     border-radius: 10px;
     line-height: 1.5;
@@ -68,6 +71,7 @@
 .chat-bubble.user {
     text-align: left;
     background: #00a2ff;
+    color: rgb(255, 255, 255);
     border-radius: 10px 10px 0 10px;
 }
 
@@ -83,6 +87,7 @@
     padding: 15px;
    /* border-top: 2px solid #0085d2; */
     background: #252525;
+    background: #008ddf;
 }
 
 #msg-input {
