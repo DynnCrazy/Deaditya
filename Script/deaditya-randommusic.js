@@ -18,6 +18,7 @@ function lihatmskrndm() {
     document.body.style.overflow = 'hidden';
     document.getElementById("contmusicc").style.opacity = 1;
     document.getElementById("contmusicc").style.zIndex = 99999999;
+    closeTheNavMenu();
 }
 
 function closecntmusik() {

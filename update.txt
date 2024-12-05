@@ -83,4 +83,10 @@ SCROLL TO SEE LAST UPDATE
 # Deaditya v1.6.7 | 27-11-2024
 - Fitur baru command message
 
+# Deaditya v1.7.1 | 04-12-2024
+- Update data
+- Fitur baru yang akan rilis 'karya'
+- Menambahkan kombinasi rahasia
+- Bug fix
+
 Web by Dyn Crazy | Deaditya
