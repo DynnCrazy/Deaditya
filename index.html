@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <!-- HALO BANG! -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Deaditya</title>
     <link rel="icon" href="icon.png" type="image/png">
@@ -81,7 +80,7 @@
         <button onclick="lihatStatistik()" class="btnstyle2">Lihat</button>
     </div>
 
-    <div class="divps">
+    <div class="divps" id="mywebdivcont">
         <p class="subttl">My Website (<span style="color: yellow;">Beta</span>):</p>
         <button onclick="lihatPWebku()" class="btnstyle2">Lihat</button>
     </div>
@@ -323,10 +322,6 @@
         <p class="fttr"><a href="update.txt" target="_blank" style="text-decoration: none; color: rgba(255, 255, 255, 0.301);">Web</a> by <a href="#deaditya" style="text-decoration: none; color: rgba(255, 255, 255, 0.301);">Deaditya</a></p>
     </footer>
 
-
-<script>
-    console.log('Tutor debugging bang');
-</script>
 <!-- # EXTERNAL SCRIPT -->
 <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
@@ -346,6 +341,7 @@
 <script src="Script/deaditya-projectweb.js"></script>
 <script src="Script/deaditya-randommusic.js"></script>
 <script src="Script/deaditya-riwayatsekolah.js"></script>
+<script src="Script/theme-website.js"></script>
 <!-- # INTERNAL SCRIPT | LIBRARY -->
 <script src="Script/chart.js"></script>
 <script src="Script/email.js"></script>
@@ -410,11 +406,11 @@
     if (admin === '180708') {
         console.log('Admin Mode = True');
         document.getElementById("onlyAdminMenu").style.display = 'block';
+        document.getElementById("mywebdivcont").style.display = 'block';
     } else {
         console.log('Admin Mode = False');
         document.getElementById("onlyAdminMenu").style.display = 'none';
-        // document.getElementById('subtitleadmin2').style.display = 'none';
-        // document.getElementById('subtitleadmin4').style.display = 'none';
+        document.getElementById("mywebdivcont").style.display = 'none';
     }
 
     function terjadiKesalahan() {

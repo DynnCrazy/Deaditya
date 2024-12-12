@@ -8,6 +8,7 @@ const katakunci4 = ["pacar", "ayang", "kekasih", "istri", "sayang"];
 const katakunci5 = ["web", "website", "browser"];
 const katakunci6 = ["hobi", "kesukaan", "kegemaran", "hobby", "hoby"];
 const katagantiorang2 = ["kamu", "mu", "kau", "c", "ci"];
+const katabantuan = ["tolong", "bantu", "help", "please", "plis"];
 const katapujian = ["keren", "mantap", "bagus", "gg"];
 const katalucu = ["wkwk", "awok", "haha"];
 const katasapaan = ["hai", "hallo", "p", "halo", "hy", "hello", "hay", "swastiastu"];

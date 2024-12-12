@@ -14,6 +14,10 @@ const secretCodes = [
     { 
         combination: ['h', 'e', 'l', 'p'], 
         action: () => showAlert('Help?') 
+    },
+    { 
+        combination: ['c', 'h', 'a', 't'], 
+        action: () => goToLink('chat') 
     }
 ];
 

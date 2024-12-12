@@ -18,6 +18,12 @@ function goToLink(to) {
         window.location.href = "#contact";
         adaLink = false;
         alert('Mohon kirim pesan (permohonan) dulu!');
+    } else if (to === "chat") {
+        window.location.href = "#contact";
+        adaLink = false;
+    } else if (to === "mainmenu") {
+        window.location.href = "/index.html";
+        adaLink = false;
     } else if (to === "tt") {
         link = "https://tiktok.com/@deaditya.xyz";
     } else if (to === "tt") {
@@ -42,6 +48,6 @@ function goToLink(to) {
     if (adaLink === true) {
         window.open(link, '_blank');
     } else {
-        console.log("Link tidak ditemukan!");
+        return;
     }
 }

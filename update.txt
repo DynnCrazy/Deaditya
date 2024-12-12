@@ -89,4 +89,15 @@ SCROLL TO SEE LAST UPDATE
 - Menambahkan kombinasi rahasia
 - Bug fix
 
+# Deaditya v1.7.3 | 05-12-2024
+- Pembaruan fitur karya
+
+# Deaditya v1.7.4 | 07-12-2024
+- Pembaruan untuk redirect halaman yang tidak ada
+- Pengoptimalan website
+
+# Deaditya v1.7.6 | 12-12-2024
+- Update data
+- Menghapus sementara my website
+
 Web by Dyn Crazy | Deaditya
