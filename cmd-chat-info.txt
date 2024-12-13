@@ -1,6 +1,7 @@
 ## COMMAND CHAT
 
 Daftar command:
+- !nama
 - !asal
 - !lahir
 - !umur

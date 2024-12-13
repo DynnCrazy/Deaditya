@@ -116,7 +116,7 @@
     cursor: pointer;
 }
 .divsm button:hover {
-    background-color: transparent;
+    background-color: transparent !important;
     border-color: white;
     color: white;
 }
@@ -584,7 +584,7 @@
 }
 
 .contmyweb2 button:hover {
-    background-color: transparent;
+    background-color: transparent !important;
     border-color: white;
     color: white;
 }

@@ -7,7 +7,10 @@ const katakunci3 = ["umur", "tahun"];
 const katakunci4 = ["pacar", "ayang", "kekasih", "istri", "sayang"];
 const katakunci5 = ["web", "website", "browser"];
 const katakunci6 = ["hobi", "kesukaan", "kegemaran", "hobby", "hoby"];
-const katagantiorang2 = ["kamu", "mu", "kau", "c", "ci"];
+const katakunci7 = ["nama", "adan", "name"];
+const katakunci8 = ["sekolah", "school"];
+const katakunci9 = ["adik", "siter", "adek"];
+const katagantiorang2 = ["kamu", "mu", "kau", "c", "ci", "you", "your"];
 const katabantuan = ["tolong", "bantu", "help", "please", "plis"];
 const katapujian = ["keren", "mantap", "bagus", "gg"];
 const katalucu = ["wkwk", "awok", "haha"];
@@ -54,6 +57,12 @@ sendBtn.addEventListener("click", () => {
         msgcmd_id = "8";
     } else if ( isMsgUsersingleword === true && katasapaan.some(kata => themsguser.includes(kata)) ) {
         msgcmd_id = "9";
+    } else if ( (katakunci7.some(kata => themsguser.includes(kata)) && katagantiorang2.some(kata => themsguser.includes(kata)) && katakunci9.some(kata => themsguser.includes(kata))) || themsguser.includes("!adik") ) {
+        msgcmd_id = "12";
+    } else if ( (katakunci7.some(kata => themsguser.includes(kata)) && katagantiorang2.some(kata => themsguser.includes(kata))) || themsguser.includes("!nama") ) {
+        msgcmd_id = "10";
+    } else if ( (katakunci8.some(kata => themsguser.includes(kata)) && katagantiorang2.some(kata => themsguser.includes(kata))) || themsguser.includes("!sekolah") ) {
+        msgcmd_id = "11";
     } else {
         msgcmd_id = "0";
     }
@@ -72,13 +81,19 @@ sendBtn.addEventListener("click", () => {
     } else if (msgcmd_id === "5") {
         resp_msg = "Saya buat web ini pakai html, css, dan javascript. Selain itu, saya juga menggunakan library/framework seperti bootstrap, email.js, aos.js, dll. Untuk hosting, saya menggunakan netlify yang sudah saya tautkan dengan repo github saya";
     } else if (msgcmd_id === "6") {
-        resp_msg = "Saya memiliki banyak hobby tergantung mood saya. Contoh hobby saya antara lain: Jelas belajar 🥸, lalu ada programing, main game, nonton film, berjualan, olahraga, dll";
+        resp_msg = "Saya memiliki banyak hobby tergantung mood saya. Untuk tau apa aja, bisa kontak langsung ya!";
     } else if (msgcmd_id === "7") {
         resp_msg = "Terimaksih";
     } else if (msgcmd_id === "8") {
         resp_msg = msgUserwithoutcngae;
     } else if (msgcmd_id === "9") {
         resp_msg = msgUserwithoutcngae;
+    } else if (msgcmd_id === "10") {
+        resp_msg = "Nama saya I Gede Aditya Pramana";
+    } else if (msgcmd_id === "11") {
+        resp_msg = "Saya sekarang bersekolah di SMA Negeri 1 Blahbatuh";
+    } else if (msgcmd_id === "12") {
+        resp_msg = "Nama adik saya adalah Ni Kadek Devika Sri Ardani";
     } else {
         resp_msg = "Hmm";
     }
@@ -101,6 +116,8 @@ function addMessage(message, sender) {
     chatBox.appendChild(messageDiv);
 
     chatBox.scrollTop = chatBox.scrollHeight;
+
+    checkTheme();
 }
 
 function isSingleWord(sentence) {

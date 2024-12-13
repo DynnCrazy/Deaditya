@@ -2,7 +2,7 @@ const labels = ['12 Des 24', '9 Des 24', '6 Des 24', '3 Des 24', '30 Nov 24', '2
 const dataPoints = [6, 6, 6, 8, 7, 8, 7, 7, 7, 7, 6, 5, 6, 7, 6, 7, 5, 6,];
 
 const ctx = document.getElementById('myChart').getContext('2d');
-const myChart = new Chart(ctx, {
+var myChart = new Chart(ctx, {
     type: 'line',
     data: {
         labels: labels.slice().reverse(),
