@@ -10,23 +10,35 @@ const katakunci6 = ["hobi", "kesukaan", "kegemaran", "hobby", "hoby"];
 const katakunci7 = ["nama", "adan", "name"];
 const katakunci8 = ["sekolah", "school"];
 const katakunci9 = ["adik", "siter", "adek"];
+const katakunci10 = ["jam", "pukul"];
+const katatanya1 = ["berapa", "kude"];
 const katagantiorang2 = ["kamu", "mu", "kau", "c", "ci", "you", "your"];
 const katabantuan = ["tolong", "bantu", "help", "please", "plis"];
 const katapujian = ["keren", "mantap", "bagus", "gg"];
 const katalucu = ["wkwk", "awok", "haha"];
 const katasapaan = ["hai", "hallo", "p", "halo", "hy", "hello", "hay", "swastiastu"];
+var isCmdChatOpen = false;
+
+msgInput.addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+        if (isCmdChatOpen === true) {
+            sendBtn.click()
+        }
+    }
+});
 
 function lihatcmdchat() {
     document.body.style.overflow = 'hidden';
     document.getElementById("contcmdchat").style.opacity = 1;
     document.getElementById("contcmdchat").style.zIndex = 99999999;
+    isCmdChatOpen = true;
 }
 
 function closedivcmdchat() {
     document.body.style.overflow = 'auto';
     document.getElementById("contcmdchat").style.opacity = 0;
     document.getElementById("contcmdchat").style.zIndex = -1;
-
+    isCmdChatOpen = false;
 }
 
 sendBtn.addEventListener("click", () => {
@@ -63,6 +75,8 @@ sendBtn.addEventListener("click", () => {
         msgcmd_id = "10";
     } else if ( (katakunci8.some(kata => themsguser.includes(kata)) && katagantiorang2.some(kata => themsguser.includes(kata))) || themsguser.includes("!sekolah") ) {
         msgcmd_id = "11";
+    } else if ( (katakunci10.some(kata => themsguser.includes(kata)) && katatanya1.some(kata => themsguser.includes(kata))) || themsguser.includes("!jam") || themsguser.includes("!menit") ) {
+        msgcmd_id = "13";
     } else {
         msgcmd_id = "0";
     }
@@ -94,6 +108,11 @@ sendBtn.addEventListener("click", () => {
         resp_msg = "Saya sekarang bersekolah di SMA Negeri 1 Blahbatuh";
     } else if (msgcmd_id === "12") {
         resp_msg = "Nama adik saya adalah Ni Kadek Devika Sri Ardani";
+    } else if (msgcmd_id === "13") {
+        var now = new Date();
+        var hours = now.getHours().toString().padStart(2, '0');
+        var minutes = now.getMinutes().toString().padStart(2, '0'); 
+        resp_msg = `Sekarang jam ${hours}:${minutes}`;
     } else {
         resp_msg = "Hmm";
     }

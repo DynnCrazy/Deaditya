@@ -103,4 +103,8 @@ SCROLL TO SEE LAST UPDATE
 # Deaditya v1.7.7 | 13-12-2024
 - Cmd Chat update
 
+# Deaditya v1.7.8 | 14-12-2024
+- Sekarang jika kamu menekan Enter pada cmd chat, maka pesan akan terkirim
+- Beberapa update kecil
+
 Web by Dyn Crazy | Deaditya

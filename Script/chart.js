@@ -1,48 +1,93 @@
-const labels = ['12 Des 24', '9 Des 24', '6 Des 24', '3 Des 24', '30 Nov 24', '27 Nov 24', '24 Nov 24', '21 Nov 24', '18 Nov 24', '15 Nov 24', '12 Nov 24', '9 Nov 24', '6 Nov 24', '3 Nov 24', '31 Okt 24', '28 Okt 24', '25 Okt 24', '22 Okt 24'];
-const dataPoints = [6, 6, 6, 8, 7, 8, 7, 7, 7, 7, 6, 5, 6, 7, 6, 7, 5, 6,];
+const labels = ['15 Des 24', '12 Des 24', '9 Des 24', '6 Des 24', '3 Des 24', '30 Nov 24', '27 Nov 24', '24 Nov 24', '21 Nov 24', '18 Nov 24', '15 Nov 24', '12 Nov 24', '9 Nov 24', '6 Nov 24', '3 Nov 24', '31 Okt 24', '28 Okt 24', '25 Okt 24', '22 Okt 24'];
+const dataPoints = [7, 6, 6, 6, 8, 7, 8, 7, 7, 7, 7, 6, 5, 6, 7, 6, 7, 5, 6,];
 
 const ctx = document.getElementById('myChart').getContext('2d');
-var myChart = new Chart(ctx, {
-    type: 'line',
-    data: {
-        labels: labels.slice().reverse(),
-        datasets: [{
-            label: 'Tingkat kebahagiaan',
-            data: dataPoints.slice().reverse(),
-            borderColor: '#0088ff',
-            backgroundColor: '#0088ff39',
-            borderWidth: 2,
-            fill: true
-        }]
-    },
-    options: {
-        responsive: true,
-        plugins: {
-            tooltip: {
-                backgroundColor: '#0088ff',
-                titleColor: 'white',
-                bodyColor: 'white',
-                borderColor: '#0088ff',
-                borderWidth: 1,
-                titleFont: { size: 14 },
-                bodyFont: { size: 12 }
-            },
-            legend: { display: false },
-            zoom: {
-                pan: { enabled: true, mode: 'x', speed: 20 },
-                zoom: { wheel: { enabled: true, speed: 0.1 }, pinch: { enabled: true }, mode: 'x' }
-            }
+
+if (a === false) {
+    var myChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: labels.slice().reverse(),
+            datasets: [{
+                label: 'Tingkat kebahagiaan',
+                data: dataPoints.slice().reverse(),
+                borderColor: '#00a2ff',
+                backgroundColor: '#00a2ff39',
+                borderWidth: 2,
+                fill: true
+            }]
         },
-        scales: {
-            x: {
-                ticks: { color: 'white' }
+        options: {
+            responsive: true,
+            plugins: {
+                tooltip: {
+                    backgroundColor: '#00a2ff',
+                    titleColor: 'white',
+                    bodyColor: 'white',
+                    borderColor: '#00a2ff',
+                    borderWidth: 1,
+                    titleFont: { size: 14 },
+                    bodyFont: { size: 12 }
+                },
+                legend: { display: false },
+                zoom: {
+                    pan: { enabled: true, mode: 'x', speed: 20 },
+                    zoom: { wheel: { enabled: true, speed: 0.1 }, pinch: { enabled: true }, mode: 'x' }
+                }
             },
-            y: {
-                ticks: { color: 'white' }
+            scales: {
+                x: {
+                    ticks: { color: 'white' }
+                },
+                y: {
+                    ticks: { color: 'white' }
+                }
             }
         }
-    }
-});
+    });
+} else {
+    var myChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: labels.slice().reverse(),
+            datasets: [{
+                label: 'Tingkat kebahagiaan',
+                data: dataPoints.slice().reverse(),
+                borderColor: themeNow_1,
+                backgroundColor: themeNow_4,
+                borderWidth: 2,
+                fill: true
+            }]
+        },
+        options: {
+            responsive: true,
+            plugins: {
+                tooltip: {
+                    backgroundColor: themeNow_1,
+                    titleColor: 'white',
+                    bodyColor: 'white',
+                    borderColor: themeNow_1,
+                    borderWidth: 1,
+                    titleFont: { size: 14 },
+                    bodyFont: { size: 12 }
+                },
+                legend: { display: false },
+                zoom: {
+                    pan: { enabled: true, mode: 'x', speed: 20 },
+                    zoom: { wheel: { enabled: true, speed: 0.1 }, pinch: { enabled: true }, mode: 'x' }
+                }
+            },
+            scales: {
+                x: {
+                    ticks: { color: 'white' }
+                },
+                y: {
+                    ticks: { color: 'white' }
+                }
+            }
+        }
+    });
+}
 
 document.addEventListener('keydown', function(event) {
     if (isMyStatsOpen === false) {

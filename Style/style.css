@@ -27,6 +27,7 @@
     border: none;
     transform: translateX(-350px);
     transition: transform 0.5s ease;
+    color: #007a00;
 }
 
 .dropdown-menu.show {
@@ -383,7 +384,7 @@
     transition: color 1s ease !important;
 }
 .closexindivz:hover {
-    color: #0088ff !important;
+    color: #0088ff;
 }
 #conttxtdescondetlrs {
     width: 70%;
