@@ -44,11 +44,12 @@
     <div id="menunb" class="dropdown-menu">
         <a href="#" onclick="lihatmskrndm()"><i class='fas fa-music'></i>&emsp;Lagu</a>
         <!-- <a href="#" onclick="lihatrwytsklh()"><i class='fas fa-book-open'></i>&emsp;Sekolah (Alpha)</a> -->
-        <a href="#" onclick="lihatkaryaku()" id="onlyAdminMenu"><i class='fas fa-edit'></i>&emsp;Karya</a>
+        <a href="#" onclick="lihatkaryaku()" id="onlyAdminMenu1"><i class='fas fa-edit'></i>&emsp;Karya</a>
         <a href="#" onclick="segeraHadir()"><i class='fas fa-book-open'></i>&emsp;Sekolah</a>
         <!-- <a href="#" onclick="segeraHadir()"><i class='fas fa-exclamation-circle'></i>&emsp;Info</a> -->
         <a href="#" onclick="lihatcmdchat()"><i class='fas fa-paper-plane'></i>&emsp;Command Chat</a>
-        <a href="#" onclick="segeraHadir()"><i class='fas fa-moon'></i>&emsp;Tampilan Website</a>
+        <a href="#" onclick="segeraHadir()" id="onlyUserMenu1"><i class='fas fa-moon'></i>&emsp;Tampilan Website</a>
+        <a href="#" onclick="lihattampilanwebku()" id="onlyAdminMenu2"><i class='fas fa-moon'></i>&emsp;Tampilan Website</a>
     </div>
 
     <center data-aos="fade-in">    
@@ -285,6 +286,21 @@
         </div>
     </div>
 
+    <div id="conttampilanweb">
+        <div id="subconttampilanweb">
+            <center>
+                <h3 style="margin: 25px;">Tampilan Website:</h3>
+                <div class="contmyweb1">
+                    <div class="contmyweb2">
+                        kkk
+                    </div>
+                </div>
+                
+            </center>
+            <p id="closetampilanweb" onclick="closethetampilanweb()" class="closexindivz"><i class="fas fa-times"></i></p>
+        </div>
+    </div>
+
     <div id="contmykaryapdf">
         <div id="subcontmykaryapdf">
             <center>
@@ -292,15 +308,15 @@
                 <div class="contmyweb1">
                     <div class="pdf-grid">
                         <div class="pdf-item">
-                            <iframe src="Karya/Pdf/Candi-Kurung-Ring-Pura-Dalem-Desa-Adat-Tojan.pdf"></iframe>
+                            <iframe src="https://drive.google.com/file/d/1JTT8e-pBNj10cCraOHC7Smsu5B4HzKe-/preview"></iframe>
                             <div class="pdf-title">File 1</div>
                         </div>
                         <div class="pdf-item">
-                            <iframe src="Karya/Pdf/Candi-Kurung-Ring-Pura-Dalem-Desa-Adat-Tojan.pdf"></iframe>
+                            <iframe src="https://drive.google.com/file/d/1JTT8e-pBNj10cCraOHC7Smsu5B4HzKe-/preview"></iframe>
                             <div class="pdf-title">File 2</div>
                         </div>
                         <div class="pdf-item">
-                            <iframe src="Karya/Pdf/Candi-Kurung-Ring-Pura-Dalem-Desa-Adat-Tojan.pdf"></iframe>
+                            <iframe src="https://drive.google.com/file/d/1JTT8e-pBNj10cCraOHC7Smsu5B4HzKe-/preview"></iframe>
                             <div class="pdf-title">File 3</div>
                         </div>
                     </div>
@@ -403,11 +419,15 @@
 
     if (admin === '180708') {
         console.log('Admin Mode = True');
-        document.getElementById("onlyAdminMenu").style.display = 'block';
+        document.getElementById("onlyAdminMenu1").style.display = 'block';
+        document.getElementById("onlyAdminMenu1").style.display = 'block';
+        document.getElementById("onlyUserMenu1").style.display = 'none';
         document.getElementById("mywebdivcont").style.display = 'block';
     } else {
         console.log('Admin Mode = False');
-        document.getElementById("onlyAdminMenu").style.display = 'none';
+        document.getElementById("onlyAdminMenu1").style.display = 'none';
+        document.getElementById("onlyAdminMenu2").style.display = 'none';
+        document.getElementById("onlyUserMenu1").style.display = 'block';
         document.getElementById("mywebdivcont").style.display = 'none';
     }
 

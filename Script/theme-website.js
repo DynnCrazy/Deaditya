@@ -1,5 +1,19 @@
 var a = false;
 
+function lihattampilanwebku() {
+    document.body.style.overflow = 'hidden';
+    document.getElementById("conttampilanweb").style.opacity = 1;
+    document.getElementById("conttampilanweb").style.zIndex = 99999999;
+    closeTheNavMenu();
+}
+
+function closethetampilanweb() {
+    document.body.style.overflow = 'auto';
+    document.getElementById("conttampilanweb").style.opacity = 0;
+    document.getElementById("conttampilanweb").style.zIndex = -1;
+
+}
+
 // THEME 1 (red)
 const themeRed_1 = 'red';
 const themeRed_2 = '#da0000';
