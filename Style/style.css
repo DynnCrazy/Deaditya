@@ -669,6 +669,28 @@
     font-size: 16px;
     font-weight: bold;
 }
+#theme-selector {
+    background-color: #00a2ff;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    padding: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#theme-selector option {
+    background-color: #00a2ff;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    padding: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 
 @media (max-width: 600px) {
     .pdf-item {
