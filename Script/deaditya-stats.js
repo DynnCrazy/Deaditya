@@ -33,6 +33,7 @@ function closelhtstats() {
     document.body.style.overflow = 'auto';
     id_contstats.style.opacity = 0;
     id_contstats.style.zIndex = -1;
+    myChart.resetZoom();
 }
 
 function calculateAge(birthDate) {

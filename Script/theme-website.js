@@ -119,6 +119,12 @@ function checkTheme() {
             element.style.setProperty("color", "white", "important");
         });
     });
+
+    myChart.data.datasets[0].borderColor = themeNow_1;
+    myChart.data.datasets[0].backgroundColor = themeNow_4;
+    myChart.options.plugins.tooltip.backgroundColor = themeNow_1;
+    myChart.options.plugins.tooltip.borderColor = themeNow_1;
+    myChart.update();
 }
 
 document.addEventListener('DOMContentLoaded', function() { 

@@ -107,4 +107,9 @@ SCROLL TO SEE LAST UPDATE
 - Sekarang jika kamu menekan Enter pada cmd chat, maka pesan akan terkirim
 - Beberapa update kecil
 
+# Deaditya v1.8.4 | 17-12-2024
+- Tema atau tampilan website bisa dirubah!
+- Penambahan Terms of Service dan Privacy Policy
+- Fix Bug
+
 Web by Dyn Crazy | Deaditya

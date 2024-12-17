@@ -1,0 +1,57 @@
+PRIVACY POLICY (PP)
+Setelah menyetujui Kebijakan Layanan Kami, Anda juga harus menyetujui Kebijakan Privasi kami. Dengan mengakses atau menggunakan layanan kami, Anda juga setuju untuk mematuhi Kebijakan Privasi ini.
+
+1 - Informasi yang Dikumpulkan
+Informasi yang kami kumpulkan berupa:
+    1.1 Informasi yang Anda berikan kepada kami di dalam website, di mana Anda secara jelas melihat dan mengetahui informasi apa yang sedang Anda berikan.
+    1.2 Informasi interaktif seperti tema web, dll yang bertujuan untuk memberikan pelayanan yang terbaik.
+
+2 - Penggunaan Informasi
+Informasi yang kami kumpulkan digunakan untuk:
+    2.1 Menyediakan, mengoperasikan, dan mengelola situs website kami.
+    2.2 Membaca atau memahami pesan yang Anda berikan kepada kami.
+
+3 - Penggunaan Cookies
+Penggunaan cookies di website kami:
+    3.1 Kami tidak memberikan cookies atau file kecil yang disimpan di perangkat Anda.
+
+4 - Pembagian Informasi
+Pembagian informasi yang Anda berikan:
+    4.1 Kami tidak akan membagikan informasi yang Anda berikan kepada kami, kecuali sudah mendapatkan izin dari Anda.
+    4.2 Kami dapat memberikan informasi kepada organisasi hukum jika dibutuhkan, tanpa izin dari Anda, namun harus diketahui oleh Anda.
+    4.3 Jika kami memberikan informasi kepada pihak lain sesuai dengan [PP-4.1] dan [PP-4.2], kami akan memberikan informasi dengan sebaik-baiknya supaya informasi Anda aman dan terjaga.
+
+5 - Keamanan Informasi
+Keamanan informasi Anda:
+    5.1 Kami akan menyimpan informasi Anda secara rahasia, terjaga, dan aman. Namun, tidak menjamin informasi yang Anda berikan akan terus ada atau tetap (dalam artian bisa hilang atau terhapus secara tidak sengaja).
+    5.2 Kami tidak menjamin informasi yang Anda berikan kepada kami melalui pihak ketiga akan aman dan terjaga.
+    5.3 Kami menggunakan localStorage untuk menyimpan sedikit data Anda yang digunakan untuk [PP-2.1]. Jadi keamanan data yang berada di localStorage hp/web Anda adalah tanggung jawab Anda.
+
+6 - Pihak Ketiga
+Kami menggunakan layanan pihak ketiga yang bisa saja menyimpan informasi Anda:
+    6.1 Kami tidak bertanggung jawab jika informasi yang Anda berikan melalui pihak ketiga tidak aman, sesuai dengan [PP-5.2].
+    6.2 Jika Anda menggunakan layanan kami, sebaiknya Anda juga membaca TOS dan PP layanan pihak ketiga kami, seperti Email.js dan/atau Gmail.
+
+7 - Hak Anda
+Berikut adalah hak Anda sebagai pengguna:
+    7.1 Memperbarui informasi yang Anda berikan kepada kami.
+    7.2 Meminta untuk menghapus informasi yang Anda berikan kepada kami secara permanen (tidak bisa dikembalikan).
+    7.3 Melakukan penghapusan data di localStorage Anda tanpa pemberitahuan kepada kami. Namun, data yang dihapus adalah tanggung jawab Anda sesuai dengan [PP-5.3].
+    7.4 Menolak informasi yang diberikan untuk dibagikan kepada orang lain [PP-4.1]. Namun, tidak bisa menolak jika berhubungan dengan hukum [PP-4.2].
+    7.5 Meminta data siapa saja yang bisa/sudah melihat informasi yang Anda bagikan dan apa saja yang sudah mereka lihat.
+    7.6 Melaporkan kami jika kami menyebarkan data Anda tanpa izin Anda (kecuali yang berhubungan dengan hukum) dengan bukti-bukti dan/atau saksi yang kuat.
+    7.7 Melanjutkan [PP-7.6], kalian bisa melaporkan kami jika Anda merasa sangat dirugikan. Dan juga, jangan sampai Anda melaporkan kami padahal pihak ketiga yang menyebarkan data Anda [PP-6.1] dan [PP-6.2].
+
+8 - Perubahan Kebijakan Privasi
+Berikut adalah perubahan kebijakan privasi:
+    8.1 Kami dapat memperbarui Kebijakan Privasi ini sewaktu-waktu. Anda disarankan untuk secara berkala memeriksa halaman ini untuk mengetahui perubahan terbaru.
+    8.2 Perubahan Kebijakan Privasi dapat Anda lihat melalui halaman Kebijakan Privasi paling bawah.
+    8.3 Perubahan kata pada Kebijakan Privasi ini tidak dianggap sebagai Perubahan Kebijakan Privasi.
+
+9 - Hubungi Kami
+Jika Anda memiliki pertanyaan tentang Kebijakan Privasi ini, silakan hubungi kami di:
+Email: dynncrazy@gmail.com
+
+Terima kasih telah menggunakan layanan kami!
+
+[Kebijakan Privasi diubah pada 17/12/2024 pukul 23:21 oleh Dyn Crazy]

@@ -3,7 +3,6 @@ const dataPoints = [7, 6, 6, 6, 8, 7, 8, 7, 7, 7, 7, 6, 5, 6, 7, 6, 7, 5, 6,];
 
 const ctx = document.getElementById('myChart').getContext('2d');
 
-if (a === false) {
     var myChart = new Chart(ctx, {
         type: 'line',
         data: {
@@ -31,8 +30,19 @@ if (a === false) {
                 },
                 legend: { display: false },
                 zoom: {
-                    pan: { enabled: true, mode: 'x', speed: 20 },
-                    zoom: { wheel: { enabled: true, speed: 0.1 }, pinch: { enabled: true }, mode: 'x' }
+                    zoom: {
+                        wheel: {
+                            enabled: true,
+                        },
+                        pinch: {
+                            enabled: true
+                        },
+                        mode: 'xy',
+                    },
+                    limits: {
+                        x: { min: 0, max: 10 },
+                        y: { min: 0, max: 10 } 
+                    }
                 }
             },
             scales: {
@@ -45,49 +55,6 @@ if (a === false) {
             }
         }
     });
-} else {
-    var myChart = new Chart(ctx, {
-        type: 'line',
-        data: {
-            labels: labels.slice().reverse(),
-            datasets: [{
-                label: 'Tingkat kebahagiaan',
-                data: dataPoints.slice().reverse(),
-                borderColor: themeNow_1,
-                backgroundColor: themeNow_4,
-                borderWidth: 2,
-                fill: true
-            }]
-        },
-        options: {
-            responsive: true,
-            plugins: {
-                tooltip: {
-                    backgroundColor: themeNow_1,
-                    titleColor: 'white',
-                    bodyColor: 'white',
-                    borderColor: themeNow_1,
-                    borderWidth: 1,
-                    titleFont: { size: 14 },
-                    bodyFont: { size: 12 }
-                },
-                legend: { display: false },
-                zoom: {
-                    pan: { enabled: true, mode: 'x', speed: 20 },
-                    zoom: { wheel: { enabled: true, speed: 0.1 }, pinch: { enabled: true }, mode: 'x' }
-                }
-            },
-            scales: {
-                x: {
-                    ticks: { color: 'white' }
-                },
-                y: {
-                    ticks: { color: 'white' }
-                }
-            }
-        }
-    });
-}
 
 document.addEventListener('keydown', function(event) {
     if (isMyStatsOpen === false) {
