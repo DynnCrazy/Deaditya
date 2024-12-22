@@ -14,32 +14,44 @@ function closethetampilanweb() {
     // document.getElementById("conttampilanweb").style.zIndex = -1;
 }
 
-// THEME 1 (red)
+// THEME (red)
 const themeRed_1 = 'red';
 const themeRed_2 = '#da0000';
 const themeRed_3 = '#e90000';
 const themeRed_4 = '#ff000039';
 
-// THEME 2 (green)
+// THEME (green)
 const themeGreen_1 = '#008e00';
 const themeGreen_2 = '#007a00';
 const themeGreen_3 = '#007a00';
 const themeGreen_4 = '#008e0039';
 
-// THEME 3 (pink)
+// THEME (pink)
 const themePink_1 = '#ff00c3';
 const themePink_2 = '#cf009f';
 const themePink_3 = '#e800b2';
 const themePink_4 = '#ff00c339';
 
+// THEME (rainbow)
+const themeRainbow_1 = 'white';
+const themeRainbow_2 = 'white';
+const themeRainbow_3 = 'white';
+const themeRainbow_4 = 'white';
+const themeRainbow_5 = 'white';
+
 var themeNow_1 = ""; // warna utama
 var themeNow_2 = ""; // warna utama (lebih gelap)
 var themeNow_3 = ""; // warna utama (lebih gelap #2)
 var themeNow_4 = ""; // warna utama (sedikit transparan)
+var themeNow_5 = '#0f0f0f';
 
 var whatTheme = "default";
 
 function changeTheme(temanyaApa) {
+    if (temanyaApa === "-") {
+        return;
+    }
+
     if (temanyaApa === "default") {
         whatTheme = "default";
     } else if (temanyaApa === "red") {
@@ -48,6 +60,8 @@ function changeTheme(temanyaApa) {
         whatTheme = "green";
     } else if (temanyaApa === "pink") {
         whatTheme = "pink";
+    } else if (temanyaApa === "rainbow") {
+        whatTheme = "rainbow";
     }
 
     // Simpan tema ke localStorage
@@ -72,6 +86,12 @@ function checkTheme() {
         themeNow_2 = themePink_2;
         themeNow_3 = themePink_3;
         themeNow_4 = themePink_4;
+    } else if (whatTheme === "rainbow") {
+        themeNow_1 = themeRainbow_1;
+        themeNow_2 = themeRainbow_2;
+        themeNow_3 = themeRainbow_3;
+        themeNow_4 = themeRainbow_4;
+        themeNow_5 = themeRainbow_5;
     } else {
         themeNow_1 = "";
         themeNow_2 = "";
@@ -79,9 +99,10 @@ function checkTheme() {
         themeNow_4 = "";
     }
 
-    const theThemeElements_bg_1 = document.querySelectorAll('.btnstyle1, .btnstyle2, .divsm button, .dropdown-menu, .btnrndmmsck, #theme-selector, #theme-selector option, #mvntButton, #contact-username, #contact-message, #contact-btn-send, .contmyweb2 button, .pdf-item, .pdf-item iframe');
+    const theThemeElements_bg_1 = document.querySelectorAll('.x2, .btnstyle1, .btnstyle2, .divsm button, .dropdown-menu, .btnrndmmsck, #theme-selector, #theme-selector option, #mvntButton, #contact-username, #contact-message, #contact-btn-send, .contmyweb2 button, .pdf-item, .pdf-item iframe');
     const theThemeElements_bg_2 = document.querySelectorAll('.chat-input');
     const theThemeElements_bg_3 = document.querySelectorAll('.chat-bubble.user, .chat-bubble user');
+    const theThemeElements_bg_4 = document.querySelectorAll('#particles-js');
     const theThemeElements_color_1 = document.querySelectorAll('.ttlweb2');
 
     theThemeElements_bg_1.forEach(function(element) {
@@ -94,6 +115,10 @@ function checkTheme() {
 
     theThemeElements_bg_3.forEach(function(element) {
         element.style.setProperty("background-color", themeNow_1, "important");
+    });
+
+    theThemeElements_bg_4.forEach(function(element) {
+        element.style.setProperty("background-color", themeNow_5, "important");
     });
 
     theThemeElements_color_1.forEach(function(element) {

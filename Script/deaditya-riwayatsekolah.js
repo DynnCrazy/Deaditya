@@ -84,6 +84,7 @@ function detailRiwayatSekolah(whatSch) {
     closedtlrsselect();
     isDetailrsopen = true;
 
+    /*
     if (whatSch === "TK") {
         document.getElementById("descindetailrs").innerHTML = descmytk;
         document.getElementById("linkindetailrs").href = locmytk;
@@ -111,6 +112,18 @@ function detailRiwayatSekolah(whatSch) {
     if (!intervalId) {
         intervalId = setInterval(changeImage, 5000);
     }
+    */
+
+    if (whatSch === "TK") {
+        window.location.href = "/sekolah.html?tingkat=tk"
+    } else if (whatSch === "SD") {
+        window.location.href = "/sekolah.html?tingkat=sd"
+    } else if (whatSch === "SMP") {
+        window.location.href = "/sekolah.html?tingkat=smp"
+    } else if (whatSch === "SMASMK") {
+        window.location.href = "/sekolah.html?tingkat=smasmk"
+    }
+
 }
 
 

@@ -1,5 +1,5 @@
-const labels = ['15 Des 24', '12 Des 24', '9 Des 24', '6 Des 24', '3 Des 24', '30 Nov 24', '27 Nov 24', '24 Nov 24', '21 Nov 24', '18 Nov 24', '15 Nov 24', '12 Nov 24', '9 Nov 24', '6 Nov 24', '3 Nov 24', '31 Okt 24', '28 Okt 24', '25 Okt 24', '22 Okt 24'];
-const dataPoints = [7, 6, 6, 6, 8, 7, 8, 7, 7, 7, 7, 6, 5, 6, 7, 6, 7, 5, 6,];
+const labels = ['15 Des 24', '18 Des 24', '15 Des 24', '12 Des 24', '9 Des 24', '6 Des 24', '3 Des 24', '30 Nov 24', '27 Nov 24', '24 Nov 24', '21 Nov 24', '18 Nov 24', '15 Nov 24', '12 Nov 24', '9 Nov 24', '6 Nov 24', '3 Nov 24', '31 Okt 24', '28 Okt 24', '25 Okt 24', '22 Okt 24'];
+const dataPoints = [7, 6, ,7, 6, 6, 6, 8, 7, 8, 7, 7, 7, 7, 6, 5, 6, 7, 6, 7, 5, 6,];
 
 const ctx = document.getElementById('myChart').getContext('2d');
 

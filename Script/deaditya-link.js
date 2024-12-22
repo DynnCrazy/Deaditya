@@ -1,5 +1,7 @@
 // Baru bisa If Else bang...
 
+var oneTry = true;
+
 function goToLink(to) {
     var link = "";
     var adaLink = true;
@@ -40,6 +42,15 @@ function goToLink(to) {
         link = "https://dcfinder.netlify.app/";
     } else if (to === "cmdchatinfo") {
         link = "/cmd-chat-info.txt";
+    }  else if (to === "badWordBtn") {
+        if (oneTry === true) {
+            oneTry = false;
+            link = "https://www.youtube.com/@DynCrazy";
+        } else {
+            oneTry = true;
+            window.location.href = "/index.html";
+            adaLink = false;
+        }
     } else {
         terjadiKesalahan();
         adaLink = false;

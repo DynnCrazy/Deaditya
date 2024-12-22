@@ -112,4 +112,17 @@ SCROLL TO SEE LAST UPDATE
 - Penambahan Terms of Service dan Privacy Policy
 - Fix Bug
 
+# Deaditya v1.8.1 | 18-12-2024
+- Fitur auto sensor jika pengguna menggunakan kata kasar
+- Update ToS
+
+# Deaditya v1.8.2 | 19-12-2024
+- Fix bug
+
+# Deaditya v1.8.6 | 22-12-2024
+- Hukuman jika pengguna berkata kasar
+- Data update
+- Update kebijakan
+- Sedikit perbaikan kode
+
 Web by Dyn Crazy | Deaditya

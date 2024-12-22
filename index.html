@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="Style/style.css">
     <link rel="stylesheet" href="Style/chatcmd.css">
     <link rel="stylesheet" href="Style/iframe.css">
-    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-zoom@1.3.0"></script>
@@ -43,9 +42,9 @@
     </div>
     <div id="menunb" class="dropdown-menu">
         <a href="#" onclick="lihatmskrndm()"><i class='fas fa-music'></i>&emsp;Lagu</a>
-        <!-- <a href="#" onclick="lihatrwytsklh()"><i class='fas fa-book-open'></i>&emsp;Sekolah (Alpha)</a> -->
         <a href="#" onclick="lihatkaryaku()" id="onlyAdminMenu1"><i class='fas fa-edit'></i>&emsp;Karya</a>
         <a href="#" onclick="segeraHadir()"><i class='fas fa-book-open'></i>&emsp;Sekolah</a>
+        <!-- <a href="#" onclick="lihatrwytsklh()"><i class='fas fa-book-open'></i>&emsp;Sekolah V.2</a> -->
         <!-- <a href="#" onclick="segeraHadir()"><i class='fas fa-exclamation-circle'></i>&emsp;Info</a> -->
         <a href="#" onclick="lihatcmdchat()"><i class='fas fa-paper-plane'></i>&emsp;Command Chat</a>
         <a href="#" onclick="lihattampilanwebku()"><i class='fas fa-moon'></i>&emsp;Tampilan Website</a>
@@ -292,10 +291,12 @@
                 <div class="contmyweb1">
                     <div class="contmyweb2">
                         <select id="theme-selector" onchange="changeTheme(this.value)">
-                            <option value="default">Tema Default</option>
+                            <option value="-">Pilih Tema</option>
+                            <option value="default">Tema Default (Biru)</option>
                             <option value="red">Tema Merah</option>
                             <option value="green">Tema Hijau</option>
                             <option value="pink">Tema Pink</option>
+                            <option value="rainbow">Tema Pelangi</option>
                         </select>                        
                     </div>
                 </div>

@@ -17,6 +17,7 @@ const katabantuan = ["tolong", "bantu", "help", "please", "plis"];
 const katapujian = ["keren", "mantap", "bagus", "gg"];
 const katalucu = ["wkwk", "awok", "haha"];
 const katasapaan = ["hai", "hallo", "p", "halo", "hy", "hello", "hay", "swastiastu"];
+const katablacklist = ["kontol", "kntl", "asu", "goblok", "bokep", "yatim", "piatu", "tai", "kintil", "kuntul", "memek", "ngentot", "ngentod", "ngentit", "ngewe", "seks", "kondom", "sprema", "asw", "jancok", "jncok", "jnck", "mekatuk", "telak", "lolok", "bangsat", "bngsat", "ngucut"];
 var isCmdChatOpen = false;
 
 msgInput.addEventListener("keydown", function(event) {
@@ -41,17 +42,26 @@ function closedivcmdchat() {
     isCmdChatOpen = false;
 }
 
+function censorWords(text, blacklist) {
+    const regex = new RegExp(`\\b(${blacklist.join('|')})\\b`, 'gi');
+    return text.replace(regex, (match) => '*'.repeat(match.length));
+}
+
 sendBtn.addEventListener("click", () => {
     var msgcmd_id = msgInput.value.trim();
     if (!msgcmd_id) return;
 
-    addMessage(msgcmd_id, "user");
+    var censoredMsg = censorWords(msgcmd_id, katablacklist);
+
+    addMessage(censoredMsg, "user");
 
     var themsguser = msgcmd_id.toLowerCase();
     var msgUserwithoutcngae = msgcmd_id;
     var isMsgUsersingleword = isSingleWord(themsguser);
 
-    if ( (katakunci1.some(kata => themsguser.includes(kata)) && katagantiorang2.some(kata => themsguser.includes(kata))) || themsguser.includes("!asal") ) {
+    if (katablacklist.some(kata => themsguser.includes(kata))) {
+        msgcmd_id = "blacklist";  
+    } else if ( (katakunci1.some(kata => themsguser.includes(kata)) && katagantiorang2.some(kata => themsguser.includes(kata))) || themsguser.includes("!asal") ) {
         msgcmd_id = "1";
     } else if ( (katakunci2.some(kata => themsguser.includes(kata)) && katagantiorang2.some(kata => themsguser.includes(kata))) || themsguser.includes("!lahir") ) {
         msgcmd_id = "2";
@@ -113,6 +123,9 @@ sendBtn.addEventListener("click", () => {
         var hours = now.getHours().toString().padStart(2, '0');
         var minutes = now.getMinutes().toString().padStart(2, '0'); 
         resp_msg = `Sekarang jam ${hours}:${minutes}`;
+    } else if (msgcmd_id === "blacklist") {
+        resp_msg = `Kamu menggunakan kata terlarang!`;
+        window.location.href = "/ban-words.html";
     } else {
         resp_msg = "Hmm";
     }
