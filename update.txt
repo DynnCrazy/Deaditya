@@ -125,4 +125,8 @@ SCROLL TO SEE LAST UPDATE
 - Update kebijakan
 - Sedikit perbaikan kode
 
+# Deaditya v1.8.7 | 15-01-2025
+- Update data
+- Sedikit perubahan
+
 Web by Dyn Crazy | Deaditya
