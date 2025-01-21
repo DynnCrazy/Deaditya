@@ -1,22 +1,41 @@
-const loading = document.getElementById('contloading');
-const images = document.querySelectorAll('.imgLoad');
+document.addEventListener('DOMContentLoaded', function() {
+    const loading = document.getElementById('contloading'); // Kontainer loading
+    const images = document.querySelectorAll('.imgLoad');   // Semua gambar dengan class .imgLoad
 
-// Fungsi untuk memeriksa apakah semua gambar sudah dimuat
-let loadedImages = 0;
-const totalImages = images.length;
+    let loadedImages = 0;
+    const totalImages = images.length;
 
-// Menambahkan event listener untuk setiap gambar
-images.forEach(image => {
-    image.onload = function() {
-        loadedImages++;
+    function checkAllImagesLoaded() {
         if (loadedImages === totalImages) {
-            // Menyembunyikan efek loading dan menampilkan semua gambar
+            // Sembunyikan kontainer loading
             loading.style.display = 'none';
+
+            // Tampilkan semua gambar
             images.forEach(img => {
                 img.style.display = 'block';
             });
         }
-    };
-    // Pastikan gambar mulai dimuat
-    image.src = image.src;
+    }
+
+    images.forEach(image => {
+        if (image.complete) {
+            // Jika gambar sudah dimuat (cached)
+            loadedImages++;
+            checkAllImagesLoaded();
+        } else {
+            // Tambahkan event handler untuk onload dan onerror
+            image.onload = function() {
+                loadedImages++;
+                console.log(`Berhasil memuat gambar: ${image.src}`);
+                checkAllImagesLoaded();
+            };
+            image.onerror = function() {
+                loadedImages++;
+                console.error(`Gagal memuat gambar: ${image.src}`);
+                checkAllImagesLoaded();
+            };
+        }
+        // Refresh src untuk memastikan pemuatan ulang
+        image.src = image.src;
+    });
 });
