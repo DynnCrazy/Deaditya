@@ -3,7 +3,7 @@
     left: 0px;
     top: 0px;
     font-size: 30px;
-    margin: 25px;
+    margin: 30px;
     cursor: pointer;
     z-index: 999999;
 }
@@ -396,7 +396,7 @@
     margin: 50px !important;
     margin-top: 30px !important;
     cursor: pointer !important;
-    transition: color 1s ease !important;
+    transition: color 0.5s ease !important;
 }
 .closexindivz:hover {
     color: #0088ff;
