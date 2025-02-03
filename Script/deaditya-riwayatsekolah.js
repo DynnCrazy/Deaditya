@@ -115,13 +115,13 @@ function detailRiwayatSekolah(whatSch) {
     */
 
     if (whatSch === "TK") {
-        window.location.href = "/sekolah.html?tingkat=tk"
+        window.location.href = "/Informasi/Sekolah/index.html?tingkat=tk"
     } else if (whatSch === "SD") {
-        window.location.href = "/sekolah.html?tingkat=sd"
+        window.location.href = "/Informasi/Sekolah/index.html?tingkat=sd"
     } else if (whatSch === "SMP") {
-        window.location.href = "/sekolah.html?tingkat=smp"
+        window.location.href = "/Informasi/Sekolah/index.html?tingkat=smp"
     } else if (whatSch === "SMASMK") {
-        window.location.href = "/sekolah.html?tingkat=smasmk"
+        window.location.href = "/Informasi/Sekolah/index.html?tingkat=smasmk"
     }
 
 }
