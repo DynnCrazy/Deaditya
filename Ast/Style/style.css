@@ -1,0 +1,58 @@
+#contprofimg {
+    display: flex;
+    justify-content: center;
+}
+
+#contprofimg img {
+    border-radius: 50%;
+    border: 2px solid white;
+    width: 100px;
+}
+
+.cont-sosmed {
+    width: 30%;
+    background-color: transparent;
+}
+
+.cont-sosmed button {
+    width: 100%;
+    padding: 15px;
+    font-size: 14px;
+    margin-bottom: 18px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    background-color: #178cf3;
+    color: white;
+    cursor: pointer;
+}
+
+/*
+.keyword {
+    color: #178cf3;
+    color: white;
+}
+*/
+
+.lihatJawabanBJ {
+    color: #178cf3;
+    text-decoration: none;
+}
+
+.btnGoToTop {
+    background-color: #178cf3;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    padding: 14px;
+    padding-left: 17px;
+    padding-right: 17px;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .cont-sosmed {
+        width: 60%;
+    }
+}
