@@ -27,18 +27,6 @@
     cursor: pointer;
 }
 
-/*
-.keyword {
-    color: #178cf3;
-    color: white;
-}
-*/
-
-.lihatJawabanBJ {
-    color: #178cf3;
-    text-decoration: none;
-}
-
 .btnGoToTop {
     background-color: #178cf3;
     color: white;
