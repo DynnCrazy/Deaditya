@@ -1,12 +1,13 @@
 #contprofimg {
     display: flex;
     justify-content: center;
+    margin: 30px;
 }
 
 #contprofimg img {
     border-radius: 50%;
     border: 2px solid white;
-    width: 100px;
+    width: 120px;
 }
 
 .cont-sosmed {
@@ -42,5 +43,11 @@
 @media (max-width: 600px) {
     .cont-sosmed {
         width: 60%;
+    }
+
+    #contprofimg img {
+        border-radius: 50%;
+        border: 2px solid white;
+        width: 100px;
     }
 }
