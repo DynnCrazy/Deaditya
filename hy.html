@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Deaditya</title>
+    <link rel="icon" href="/Ast/Image/icon.png" type="image/png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: "Poppins", serif;
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+        }
+        .containerAll {
+            width: 100%;
+            height: 100vh;
+            padding-top: 30px;
+            background-color: transparent;
+        }
+
+        .div {
+            margin: 0;
+            padding: 0;
+        }
+        #content1, #content2, #content3 {
+            display: none;
+        }
+        #content1 {
+            display: block;
+        }
+        p {
+            font-size: 18px;
+            margin-bottom: 50px;
+        }
+        button {
+            background-color: #00a2ff;
+            color: white;
+            border: none;
+            text-align: center;
+            width: 120px;
+            font-size: 16px;
+            height: 50px;
+            padding: 7px;
+            border-radius: 6px;
+            margin-inline: 0px;
+            cursor: pointer;
+        }
+
+        #mauBtn {
+            background-color: green;
+            z-index: 1;
+        }
+        #tidakBtn {
+            background-color: red;
+            z-index: 99;
+        }
+        .contbtnpertanyaan {
+            width: 100%;
+            background-color: transparent;
+        }
+        .contbtnpertanyaan2 {
+            width: 95%;
+            height: 333px;
+            position: relative;
+            background-color: transparent;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div class="containerAll">
+            <div id="content1">
+                <p id="pc1">Halo</p>
+                <button onclick="clickCont('1')">Halo</button>
+            </div>
+            <div id="content2">
+                <p>Hmm</p>
+                <button onclick="clickCont('2')">Kenapa?</button>
+            </div>
+            <div id="content3">
+                <p>Kamu mau gak jadi pacarku?</p>
+                <div class="contbtnpertanyaan">
+                    <button onclick="goToWa()" id="mauBtn" class="abtn">Mauu</button>
+                </div>
+                <br>
+                <div class="contbtnpertanyaan2">
+                    <button id="tidakBtn" class="bbtn">Tidak</button>
+                </div>
+            </div>
+        </div>
+    </center>
+
+    <script>
+        const url = new URL(window.location.href);
+        const nama = url.searchParams.get('nama');
+        var namanya = nama ? nama : 'cewek';
+        document.getElementById('pc1').innerHTML = `Halo ${namanya}`;
+
+        function clickCont(idCont) {
+            if (idCont === '1') {
+                document.getElementById('content1').style.display = 'none';
+                document.getElementById('content2').style.display = 'block';
+            } else if (idCont === '2') {
+                document.getElementById('content2').style.display = 'none';
+                document.getElementById('content3').style.display = 'block';
+            }
+        }
+
+        function goToWa() {
+            window.location.href = "https://wa.me/+6287817661477";
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+    const tidakBtn = document.getElementById("tidakBtn");
+    const container = document.querySelector(".contbtnpertanyaan2");
+
+    container.style.position = "relative";
+
+    function moveButton() {
+        const containerWidth = container.offsetWidth;
+        const containerHeight = container.offsetHeight;
+        const buttonWidth = tidakBtn.offsetWidth;
+        const buttonHeight = tidakBtn.offsetHeight;
+
+        const maxX = containerWidth - buttonWidth;
+        const maxY = containerHeight - buttonHeight;
+
+        const newX = Math.min(maxX, Math.random() * maxX);
+        const newY = Math.min(maxY, Math.random() * maxY);
+
+        tidakBtn.style.position = "absolute";
+        tidakBtn.style.left = `${newX}px`;
+        tidakBtn.style.top = `${newY}px`;
+    }
+
+    // Event buat HP dan PC
+    tidakBtn.addEventListener("mouseover", moveButton); // PC
+    tidakBtn.addEventListener("click", moveButton);     // HP (klik langsung kabur 🤣)
+    tidakBtn.addEventListener("touchstart", moveButton); // HP (sentuh langsung kabur 🔥)
+});
+
+    </script>
+</body>
+</html>
