@@ -28,6 +28,17 @@
     cursor: pointer;
 }
 
+.cont-sosmed button:hover {
+    background-color: #0e88f2;
+}
+
+.img-mauberteman {
+    width: 180px;
+    margin-top: 15px;
+    border: 2px solid transparent;
+    border-radius: 6px;
+}
+
 .btnGoToTop {
     background-color: #178cf3;
     color: white;
