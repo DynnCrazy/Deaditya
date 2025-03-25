@@ -9,81 +9,71 @@
     <meta property="og:image" content="https://i.ibb.co.com/Qk5qTY1/IMG-20231212-142221-0597.jpg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css">
-    <link rel="stylesheet" href="/Ast/Style/id.css">
-    <link rel="stylesheet" href="/Ast/Style/tag.css">
-    <link rel="stylesheet" href="/Ast/Style/main.css">
     <link rel="stylesheet" href="/Ast/Style/style.css">
-    <script src="/Ast/Script/script.js"></script>
+    <script src="/Ast/Script/script.js" defer></script>
 </head>
-<body>
-    <div class="preloader">
-        <h3 id="loading">Loading</h3>
-    </div>
-    
+<body>    
     <div class="content">
-     
-    <header id="topWeb">
-    </header>
+        <header id="topWeb">
+        </header>
 
-    <main>
-        <div class="bg0">         
-            <h1 class="center" style="margin: 0.67em;">DEADITYA</h1>
-
-            <div id="contprofimg" style="margin: 30px;">
-                <img src="/Ast/Image/icon2.png" alt="Love You ❤" class="imgLoad">
+        <main>
+            <div class="backgroundavatar">
+                <img src="/Ast/Image/bg-angkasa.jpg" alt="I Love You" class="fotobackgroundavatar">
             </div>
-
-            <p class="center">Live in <a href="https://maps.app.goo.gl/np5y9ueUrj8DUDRE9" target="_blank" class="link2">Gianyar, Bali.</a></p>
-        </div>
-
-        <div class="bg2">  
-            <h3 class="center" style="margin: 26px;">Media Sosial:</h3>       
-            <div class="containercenter">
-                <div class="cont-sosmed">
-                    <a href="https://www.instagram.com/deaditya.xyz" target="_blank"><button>Instagram</button></a>
-                    <a href="https://www.youtube.com/@DynCrazy" target="_blank"><button>YouTube</button></a>
-                    <a href="https://tiktok.com/@deaditya.xyz" target="_blank"><button>TikTok</button></a>
-                    <a href="https://www.facebook.com/gede.aditya.777158?mibextid=ZbWKwL" target="_blank"><button>Facebook</button></a>
-                    <a href="https://www.threads.net/@deaditya.xyz" target="_blank"><button>Threads</button></a>
+            <div class="centerdiv">
+                <div class="avatar">
+                    <img src="/Ast/Image/icon2.png" alt="I Love You" class="fotoavatar">
                 </div>
             </div>
-        </div>
-    </main>
 
-    <footer>
-        <div class="containerFooter1">
-            <div class="containerFooter2">
-                <h4 id="ttlInFooter">DEADITYA OFFICIAL WEBSITE</h4>
-                <div class="logoFooterContainer">
-                    <a onclick="link('yt')"><i class="ri-youtube-fill"></i></a>
-                    <a onclick="link('ig')"><i class="ri-instagram-fill"></i></a>
-                    <a onclick="link('tt')"><i class="ri-tiktok-fill"></i></a>
-                    <a onclick="link('th')"><i class="ri-threads-fill"></i></a>
+            <h1 class="textcenter">Hello, Im <u>Deaditya</u></h1>
+            <div class="centerdiv">
+                <div class="containertext">
+                    <p class="textcenter">Saya hanya manusia biasa. Bukan siapa-siapa, bukan pahlawan, bukan superhero, bukan robot, bukan alien, hanya manusia... yap, manusia biasa.<span class="descnotinmobile"><br>Di dunia ini, keinginanku hanya satu, yaitu bahagia.</span></p>
                 </div>
-                <p class="authorFooter" id="theAuthorInFooter">Created by Deaditya</p>
             </div>
-        </div>
-    </footer>
 
+            <div id="emojiContainer"></div>
+            
+            <div class="centerdiv">
+                <button class="btn-sayhello" onclick="spawnEmoji()">Say Hello</button>
+            </div>
+
+            <div class="centerdiv">
+                <div class="garispemisah"></div>
+            </div>
+
+            <div class="centerdiv mylife">
+                <div class="containerlink">
+                    <h2>Social Media:</h2>
+                    <p>
+                        Instagram: <a href="https://www.instagram.com/deaditya.xyz">Klik disini!</a><br>
+                        YouTube: <a href="https://www.youtube.com/@DynCrazy">Klik disini!</a><br>
+                        TikTok: <a href="https://tiktok.com/@deaditya.xyz">Klik disini!</a><br>
+                        Facebook: <a href="https://www.facebook.com/gede.aditya.777158?mibextid=ZbWKwL">Klik disini!</a><br>
+                        Threads: <a href="https://www.threads.net/@deaditya.xyz">Klik disini!</a>
+                    </p>
+                </div>
+            
+                <div class="container2div">
+                    <div class="containeraboutme">
+                        <h2>About Me:</h2>
+                        <p>Soon!</p>
+                    </div>
+
+                    <div class="containerfuture">
+                        <h2>Hope:</h2>
+                        <p>Soon!</p>
+                    </div>
+                </div>
+            </div>
+
+            <br><br><br><br><br><br><br><br>
+        </main>
+
+        <footer>
+        </footer>
     </div>
-
-    <script>
-        let dots = 0;
-        setInterval(() => {
-           dots = (dots + 1) % 4; // 0 → 1 → 2 → 3 → 0 (Loop)
-           document.getElementById("loading").textContent = "Loading" + ".".repeat(dots);
-        }, 500);
-  
-        window.onload = function() {
-           setTimeout(() => {
-              document.querySelector(".preloader").style.opacity = "0";
-              setTimeout(() => {
-                 document.querySelector(".preloader").style.display = "none";
-                 document.querySelector(".content").style.display = "block";
-              }, 1000);
-           }, 3000);
-        };
-     </script>
-     
 </body>
 </html>
