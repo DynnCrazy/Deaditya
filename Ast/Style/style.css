@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 html, body {
+    background-image: radial-gradient(circle, rgb(238, 238, 238) 2px, transparent 2px);
+    background-size: 35px 35px;
     background-color: white;
     color: #00111b;
     font-family: "Poppins", serif;
     padding: 0px;
     margin: 0px;
     font-size: 16px;
+    transition: background-color 0.5s ease, background-image 0.5s ease;
 }
 
 html {
@@ -27,11 +30,17 @@ a {
     text-align: center;
 }
 
+.btnmode {
+    top: 0;
+    right: 0;
+    position: fixed;
+}
 
 .backgroundavatar {
     width: 100%;
     height: 120px;
     background-color: #00111b;
+    border-bottom: 2px solid white;
 }
 
 .avatar {
@@ -67,18 +76,33 @@ a {
 .btn-sayhello {
     width: 150px;
     height: 45px;
-    background-color: #00111b;
+    background-color: #00a2ff;
     border: none;
     color: white;
     margin: 35px;
     border-radius: 6px;
     cursor: pointer;
-    transition: width 0.3s ease, height 0.3s ease;
+    outline: none;
+    transition: width 0.3s ease, height 0.3s ease, background-color 0.3s ease;
 }
 
 .btn-sayhello:hover {
+    background-color: #00111b;
     width: 144px;
     height: 43px;
+}
+
+#webthemebtn {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border-radius: 10px;
+    font-size: 30px;
+    text-align: center;
+    margin: 10px;
+    padding: 0px !important;
+    color: white;
+    box-sizing: content-box;
 }
 
 .emoji {
@@ -100,14 +124,15 @@ a {
     margin-bottom: 70px;
     height: 3px;
     width: 90%;
-    background-color: #e8e8e8;
+    background-color: #dfdfdf;
     border-radius: 6px;
 }
 
 .containerlink {
     width: 29%;
     margin-right: 1%;
-    background-color: #e8e8e8;
+    background-color: #001b2b;
+    background-color: #f4f4f4;
     padding: 15px;
     padding-left: 25px;
     box-sizing: border-box;
@@ -122,7 +147,7 @@ a {
 
 .containeraboutme {
     width: 100%;
-    background-color: #e8e8e8;
+    background-color: #f4f4f4;
     padding: 15px;
     padding-left: 25px;
     box-sizing: border-box;
@@ -132,12 +157,53 @@ a {
 
 .containerfuture {
     width: 100%;
-    background-color: #e8e8e8;
+    background-color: #f4f4f4;
     padding: 15px;
     padding-left: 25px;
     box-sizing: border-box;
     border-radius: 6px;
     margin-top: 3%;
+}
+
+.containerfooter {
+    position: relative;
+    bottom: 0;
+    margin: 0px !important;
+    width: 100%;
+    height: auto;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+}
+
+.mainfooter {
+    width: 100%;
+    height: 100%;
+    background-color: #f4f4f4;
+    border-top: 2px solid #dfdfdf;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.submainfooter {
+    display: flex;
+    justify-content: center;
+}
+
+.submainfooter a {
+    font-size: 24px;
+    color: #00111b;
+    margin: 15px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.copyftr {
+    text-align: center;
+}
+
+.mainfooter, .garispemisah, .containerfuture, .containeraboutme, .containerlink {
+    transition: background-color 0.3s ease;
 }
 
 @media (max-width: 600px) {
@@ -156,7 +222,7 @@ a {
     .containerlink {
         width: 90%;
         height: auto;
-        background-color: #e8e8e8;
+        background-color: #f4f4f4;
         padding: 15px;
         padding-left: 25px;
         box-sizing: border-box;
@@ -177,7 +243,7 @@ a {
     
     .containeraboutme {
         width: 90%;
-        background-color: #e8e8e8;
+        background-color: #f4f4f4;
         padding: 15px;
         padding-left: 25px;
         box-sizing: border-box;
@@ -189,7 +255,7 @@ a {
     
     .containerfuture {
         width: 90%;
-        background-color: #e8e8e8;
+        background-color: #f4f4f4;
         padding: 15px;
         padding-left: 25px;
         box-sizing: border-box;
