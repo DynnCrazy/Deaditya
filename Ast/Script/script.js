@@ -50,10 +50,34 @@ function changeTheme() {
             ss.style.borderTop = "2px solid #dfdfdf";
         });
         document.body.style.backgroundColor = "white";
-        document.body.style.backgroundImage = "radial-gradient(circle, rgb(238, 238, 238) 2px, transparent 2px)";
+        document.body.style.backgroundImage = "radial-gradient(circle, rgb(250, 250, 250) 2px, transparent 2px)";
         document.body.style.color = "#00111b";
         isLightMode = true;
     }
 }
 
-document.getElementById("copyinftr").innerHTML = "Copyright &copy 2025";
+function calculateAge(birthDate) {
+    let today = new Date();
+    let birth = new Date(birthDate);
+    
+    let ageYears = today.getFullYear() - birth.getFullYear();
+    let ageMonths = today.getMonth() - birth.getMonth();
+    let ageDays = today.getDate() - birth.getDate();
+    
+    if (ageMonths < 0 || (ageMonths === 0 && ageDays < 0)) {
+        ageYears--;
+        ageMonths += 12;
+    }
+    
+    if (ageDays < 0) {
+        let lastMonth = new Date(today.getFullYear(), today.getMonth(), 0);
+        ageDays += lastMonth.getDate();
+        ageMonths--;
+    }
+    
+    return `${ageYears}`;
+}
+
+document.getElementById("umurku").innerHTML = calculateAge("2008-07-18") + " tahun";
+
+document.getElementById("copyinftr").innerHTML = "Created by Gede Aditya | Copyright &copy 2025";
