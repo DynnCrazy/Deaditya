@@ -19,11 +19,14 @@ var isLightMode = true;
 function changeTheme() {
     if (isLightMode) {
         document.getElementById("webthemebtn").innerHTML = '<span class="fas fa-toggle-on" style="cursor: pointer;"></span>';
-        document.querySelectorAll(".mainfooter, .containeraboutme, .containerfuture, .containerlink").forEach(el => {
+        document.querySelectorAll(".containerdtl, .mainfooter, .containeraboutme, .containerfuture, .containerlink").forEach(el => {
             el.style.backgroundColor = "#001b2b";
         });
         document.querySelectorAll(".submainfooter a").forEach(clr => {
             clr.style.color = "white";
+        });
+        document.querySelectorAll(".contmymovielist").forEach(mtr => {
+            mtr.style.backgroundColor = "#002941";
         });
         document.querySelectorAll(".garispemisah").forEach(wk => {
             wk.style.backgroundColor = "#001b2b";
@@ -37,11 +40,14 @@ function changeTheme() {
         isLightMode = false;
     } else {
         document.getElementById("webthemebtn").innerHTML = '<span class="fas fa-toggle-off" style="cursor: pointer;"></span>';
-        document.querySelectorAll(".mainfooter, .containeraboutme, .containerfuture, .containerlink").forEach(el => {
+        document.querySelectorAll(".containerdtl, .mainfooter, .containeraboutme, .containerfuture, .containerlink").forEach(el => {
             el.style.backgroundColor = "#f4f4f4";
         });
         document.querySelectorAll(".submainfooter a").forEach(clr => {
             clr.style.color = "#001b2b";
+        });
+        document.querySelectorAll(".contmymovielist").forEach(mtr => {
+            mtr.style.backgroundColor = "#eaeaea";
         });
         document.querySelectorAll(".garispemisah").forEach(wk => {
             wk.style.backgroundColor = "#dfdfdf";
