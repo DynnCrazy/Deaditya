@@ -25,8 +25,8 @@ function changeTheme() {
         document.querySelectorAll(".submainfooter a").forEach(clr => {
             clr.style.color = "white";
         });
-        document.querySelectorAll(".contmymovielist").forEach(mtr => {
-            mtr.style.backgroundColor = "#002941";
+        document.querySelectorAll(".contmymovielist, .contmygamelist").forEach(mtr => {
+            mtr.style.backgroundColor = "#002032";
         });
         document.querySelectorAll(".garispemisah").forEach(wk => {
             wk.style.backgroundColor = "#001b2b";
@@ -46,7 +46,7 @@ function changeTheme() {
         document.querySelectorAll(".submainfooter a").forEach(clr => {
             clr.style.color = "#001b2b";
         });
-        document.querySelectorAll(".contmymovielist").forEach(mtr => {
+        document.querySelectorAll(".contmymovielist, .contmygamelist").forEach(mtr => {
             mtr.style.backgroundColor = "#eaeaea";
         });
         document.querySelectorAll(".garispemisah").forEach(wk => {

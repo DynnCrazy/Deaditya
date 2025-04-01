@@ -9,7 +9,7 @@ html, body {
     padding: 0px;
     margin: 0px;
     font-size: 16px;
-    transition: background-color 0.5s ease, background-image 0.5s ease;
+    transition: background-color 0.3s ease, background-image 0.5s ease;
 }
 
 html {
@@ -178,7 +178,7 @@ a {
 
 .contmymovielist {
     width: 100%;
-    height: 160px;
+    height: 180px;
     background-color: #eaeaea;
     border-radius: 6px;
     box-sizing: border-box;
@@ -189,28 +189,41 @@ a {
     white-space: nowrap;
 }
 
-.contmymovielist::-webkit-scrollbar {
-    height: 3px;
-}
-
-.contmymovielist::-webkit-scrollbar-thumb {
-    background: #00111bb6;
-    border-radius: 5px;
-}  
-
 .contimgmymovielist {
-    width: 87px;
-    height: 130px;
+    width: 100px;
+    height: 150px;
     box-sizing: content-box;
-    background-color: yellow;
+    background-color: transparent;
     margin: 5px;
     margin-right: 10px;
     flex-shrink: 0; 
 }
 
 .imagemymovielist {
-    width: 87px;
-    height: 130px;
+    width: 100px;
+    height: 150px;
+}
+
+.contmygamelist {
+    width: 100%;
+    background-color: #eaeaea;
+    border-radius: 6px;
+    box-sizing: border-box;
+    padding: 10px;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.pagemygamelist {
+    width: 33.33%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.listgameslist {
+    margin: 0px;
 }
 
 .containerfooter {
@@ -250,9 +263,18 @@ a {
     text-align: center;
 }
 
-.containerdtl, .contmymovielist, .contimgmymovielist, .mainfooter, .garispemisah, .containerfuture, .containeraboutme, .containerlink {
+.containerdtl, .contmymovielist, .contimgmymovielist, .mainfooter, .garispemisah, .containerfuture, .containeraboutme, .containerlink, .contmygamelist, .pagemygamelist {
     transition: background-color 0.3s ease;
 }
+
+.contmymovielist::-webkit-scrollbar, .contmygamelist::-webkit-scrollbar {
+    height: 3px;
+}
+
+.contmymovielist::-webkit-scrollbar-thumb, .contmygamelist::-webkit-scrollbar-thumb {
+    background: #00111b1b;
+    border-radius: 6px;
+}  
 
 @media (max-width: 600px) {
     .descnotinmobile {
@@ -314,6 +336,47 @@ a {
     }
 
     .containerdtl {
+        padding: 15px;
+        padding-left: 25px;
+        padding-right: 25px;
         margin-top: 3%;
+    }
+    
+    .contmymovielist {
+        height: 160px;
+        padding: 10px;
+    }
+
+    .contimgmymovielist {
+        width: 87px;
+        height: 130px;
+        margin-right: 10px;
+    }
+    
+    .imagemymovielist {
+        width: 87px;
+        height: 130px;
+    }
+
+    .contmygamelist {
+        width: 100%;
+        background-color: #eaeaea;
+        border-radius: 6px;
+        box-sizing: border-box;
+        padding: 10px;
+        display: flex;
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+    }
+    
+    .pagemygamelist {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px;
+    }
+    
+    .listgameslist {
+        margin: 0px;
     }
 }

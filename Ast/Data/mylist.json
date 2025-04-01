@@ -2,182 +2,431 @@
     "movie": [
         {
             "nama": "The Maze Runner",
-            "ratingbyme": null,
+            "tahun": "2014",
+            "myrating": null,
+            "sinopsis": "Seorang remaja bernama Thomas terbangun di tengah labirin raksasa tanpa ingatan tentang masa lalunya. Ia bergabung dengan sekelompok pemuda yang juga terjebak di sana dan berusaha mencari cara untuk melarikan diri. Seiring waktu, Thomas mulai mengungkap misteri di balik labirin tersebut dan alasan mereka semua dikurung di dalamnya.",
+            "url": null,
             "poster": "https://m.media-amazon.com/images/I/A15461sPviL._AC_SY879_.jpg",
             "note": null
         },
         {
             "nama": "The Maze Runner: Scorch Trials",
-            "ratingbyme": null,
+            "tahun": "2015",
+            "myrating": null,
+            "sinopsis": "Setelah berhasil keluar dari labirin, Thomas dan teman-temannya menemukan bahwa dunia luar jauh lebih berbahaya dari yang mereka bayangkan. Mereka harus menghadapi kondisi lingkungan yang ekstrem serta musuh baru yang mengincar mereka. Dalam perjalanan mereka, kebenaran tentang organisasi yang mengendalikan nasib mereka perlahan mulai terungkap.",
+            "url": null,
             "poster": "https://i.ebayimg.com/images/g/B~oAAOSw1oNak4Nk/s-l960.webp",
             "note": null
         },
         {
             "nama": "Cars",
-            "ratingbyme": null,
+            "tahun": "2006",
+            "myrating": null,
+            "sinopsis": "Lightning McQueen, mobil balap ambisius, secara tidak sengaja terdampar di kota kecil Radiator Springs saat dalam perjalanan menuju balapan penting. Awalnya ia hanya ingin segera pergi, tetapi seiring waktu, McQueen mulai memahami arti persahabatan dan kehidupan yang lebih dari sekadar kecepatan.",
+            "url": null,
             "poster": "https://i.ebayimg.com/images/g/GOYAAOSwCmVkXARx/s-l1600.webp",
             "note": null
         },
         {
             "nama": "Cars 2",
-            "ratingbyme": null,
+            "tahun": "2011",
+            "myrating": null,
+            "sinopsis": "Lightning McQueen berpartisipasi dalam World Grand Prix, balapan internasional yang menentukan siapa mobil tercepat di dunia. Namun, sahabatnya, Mater, tanpa sengaja terlibat dalam misi mata-mata global, yang membuat perjalanan mereka penuh dengan aksi, konspirasi, dan kejutan.",
+            "url": null,
             "poster": "https://m.media-amazon.com/images/I/71w7p5qt34L.__AC_SX300_SY300_QL70_FMwebp_.jpg",
             "note": null
         },
         {
             "nama": "Edge of Tomorrow",
-            "ratingbyme": null,
+            "tahun": "2014",
+            "myrating": null,
+            "sinopsis": "Di masa depan, umat manusia berperang melawan alien yang hampir tak terkalahkan. Seorang tentara bernama Cage terjebak dalam lingkaran waktu, di mana ia terus mati dan hidup kembali setiap kali gagal. Dengan bantuan seorang prajurit tangguh, ia harus menemukan cara untuk mengalahkan musuh dan memanfaatkan kemampuannya sebelum semuanya terlambat.",
+            "url": null,
             "poster": "https://upload.wikimedia.org/wikipedia/id/thumb/f/f9/Edge_of_Tomorrow_Poster.jpg/220px-Edge_of_Tomorrow_Poster.jpg",
             "note": null
         },
         {
             "nama": "A Silent Voice",
-            "ratingbyme": null,
+            "tahun": "2016",
+            "myrating": null,
+            "sinopsis": "Seorang mantan pembully bernama Shoya Ishida mencoba menebus kesalahannya di masa lalu dengan mendekati Shoko Nishimiya, seorang gadis tunarungu yang pernah ia sakiti. Perjalanan ini membawa mereka pada refleksi diri, pertumbuhan emosional, dan makna sejati dari permintaan maaf serta pengampunan.",
+            "url": null,
             "poster": "https://m.media-amazon.com/images/I/715TE4atNBL._AC_SL1242_.jpg",
             "note": null
         },
         {
-            "nama": "Upin & Ipin: Jeng Jeng Jeng",
-            "ratingbyme": null,
-            "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/4/41/UpinIpinJengJengJengMalaysiaposter.jpg/220px-UpinIpinJengJengJengMalaysiaposter.jpg",
-            "note": null
-        },
-        {
-            "nama": "Upin & Ipin: Keris Siamang Tunggal",
-            "ratingbyme": null,
-            "poster": "https://cdn.moviescore.com/posters/28136.jpg",
-            "note": null
-        },
-        {
             "nama": "Avatar",
-            "ratingbyme": null,
+            "tahun": "2009",
+            "myrating": null,
+            "sinopsis": "Di masa depan, manusia mengeksploitasi sumber daya planet Pandora, yang dihuni oleh suku Na’vi. Jake Sully, seorang mantan marinir, menggunakan tubuh Avatar untuk berbaur dengan suku tersebut. Namun, semakin lama ia tinggal di sana, semakin ia mempertanyakan misinya dan harus memilih antara kesetiaan pada umat manusia atau melindungi dunia baru yang telah ia cintai.",
+            "url": null,
             "poster": "https://upload.wikimedia.org/wikipedia/id/thumb/b/b0/Avatar-Teaser-Poster.jpg/220px-Avatar-Teaser-Poster.jpg",
             "note": null
         },
         {
+            "nama": "Your Name.",
+            "tahun": "2016",
+            "myrating": null,
+            "sinopsis": "Dua remaja, Taki dan Mitsuha, yang hidup di tempat dan waktu berbeda, tiba-tiba mulai bertukar tubuh tanpa mereka sadari. Seiring waktu, mereka mencoba mencari satu sama lain dan mengungkap misteri di balik fenomena tersebut, yang ternyata lebih besar dari yang mereka bayangkan.",
+            "url": null,
+            "poster": "https://upload.wikimedia.org/wikipedia/id/thumb/0/0b/Your_Name_poster.png/220px-Your_Name_poster.png",
+            "note": null
+        },
+        {
+            "nama": "A Whisker Away",
+            "tahun": "2020",
+            "myrating": null,
+            "sinopsis": "Seorang gadis ceria bernama Miyo memiliki perasaan mendalam terhadap teman sekelasnya, Kento. Suatu hari, ia menemukan topeng ajaib yang memungkinkannya berubah menjadi kucing. Sebagai kucing, ia bisa lebih dekat dengan Kento, tetapi semakin lama ia menghabiskan waktu dalam bentuk itu, semakin sulit baginya untuk kembali menjadi manusia.",
+            "url": null,
+            "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/d/df/Nakitai_Watashi_wa_Neko_o_Kaburu_poster.png/220px-Nakitai_Watashi_wa_Neko_o_Kaburu_poster.png",
+            "note": null
+        },
+        {
             "nama": "Dilan 1990",
-            "ratingbyme": null,
+            "tahun": "2018",
+            "myrating": null,
+            "sinopsis": "Di Bandung tahun 1990, Milea, seorang siswi baru, bertemu dengan Dilan, seorang anak geng motor yang unik dan penuh kejutan. Dilan berusaha mendekati Milea dengan cara-cara tak biasa, membuat hubungan mereka berkembang dalam kisah cinta remaja yang penuh romansa dan puisi.",
+            "url": null,
             "poster": "https://i.ibb.co.com/f9BwyN8/20240421-120250.png",
             "note": null
         },
         {
             "nama": "Dilan 1991",
-            "ratingbyme": null,
+            "tahun": "2019",
+            "myrating": null,
+            "sinopsis": "Melanjutkan kisah cinta mereka, Milea dan Dilan mulai menghadapi tantangan yang lebih besar, terutama karena keterlibatan Dilan dalam geng motor. Perbedaan prinsip dan kejadian tak terduga mulai menguji hubungan mereka, membawa mereka pada keputusan sulit tentang masa depan bersama.",
+            "url": null,
             "poster": "https://i.ibb.co.com/8DnWbHj/20240421-120259.png",
             "note": null
         },
         {
             "nama": "Milea: Suara dari Dilan",
-            "ratingbyme": null,
+            "tahun": "2020",
+            "myrating": null,
+            "sinopsis": "Film ini menceritakan kembali kisah cinta Dilan dan Milea, tetapi kali ini dari sudut pandang Dilan. Ia mengungkapkan perasaannya yang sebenarnya, alasan di balik tindakannya, dan bagaimana ia menghadapi kenyataan setelah perpisahan mereka.",
+            "url": null,
             "poster": "https://i.ibb.co.com/VwsSJ0k/20240421-120315.png",
             "note": null
         },
         {
-            "nama": "Your Name.",
-            "ratingbyme": null,
-            "poster": "https://upload.wikimedia.org/wikipedia/id/thumb/0/0b/Your_Name_poster.png/220px-Your_Name_poster.png",
-            "note": null
-        },
-        {
             "nama": "Shaun the Sheep Movie",
-            "ratingbyme": null,
+            "tahun": "2015",
+            "myrating": null,
+            "sinopsis": "Shaun, domba cerdas dan nakal, secara tidak sengaja menyebabkan peternaknya tersesat di kota besar. Bersama teman-temannya, Shaun harus menemukan cara untuk membawa sang peternak kembali ke rumah sambil menghindari bahaya di dunia manusia.",
+            "url": null,
             "poster": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkGzaX-NW_r6oOrtZXh971bzuZmIJjx2v3WBDwMh6-9yvKpDeXthyn5b-7VQ4-w1FSlhqWPOErN2FyFf0S1LLbkxMo6FOmrSqGw83OivsXXwfZKuWFxXpxPdYHZ1-O7cpIBA1ReZRhouYohwGvKzo_z6HIZVrSbzTRH8cZptOQMUZ1DZ4dIjAbcBne0w/s320/shaun-the-sheep-movie-movie-poster-2015-1010772489.jpg",
             "note": null
         },
         {
             "nama": "Kungfu Panda",
-            "ratingbyme": null,
+            "tahun": "2008",
+            "myrating": null,
+            "sinopsis": "Po, seekor panda gemuk dan ceroboh, bermimpi menjadi master kung fu. Secara tak terduga, ia terpilih sebagai Pendekar Naga dan harus berlatih di bawah bimbingan Master Shifu serta Lima Pendekar. Saat musuh kuat, Tai Lung, datang mengancam, Po harus membuktikan bahwa dirinya layak menyandang gelar tersebut.",
+            "url": null,
             "poster": "https://i.ibb.co.com/VjMVrwr/20240421-120331.png",
             "note": null
         },
         {
             "nama": "Kungfu Panda 2",
-            "ratingbyme": null,
+            "tahun": "2011",
+            "myrating": null,
+            "sinopsis": "Po kini menjadi ksatria yang tangguh, tetapi ia mulai dihantui oleh masa lalunya. Saat Lord Shen, seorang merak jahat dengan senjata mematikan, berusaha menguasai China, Po harus menghadapi ketakutannya dan menemukan rahasia tentang asal-usulnya untuk menyelamatkan dunia.",
+            "url": null,
             "poster": "https://i.ibb.co.com/p24JS3K/20240421-120338.png",
             "note": null
         },
         {
             "nama": "Kungfu Panda 3",
-            "ratingbyme": null,
+            "tahun": "2016",
+            "myrating": null,
+            "sinopsis": "Po bertemu dengan ayah kandungnya dan menemukan desa panda tersembunyi. Sementara itu, Kai, seorang musuh dari dunia roh, mulai mencuri kekuatan para master kung fu. Po harus melatih para panda untuk bertarung dan memahami jati dirinya sebagai Pendekar Naga sejati.",
+            "url": null,
             "poster": "https://i.ibb.co.com/FDF5jz4/20240421-120343.png",
             "note": null
         },
         {
             "nama": "Kungfu Panda 4",
-            "ratingbyme": null,
+            "tahun": "2024",
+            "myrating": null,
+            "sinopsis": "Po dipilih menjadi Pemimpin Roh, tetapi sebelum itu, ia harus menemukan penggantinya sebagai Pendekar Naga. Di tengah pencariannya, ia menghadapi musuh baru bernama The Chameleon, penjahat licik yang bisa meniru kekuatan siapa pun. Po harus bekerja sama dengan seorang pencuri rubah bernama Zhen untuk mengalahkan ancaman baru ini.",
+            "url": null,
             "poster": "https://wikisinetron.com/app/uploads/2024/03/Kung-Fu-Panda-4-Poster-350x520.jpg",
             "note": null
         },
         {
             "nama": "Josee, the Tiger and the Fish",
-            "ratingbyme": null,
+            "tahun": "2020",
+            "myrating": null,
+            "sinopsis": "Tsuneo, seorang mahasiswa yang bercita-cita belajar ke luar negeri, secara tak sengaja bertemu dengan Josee, seorang gadis yang tidak bisa berjalan dan hidup dalam dunianya sendiri. Awalnya, hubungan mereka penuh ketegangan, tetapi seiring waktu, mereka mulai saling memahami dan mendukung impian masing-masing, menghadapi tantangan hidup bersama.",
+            "url": null,
             "poster": "https://upload.wikimedia.org/wikipedia/id/thumb/f/f0/Josee%2C_the_Tiger_and_the_Fish_2020_film_poster.jpg/250px-Josee%2C_the_Tiger_and_the_Fish_2020_film_poster.jpg",
             "note": null
         },
         {
             "nama": "I Want Eat to Your Pancreas",
-            "ratingbyme": null,
+            "tahun": "2018",
+            "myrating": null,
+            "sinopsis": "Seorang siswa pendiam secara tak sengaja menemukan buku harian milik Sakura, seorang gadis ceria yang diam-diam menderita penyakit pankreas yang mematikan. Meski awalnya enggan terlibat, ia perlahan mulai menjalin hubungan yang mengubah cara pandangnya tentang kehidupan dan kebahagiaan.",
+            "url": null,
             "poster": "https://a.ltrbxd.com/resized/film-poster/4/3/4/4/1/3/434413-i-want-to-eat-your-pancreas-0-1000-0-1500-crop.jpg",
             "note": null
         },
         {
             "nama": "Mr Bean Holiday",
-            "ratingbyme": null,
+            "tahun": "2007",
+            "myrating": null,
+            "sinopsis": "Mr. Bean memenangkan tiket liburan ke Prancis, tetapi perjalanannya penuh dengan kekacauan. Dalam perjalanannya menuju Cannes, ia tanpa sengaja terpisah dari seorang anak kecil dan harus membantunya menemukan kembali ayahnya, sambil terus terjebak dalam berbagai situasi lucu.",
+            "url": null,
             "poster": "https://akcdn.detik.net.id/community/media/visual/2024/07/05/mr-beans-holiday_34.png?w=700&q=90",
             "note": null
         },
         {
             "nama": "Weathering with You",
-            "ratingbyme": null,
+            "tahun": "2019",
+            "myrating": null,
+            "sinopsis": "Hodaka, seorang remaja yang melarikan diri ke Tokyo, bertemu dengan Hina, seorang gadis yang memiliki kekuatan untuk mengendalikan cuaca. Ketika Tokyo dilanda hujan tiada henti, mereka berusaha menggunakan kemampuan Hina untuk membantu orang lain, tetapi kekuatan itu memiliki konsekuensi besar yang harus mereka hadapi.",
+            "url": null,
             "poster": "https://upload.wikimedia.org/wikipedia/id/thumb/6/66/Weathering_with_You_Poster.jpg/220px-Weathering_with_You_Poster.jpg",
             "note": null
         },
         {
+            "nama": "Curious George",
+            "tahun": "2006",
+            "myrating": null,
+            "sinopsis": "Seekor monyet kecil yang penasaran bernama George tanpa sengaja terbawa ke kota besar bersama seorang pria bernama Ted. Dengan rasa ingin tahu yang tinggi, George menyebabkan berbagai kekacauan lucu, tetapi juga membantu Ted menemukan sesuatu yang lebih berharga daripada yang ia cari.",
+            "url": null,
+            "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/6/6b/3rd_Curious_George_Poster.jpg/220px-3rd_Curious_George_Poster.jpg",
+            "note": null
+        },
+        {
+            "nama": "Doraemon: New Nobita's Great Demon - Peko and the Exploration Party of Five",
+            "tahun": "2014",
+            "myrating": null,
+            "sinopsis": "Nobita dan teman-temannya menemukan seekor anjing misterius bernama Peko yang membawa mereka ke sebuah kerajaan tersembunyi. Di sana, mereka menghadapi berbagai tantangan dan harus melawan kekuatan jahat yang mengancam negeri tersebut.",
+            "url": null,
+            "poster": "https://upload.wikimedia.org/wikipedia/id/thumb/3/31/Doraemon_Shin_Nobita_no_Daimakyo_~Peko_to_5-nin_no_Tankentai_Poster.jpg/220px-Doraemon_Shin_Nobita_no_Daimakyo_~Peko_to_5-nin_no_Tankentai_Poster.jpg",
+            "note": null
+        },
+        {
+            "nama": "Doraemon: Nobita and the Birth of Japan",
+            "tahun": "1989 & 2016",
+            "myrating": null,
+            "sinopsis": "Nobita dan teman-temannya memutuskan untuk kabur dari rumah dan melakukan perjalanan ke masa lalu, tepatnya ke zaman prasejarah Jepang. Di sana, mereka bertemu dengan seorang anak dari suku kuno dan membantu melindungi bangsanya dari ancaman musuh yang berbahaya.",
+            "url": null,
+            "poster": "https://upload.wikimedia.org/wikipedia/en/3/3f/Nobita_and_the_Birth_of_Japan.jpg",
+            "note": null
+        },
+        {
+            "nama": "Rise of the Planet of the Apes",
+            "tahun": "2011",
+            "myrating": null,
+            "sinopsis": "Seorang ilmuwan menciptakan obat untuk menyembuhkan Alzheimer, tetapi tanpa disadari, obat tersebut meningkatkan kecerdasan seekor simpanse bernama Caesar. Ketika Caesar menyadari bagaimana manusia memperlakukan kaumnya, ia mulai memberontak dan memimpin revolusi yang akan mengubah dunia selamanya.",
+            "url": null,
+            "poster": "https://cdn11.bigcommerce.com/s-9yct61arm5/images/stencil/1280x1280/products/291351/289172/ds7eaj1f_rise-of-the-planet-of-the-apes_1456721788__96287.1674112835.jpg",
+            "note": null
+        },
+        {
             "nama": "Home Alone",
-            "ratingbyme": null,
+            "tahun": "1990",
+            "myrating": null,
+            "sinopsis": "Kevin, seorang bocah 8 tahun, secara tidak sengaja tertinggal di rumah saat keluarganya pergi berlibur. Ia harus menghadapi dua pencuri kocak yang mencoba merampok rumahnya, menggunakan berbagai jebakan kreatif untuk mengusir mereka.",
+            "url": null,
             "poster": "https://i.ebayimg.com/images/g/nqMAAOSwzc9jNvup/s-l1600.webp",
             "note": null
         },
         {
             "nama": "Home Alone 2: Lost in New York",
-            "ratingbyme": null,
+            "tahun": "1992",
+            "myrating": null,
+            "sinopsis": "Kevin kembali terpisah dari keluarganya, kali ini tersesat di New York. Saat menikmati kebebasannya, ia bertemu kembali dengan dua pencuri yang dulu mencoba merampok rumahnya. Sekali lagi, ia harus menggunakan kecerdasannya untuk menggagalkan rencana jahat mereka.",
+            "url": null,
             "poster": "https://m.media-amazon.com/images/I/81mHI6ZJvcL.__AC_SX300_SY300_QL70_ML2_.jpg",
             "note": null
         },
         {
             "nama": "Home Alone 3",
-            "ratingbyme": null,
+            "tahun": "1997",
+            "myrating": null,
+            "sinopsis": "Seorang bocah bernama Alex secara tidak sengaja menemukan microchip rahasia milik sekelompok agen kriminal. Saat mereka mencoba merebutnya kembali, Alex mempersiapkan serangkaian jebakan cerdik untuk melindungi rumahnya dan menggagalkan rencana para penjahat.",
+            "url": null,
             "poster": "https://m.media-amazon.com/images/I/51HO47A1vhL._AC_.jpg",
             "note": null
         },
         {
             "nama": "Home Alone 4: Taking Back the House",
-            "ratingbyme": null,
+            "tahun": "2002",
+            "myrating": null,
+            "sinopsis": "Kevin, yang kini tinggal bersama ayahnya setelah perceraian orang tuanya, harus berhadapan kembali dengan musuh lamanya, Marv. Kali ini, Marv dan rekannya merencanakan penculikan, dan Kevin harus menggunakan kecerdasannya untuk menggagalkan aksi mereka di sebuah rumah mewah yang penuh teknologi canggih.",
+            "url": null,
             "poster": "https://upload.wikimedia.org/wikipedia/id/thumb/a/ad/Home_alone_4_tv_print_ad.jpg/200px-Home_alone_4_tv_print_ad.jpg",
             "note": null
         },
         {
             "nama": "Boboiboy: The Movie",
-            "ratingbyme": null,
+            "tahun": "2016",
+            "myrating": null,
+            "sinopsis": "BoBoiBoy dan teman-temannya harus menghadapi sekelompok pemburu artefak alien yang ingin mencuri Sfera Kuasa Ochobot untuk tujuan jahat. Dalam petualangan ini, BoBoiBoy mengembangkan kekuatan baru dan bertarung demi menyelamatkan bumi serta teman-temannya.",
+            "url": null,
             "poster": "https://upload.wikimedia.org/wikipedia/id/thumb/2/2f/Boboiboy_The_Movies.jpg/220px-Boboiboy_The_Movies.jpg",
             "note": null
         },
         {
             "nama": "Boboiboy the Movie 2",
-            "ratingbyme": null,
+            "tahun": "2019",
+            "myrating": null,
+            "sinopsis": "BoBoiBoy menghadapi musuh baru bernama Retak’ka, sosok misterius yang ingin merebut kembali kekuatan elemen BoBoiBoy. Dalam pertarungan epik ini, BoBoiBoy harus berjuang lebih keras dan menguasai kekuatan baru untuk menyelamatkan alam semesta dari ancaman besar.",
+            "url": null,
             "poster": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEir86m2v06mKza4Q9CQriJK41pDKekdXSOSG5NjEUJsn1SlsQuTT8H2geDNoKqF66PqZWtbz_r5vuxRwVlQZXpGUGDgAOLE-dBzodiMkxPZ-yBsqx3u4l-8yVraq2_V7RJqPc4xSJb5Uv-lUg3ClLN-bhOpGLIA8JgBOfwKQ3lsZo-UdZ0YrkB0jL_wbQ/s320/bby.webp",
             "note": null
         },
         {
             "nama": "Pocong Jumat Kliwon",
-            "ratingbyme": null,
+            "tahun": "2010",
+            "myrating": null,
+            "sinopsis": "BoBoiBoy dan teman-temannya harus menghadapi sekelompok pemburu artefak alien yang ingin mencuri Sfera Kuasa Ochobot untuk tujuan jahat. Dalam petualangan ini, BoBoiBoy mengembangkan kekuatan baru dan bertarung demi menyelamatkan bumi serta teman-temannya.",
+            "url": null,
             "poster": "https://upload.wikimedia.org/wikipedia/id/thumb/7/7e/Poster_film_Pocong_Jumat_Kliwon.jpg/220px-Poster_film_Pocong_Jumat_Kliwon.jpg",
             "note": null
         },
         {
+            "nama": "Beauty & the Beast",
+            "tahun": "2017",
+            "myrating": null,
+            "sinopsis": "Belle, seorang gadis cerdas dan mandiri, secara tak terduga menjadi tawanan di kastil makhluk misterius yang dikenal sebagai Beast. Seiring waktu, ia mulai melihat sisi lain dari Beast dan menemukan rahasia kelam di balik kutukan yang mengubahnya menjadi sosok mengerikan.",
+            "url": null,
+            "poster": "https://upload.wikimedia.org/wikipedia/id/thumb/2/2a/Beauty_and_The_Beast_Poster.jpg/404px-Beauty_and_The_Beast_Poster.jpg",
+            "note": null
+        },
+        {
             "nama": "Hello World",
-            "ratingbyme": null,
+            "tahun": "2019",
+            "myrating": null,
+            "sinopsis": "Seorang remaja pemalu bernama Naomi Katagaki bertemu dengan versi dirinya dari masa depan, yang memberitahunya bahwa ia harus menyelamatkan seorang gadis bernama Ruri dari kejadian tragis. Namun, semakin jauh ia mengikuti petunjuk masa depannya, semakin ia menyadari bahwa dunia tempatnya tinggal menyimpan rahasia besar.",
+            "url": null,
             "poster": "https://upload.wikimedia.org/wikipedia/id/thumb/a/a8/HELLOWORLD.jpg/250px-HELLOWORLD.jpg",
+            "note": null
+        },
+        {
+            "nama": "The Garden of Words",
+            "tahun": "2013",
+            "myrating": null,
+            "sinopsis": "Seorang remaja bernama Takao, yang bercita-cita menjadi pembuat sepatu, sering bolos sekolah dan menghabiskan waktu di taman saat hujan. Di sana, ia bertemu dengan seorang wanita misterius bernama Yukino. Seiring waktu, hubungan mereka berkembang, tetapi kenyataan hidup perlahan menguji ikatan mereka.",
+            "url": null,
+            "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/Garden_of_Words_poster.png/220px-Garden_of_Words_poster.png",
+            "note": null
+        },
+        {
+            "nama": "The Anthem of the Heart",
+            "tahun": "2015",
+            "myrating": null,
+            "sinopsis": "Jun Naruse adalah seorang gadis yang dulu sangat ceria, tetapi setelah kejadian di masa kecilnya, ia dikutuk untuk tidak bisa berbicara tanpa merasa sakit. Ketika ia dipilih untuk terlibat dalam proyek musikal di sekolah, ia mulai menemukan cara baru untuk mengekspresikan perasaannya dan memahami arti sebenarnya dari komunikasi dan emosi.",
+            "url": null,
+            "poster": "https://upload.wikimedia.org/wikipedia/id/thumb/e/e4/The_Anthem_of_the_Heart_poster.jpeg/220px-The_Anthem_of_the_Heart_poster.jpeg",
+            "note": null
+        },
+        {
+            "nama": "Words Bubble Up Like Soda Pop",
+            "tahun": "2020",
+            "myrating": null,
+            "sinopsis": "Cherry, seorang remaja pendiam yang suka menulis haiku, bertemu dengan Smile, seorang gadis ceria yang selalu memakai masker untuk menyembunyikan rasa tidak percaya dirinya. Keduanya mulai menjalin hubungan melalui kata-kata dan musik, menemukan cara untuk mengekspresikan perasaan mereka yang sulit diungkapkan secara langsung.",
+            "url": null,
+            "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/0/00/Words_Bubble_Up_Like_Soda_Pop_key_visual.jpg/220px-Words_Bubble_Up_Like_Soda_Pop_key_visual.jpg",
+            "note": null
+        },
+        {
+            "nama": "Upin & Ipin: Jeng Jeng Jeng",
+            "tahun": "2016",
+            "myrating": null,
+            "sinopsis": "Sekelompok anak yatim piatu yang sangat menyukai serial Upin & Ipin menghadapi ancaman kehilangan panti asuhan mereka. Dalam situasi sulit tersebut, mereka menemukan kejutan ajaib: karakter Upin dan Ipin muncul di dunia nyata! Bersama-sama, mereka berusaha mencari solusi untuk menyelamatkan rumah mereka.",
+            "url": null,
+            "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/4/41/UpinIpinJengJengJengMalaysiaposter.jpg/220px-UpinIpinJengJengJengMalaysiaposter.jpg",
+            "note": null
+        },
+        {
+            "nama": "Upin & Ipin: Keris Siamang Tunggal",
+            "tahun": "2019",
+            "myrating": null,
+            "sinopsis": "Upin, Ipin, dan teman-temannya secara tak sengaja menemukan sebilah keris mistis yang membawa mereka ke kerajaan Inderaloka, dunia fantasi yang penuh dengan legenda. Di sana, mereka harus membantu para penghuni melawan ancaman jahat dan menemukan jalan pulang sebelum terlambat.",
+            "url": null,
+            "poster": "https://cdn.moviescore.com/posters/28136.jpg",
+            "note": null
+        }
+    ],
+    "quotes": [
+        {
+            "quotes": "Sebuah mimpi bukanlah hal yang harus kamu tepati untuk mencapainya. Karena mimpi adalah sedikit gambaran kebahagiaan yang akan segera kamu alami.",
+            "author": "Deaditya",
+            "date": "31/03/2025",
+            "note": null
+        },
+        {
+            "quotes": "Tantangan hanya kabut, hanya sebuah kabut yang mencoba membutakan kamu dari mimpimu itu.",
+            "author": "Deaditya",
+            "date": "31/03/2025",
+            "note": null
+        },
+        {
+            "quotes": "Diam. Amati. Lakukan.",
+            "author": "Deaditya",
+            "date": "31/03/2025",
+            "note": null
+        },
+        {
+            "quotes": "1 detik kamu diam, 1000 perubahan yang di dunia. Jadi, jangan sia-siakan waktumu dan jadilah bagian dari perubahan itu.",
+            "author": "Deaditya",
+            "date": "31/03/2025",
+            "note": null
+        }
+    ],
+    "games": [
+        {
+            "nama": "Free Fire",
+            "perangkat": [],
+            "mynamaeorid": "",
+            "status": [],
+            "icon": "",
+            "url": "",
+            "download": "",
+            "note": null
+        },
+        {
+            "nama": "Mobile Legends",
+            "perangkat": [],
+            "mynamaeorid": "",
+            "status": [],
+            "icon": "",
+            "url": "",
+            "download": "",
+            "note": null
+        },
+        {
+            "nama": "Citampi Stories",
+            "perangkat": [],
+            "mynamaeorid": "",
+            "status": [],
+            "icon": "",
+            "url": "",
+            "download": "",
+            "note": null
+        },
+        {
+            "nama": "TheoTown",
+            "perangkat": [],
+            "mynamaeorid": "",
+            "status": [],
+            "icon": "",
+            "url": "",
+            "download": "",
+            "note": null
+        },
+        {
+            "nama": "Roblox",
+            "perangkat": [],
+            "mynamaeorid": "",
+            "status": [],
+            "icon": "",
+            "url": "",
+            "download": "",
             "note": null
         }
     ]
