@@ -202,6 +202,7 @@ a {
 .imagemymovielist {
     width: 100px;
     height: 150px;
+    border-radius: 4px;
 }
 
 .contmygamelist {
@@ -212,7 +213,7 @@ a {
     padding: 10px;
     display: flex;
     overflow-x: auto;
-    overflow-y: hidden;
+    overflow-y: auto;
     white-space: nowrap;
 }
 
@@ -269,10 +270,11 @@ a {
 
 .contmymovielist::-webkit-scrollbar, .contmygamelist::-webkit-scrollbar {
     height: 3px;
+    width: 3px;
 }
 
 .contmymovielist::-webkit-scrollbar-thumb, .contmygamelist::-webkit-scrollbar-thumb {
-    background: #00111b1b;
+    background: #0000001b;
     border-radius: 6px;
 }  
 
@@ -372,6 +374,8 @@ a {
     
     .pagemygamelist {
         width: 100%;
+        margin-left: 3%;
+        margin-right: 3%;
         box-sizing: border-box;
         padding: 10px;
     }
