@@ -35,7 +35,7 @@ fetch("/Ast/Data/mylist.json")
 
 function updateMovieList() {
     var tempMovieList = "";
-    console.log("Saya pernah menonton " + dataMovieList.length + " movie!");
+    console.log("Saya pernah menonton " + dataMovieList.length + "+ movie!");
 
 
     for (let movieF = 0; movieF < dataMovieList.length; movieF++) {
@@ -60,7 +60,7 @@ function updateGamesList() {
     }
 
     gamesPerPage = Math.round(dataGamesList.length / 3);
-    console.log("Saya pernah memainkan " + dataGamesList.length + " game!");
+    console.log("Saya pernah memainkan " + dataGamesList.length + "+ game!");
 
     var kondisigmspglist_1 = gamesPerPage;
     var kondisigmspglist_2 = gamesPerPage + gamesPerPage - 1;
