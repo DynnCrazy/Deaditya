@@ -21,6 +21,7 @@ function changeTheme() {
         document.getElementById("webthemebtn").innerHTML = '<span class="fas fa-toggle-on" style="cursor: pointer;"></span>';
         document.querySelectorAll(".containerdtl, .mainfooter, .containeraboutme, .containerfuture, .containerlink").forEach(el => {
             el.style.backgroundColor = "#001b2b";
+            el.style.border = "none";
         });
         document.querySelectorAll(".submainfooter a").forEach(clr => {
             clr.style.color = "white";
@@ -41,7 +42,8 @@ function changeTheme() {
     } else {
         document.getElementById("webthemebtn").innerHTML = '<span class="fas fa-toggle-off" style="cursor: pointer;"></span>';
         document.querySelectorAll(".containerdtl, .mainfooter, .containeraboutme, .containerfuture, .containerlink").forEach(el => {
-            el.style.backgroundColor = "#f4f4f4";
+            el.style.backgroundColor = "rgb(252, 252, 252)";
+            el.style.border = "1px solid #e6e6e6";
         });
         document.querySelectorAll(".submainfooter a").forEach(clr => {
             clr.style.color = "#001b2b";

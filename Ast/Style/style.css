@@ -4,7 +4,7 @@ html, body {
     background-image: radial-gradient(circle, rgb(250, 250, 250) 2px, transparent 2px);
     background-size: 35px 35px;
     background-color: white;
-    color: #00111b;
+    color: #1b1b1b;
     font-family: "Poppins", serif;
     padding: 0px;
     margin: 0px;
@@ -40,8 +40,9 @@ a {
 .backgroundavatar {
     width: 100%;
     height: 120px;
-    background-color: #00111b;
-    border-bottom: 2px solid white;
+    background-color: white;
+    background: linear-gradient(to bottom, #21aeff, #00a2ff);
+    background-repeat: no-repeat;
 }
 
 .avatar {
@@ -50,7 +51,11 @@ a {
     margin-top: -60px;
     border-radius: 50%;
     border: 2px solid white;
-    background-color: #00111b;
+    background-color: #1b1b1b;
+}
+
+.avatar img {
+    border-radius: 50%;
 }
 
 .fotobackgroundavatar {
@@ -123,7 +128,7 @@ a {
 .garispemisah {
     margin-top: 70px;
     margin-bottom: 70px;
-    height: 3px;
+    height: 2px;
     width: 90%;
     background-color: #dfdfdf;
     border-radius: 6px;
@@ -133,7 +138,9 @@ a {
     width: 29%;
     margin-right: 1%;
     background-color: #001b2b;
-    background-color: #f4f4f4;
+    background-color: #e6e6e6;
+    background-color: rgb(252, 252, 252);
+    border: 1px solid #e6e6e6;
     padding: 15px;
     padding-left: 25px;
     box-sizing: border-box;
@@ -148,7 +155,9 @@ a {
 
 .containeraboutme {
     width: 100%;
-    background-color: #f4f4f4;
+    background-color: #e6e6e6;
+    background-color: rgb(252, 252, 252);
+    border: 1px solid #e6e6e6;
     padding: 15px;
     padding-left: 25px;
     box-sizing: border-box;
@@ -158,7 +167,9 @@ a {
 
 .containerfuture {
     width: 100%;
-    background-color: #f4f4f4;
+    background-color: #e6e6e6;
+    background-color: rgb(252, 252, 252);
+    border: 1px solid #e6e6e6;
     padding: 15px;
     padding-left: 25px;
     box-sizing: border-box;
@@ -168,7 +179,7 @@ a {
 
 .containerdtl {
     width: 90%;
-    background-color: #f4f4f4;
+    background-color: #e6e6e6;
     padding: 15px;
     padding-left: 25px;
     padding-right: 25px;
@@ -242,7 +253,8 @@ a {
 .mainfooter {
     width: 100%;
     height: 100%;
-    background-color: #f4f4f4;
+    background-color: #e6e6e6;
+    background-color: rgb(252, 252, 252);
     border-top: 2px solid #dfdfdf;
     padding: 40px;
     box-sizing: border-box;
@@ -255,7 +267,7 @@ a {
 
 .submainfooter a {
     font-size: 24px;
-    color: #00111b;
+    color: #1b1b1b;
     margin: 15px;
     text-decoration: none;
     cursor: pointer;
@@ -295,7 +307,6 @@ a {
     .containerlink {
         width: 90%;
         height: auto;
-        background-color: #f4f4f4;
         padding: 15px;
         padding-left: 25px;
         box-sizing: border-box;
@@ -316,7 +327,6 @@ a {
     
     .containeraboutme {
         width: 90%;
-        background-color: #f4f4f4;
         padding: 15px;
         padding-left: 25px;
         box-sizing: border-box;
@@ -328,7 +338,6 @@ a {
     
     .containerfuture {
         width: 90%;
-        background-color: #f4f4f4;
         padding: 15px;
         padding-left: 25px;
         box-sizing: border-box;
@@ -364,7 +373,6 @@ a {
     .contmygamelist {
         width: 100%;
         height: 200px;
-        background-color: #eaeaea;
         border-radius: 6px;
         box-sizing: border-box;
         padding: 10px;
