@@ -56,7 +56,7 @@ function changeTheme() {
             clr.style.color = "#001b2b";
         });
         document.querySelectorAll(".contmymovielist, .contmygamelist").forEach(mtr => {
-            mtr.style.backgroundColor = "#eaeaea";
+            mtr.style.backgroundColor = "#f6f6f6";
         });
         document.querySelectorAll(".garispemisah").forEach(wk => {
             wk.style.backgroundColor = "#dfdfdf";

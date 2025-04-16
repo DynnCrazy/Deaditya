@@ -52,8 +52,8 @@
                 <div class="garispemisah"></div>
             </div>
 
-            <div class="centerdiv mylife" data-aos="fade-up">
-                <div class="containerlink">
+            <div class="centerdiv mylife aos-nonmobile" data-aos="fade-up">
+                <div class="containerlink aos-mobile" data-aos="fade-up">
                     <h2>Social Media:</h2>
                     <!--
                     <a href="https://www.instagram.com/deaditya.xyz"><button class="btnsm">Instagram</button></a><br>
@@ -73,15 +73,30 @@
                 </div>
             
                 <div class="container2div">
-                    <div class="containeraboutme">
+                    <div class="containeraboutme aos-mobile" data-aos="fade-up">
                         <h2>About Me:</h2>
                         <p>Halo, perkenalkan nama saya I Gede Aditya Pramana. Sekarang, saya berusia <span id="umurku">2008</span>. Saya berasal dari Tojan, Blahbatuh, Gianyar, Bali.</p>
                     </div>
 
-                    <div class="containerfuture">
+                    <div class="containerfuture aos-mobile" data-aos="fade-up">
                         <h2>Goals:</h2>
                         <p>Tujuan saya didunia ini hanya satu yaitu bahagia.</p>
                     </div>
+                </div>
+            </div>
+
+            <div class="centerdiv" data-aos="fade-up" style="display: none;">
+                <div class="containerdtl">
+                    <h2>Colection:</h2>
+                        <p>My movie list:</p>
+                        <div class="contmymovielist" id="mymovielist">
+                        </div>
+                        <br>
+                        <p>My game list:</p>
+                        <div class="contmygamelist" id="mygamelist">
+                        </div>
+                    <br>
+                    <p>Last update: 04/04/2025</p>
                 </div>
             </div>
 
@@ -104,10 +119,24 @@
         </footer>
     </div>
 
+
     <script>
+        const isMobile = window.innerWidth < 600;
+
+        if (isMobile) {
+            document.querySelectorAll('.aos-nonmobile').forEach(el => {
+                el.removeAttribute('data-aos');
+            });
+        } else {
+            document.querySelectorAll('.aos-mobile').forEach(el => {
+                el.removeAttribute('data-aos');
+            });
+        }
+
         AOS.init({
             duration: 1000
         });
-    </script>      
+</script>
+   
 </body>
 </html>
