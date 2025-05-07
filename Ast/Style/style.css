@@ -12,7 +12,7 @@ html, body {
     margin: 0px;
     font-size: 16px;
     overflow-x: hidden;
-    transition: background-color 0.1s ease, background-image 0.1s ease, background-size 0.1s ease;
+    transition: background-color 0.1s ease, color 0.1s ease, background-image 0.1s ease, background-size 0.1s ease;
 }
 
 html {
@@ -250,6 +250,52 @@ a {
     margin: 0px;
 }
 
+.containerfaq {
+    width: 90%;
+    background-color: #e6e6e6;
+    background-color: rgb(252, 252, 252);
+    border: 1px solid #e6e6e6;
+    padding: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+    box-shadow: 0 0 18px 12px white;
+    box-sizing: border-box;
+    border-radius: 6px;
+    margin-top: 2%;
+}
+
+.faq-item {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.faq-question {
+    width: 100%;
+    background-color: #f6f6f6;
+    padding: 7px;
+    padding-left: 12px;
+    padding-right: 12px;
+    box-sizing: border-box;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+}
+
+.faq-sorh {
+    margin-right: 2%;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    width: 100%;
+    background-color: #ededed;
+    box-sizing: border-box;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    transition: max-height 0.3s ease;
+}
+
 .btnsm {
     width: 97%;
     padding: 10px;
@@ -304,7 +350,7 @@ a {
 }
 
 .containerdtl, .containerdtl, .contmymovielist, .contimgmymovielist, .mainfooter, .garispemisah, .containerfuture, .containeraboutme, .containerlink, .contmygamelist, .pagemygamelist {
-    transition: background-color 0.1s ease, border 0.1s ease, box-shadow 0.1s ease;
+    transition: background-color 0.1s ease, border 0.1s ease, box-shadow 0.1s ease, color 0.1s ease;
 }
 
 .contmymovielist::-webkit-scrollbar, .contmygamelist::-webkit-scrollbar {

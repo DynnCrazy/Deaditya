@@ -11,7 +11,30 @@ function prosesData(data) {
     dataGamesList = dataGlobal.games;
 
     if (data.movie && Array.isArray(data.movie)) {
-        dataMovieList = data.movie.sort((a, b) => a.nama.localeCompare(b.nama));
+        /*
+        dataMovieList = data.movie.sort((a, b) => {
+            if (a.type !== b.type) {
+              return a.type - b.type;
+            } else {
+              return a.nama.localeCompare(b.nama);
+            }
+          });
+        */
+          const customOrder = [2, 1, 3, 4];
+
+          dataMovieList = data.movie.sort((a, b) => {
+            const orderA = customOrder.indexOf(a.type);
+            const orderB = customOrder.indexOf(b.type);
+          
+            if (orderA !== orderB) {
+              return orderA - orderB; // Urut berdasarkan posisi dalam customOrder
+            } else {
+              return a.nama.localeCompare(b.nama); // Kalau type sama, urutkan nama secara abjad
+            }
+          });
+        // dataMovieList = data.movie.sort((a, b) => a.nama.localeCompare(b.nama));
+        // dataMovieList = data.movie.sort(() => Math.random() - 0.5);
+        // dataMovieList = data.movie;
     } else {
         dataMovieList = [];
     }
@@ -40,7 +63,7 @@ function updateMovieList() {
 
     for (let movieF = 0; movieF < dataMovieList.length; movieF++) {
         tempMovieList += `<div class="contimgmymovielist" onclick="alert('${dataMovieList[movieF].nama} (${dataMovieList[movieF].tahun})')">
-                                <img src="${dataMovieList[movieF].poster}" class="imagemymovielist" alt="${dataMovieList[movieF].nama}">
+                                <img src="${dataMovieList[movieF].poster}" class="imagemymovielist" loading="lazy" alt="${dataMovieList[movieF].nama}">
                           </div>`;
     }
 

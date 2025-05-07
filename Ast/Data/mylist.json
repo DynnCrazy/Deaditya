@@ -3,7 +3,14 @@
         {
             "nama": "The Maze Runner",
             "tahun": "2014",
-            "myrating": null,
+            "genre": [],
+            "jenis": "movie",
+            "type": 2,
+            "myrating": 9,
+            "status": {
+                "tamat": true,
+                "desc": ""
+            },
             "sinopsis": "Seorang remaja bernama Thomas terbangun di tengah labirin raksasa tanpa ingatan tentang masa lalunya. Ia bergabung dengan sekelompok pemuda yang juga terjebak di sana dan berusaha mencari cara untuk melarikan diri. Seiring waktu, Thomas mulai mengungkap misteri di balik labirin tersebut dan alasan mereka semua dikurung di dalamnya.",
             "url": null,
             "poster": "https://m.media-amazon.com/images/I/A15461sPviL._AC_SY879_.jpg",
@@ -12,7 +19,14 @@
         {
             "nama": "The Maze Runner: Scorch Trials",
             "tahun": "2015",
-            "myrating": null,
+            "genre": [],
+            "jenis": "movie",
+            "type": 2,
+            "myrating": 7,
+            "status": {
+                "tamat": true,
+                "desc": ""
+            },
             "sinopsis": "Setelah berhasil keluar dari labirin, Thomas dan teman-temannya menemukan bahwa dunia luar jauh lebih berbahaya dari yang mereka bayangkan. Mereka harus menghadapi kondisi lingkungan yang ekstrem serta musuh baru yang mengincar mereka. Dalam perjalanan mereka, kebenaran tentang organisasi yang mengendalikan nasib mereka perlahan mulai terungkap.",
             "url": null,
             "poster": "https://i.ebayimg.com/images/g/B~oAAOSw1oNak4Nk/s-l960.webp",
@@ -21,7 +35,14 @@
         {
             "nama": "Cars",
             "tahun": "2006",
-            "myrating": null,
+            "genre": [],
+            "jenis": "movie",
+            "type": 4,
+            "myrating": 9,
+            "status": {
+                "tamat": true,
+                "desc": ""
+            },
             "sinopsis": "Lightning McQueen, mobil balap ambisius, secara tidak sengaja terdampar di kota kecil Radiator Springs saat dalam perjalanan menuju balapan penting. Awalnya ia hanya ingin segera pergi, tetapi seiring waktu, McQueen mulai memahami arti persahabatan dan kehidupan yang lebih dari sekadar kecepatan.",
             "url": null,
             "poster": "https://i.ebayimg.com/images/g/GOYAAOSwCmVkXARx/s-l1600.webp",
@@ -30,7 +51,14 @@
         {
             "nama": "Cars 2",
             "tahun": "2011",
-            "myrating": null,
+            "genre": [],
+            "jenis": "movie",
+            "type": 4,
+            "myrating": 7,
+            "status": {
+                "tamat": true,
+                "desc": ""
+            },
             "sinopsis": "Lightning McQueen berpartisipasi dalam World Grand Prix, balapan internasional yang menentukan siapa mobil tercepat di dunia. Namun, sahabatnya, Mater, tanpa sengaja terlibat dalam misi mata-mata global, yang membuat perjalanan mereka penuh dengan aksi, konspirasi, dan kejutan.",
             "url": null,
             "poster": "https://m.media-amazon.com/images/I/71w7p5qt34L.__AC_SX300_SY300_QL70_FMwebp_.jpg",
@@ -39,43 +67,78 @@
         {
             "nama": "Edge of Tomorrow",
             "tahun": "2014",
-            "myrating": null,
+            "genre": [],
+            "jenis": "movie",
+            "type": 2,
+            "myrating": 8,
+            "status": {
+                "tamat": true,
+                "desc": ""
+            },
             "sinopsis": "Di masa depan, umat manusia berperang melawan alien yang hampir tak terkalahkan. Seorang tentara bernama Cage terjebak dalam lingkaran waktu, di mana ia terus mati dan hidup kembali setiap kali gagal. Dengan bantuan seorang prajurit tangguh, ia harus menemukan cara untuk mengalahkan musuh dan memanfaatkan kemampuannya sebelum semuanya terlambat.",
             "url": null,
             "poster": "https://upload.wikimedia.org/wikipedia/id/thumb/f/f9/Edge_of_Tomorrow_Poster.jpg/220px-Edge_of_Tomorrow_Poster.jpg",
             "note": null
         },
         {
-            "nama": "A Silent Voice",
+            "nama": "A Silent Voice (Koe no Katachi)",
             "tahun": "2016",
-            "myrating": null,
+            "genre": [],
+            "jenis": "movie",
+            "type": 3,
+            "myrating": 10,
+            "status": {
+                "tamat": true,
+                "desc": ""
+            },
             "sinopsis": "Seorang mantan pembully bernama Shoya Ishida mencoba menebus kesalahannya di masa lalu dengan mendekati Shoko Nishimiya, seorang gadis tunarungu yang pernah ia sakiti. Perjalanan ini membawa mereka pada refleksi diri, pertumbuhan emosional, dan makna sejati dari permintaan maaf serta pengampunan.",
             "url": null,
-            "poster": "https://m.media-amazon.com/images/I/715TE4atNBL._AC_SL1242_.jpg",
+            "poster": "https://cdn.myanimelist.net/images/anime/1122/96435.jpg",
             "note": null
         },
         {
             "nama": "Avatar",
             "tahun": "2009",
-            "myrating": null,
+            "genre": [],
+            "jenis": "movie",
+            "type": 2,
+            "myrating": 9,
+            "status": {
+                "tamat": true,
+                "desc": ""
+            },
             "sinopsis": "Di masa depan, manusia mengeksploitasi sumber daya planet Pandora, yang dihuni oleh suku Na’vi. Jake Sully, seorang mantan marinir, menggunakan tubuh Avatar untuk berbaur dengan suku tersebut. Namun, semakin lama ia tinggal di sana, semakin ia mempertanyakan misinya dan harus memilih antara kesetiaan pada umat manusia atau melindungi dunia baru yang telah ia cintai.",
             "url": null,
             "poster": "https://upload.wikimedia.org/wikipedia/id/thumb/b/b0/Avatar-Teaser-Poster.jpg/220px-Avatar-Teaser-Poster.jpg",
             "note": null
         },
         {
-            "nama": "Your Name.",
+            "nama": "Your Name. (Kimi No Na wa.)",
             "tahun": "2016",
-            "myrating": null,
+            "genre": [],
+            "jenis": "movie",
+            "type": 3,
+            "myrating": 9,
+            "status": {
+                "tamat": true,
+                "desc": ""
+            },
             "sinopsis": "Dua remaja, Taki dan Mitsuha, yang hidup di tempat dan waktu berbeda, tiba-tiba mulai bertukar tubuh tanpa mereka sadari. Seiring waktu, mereka mencoba mencari satu sama lain dan mengungkap misteri di balik fenomena tersebut, yang ternyata lebih besar dari yang mereka bayangkan.",
             "url": null,
             "poster": "https://upload.wikimedia.org/wikipedia/id/thumb/0/0b/Your_Name_poster.png/220px-Your_Name_poster.png",
             "note": null
         },
         {
-            "nama": "A Whisker Away",
+            "nama": "A Whisker Away (Nakitai Watashi wa Neko o Kaburu)",
             "tahun": "2020",
-            "myrating": null,
+            "genre": [],
+            "jenis": "movie",
+            "type": 3,
+            "myrating": 7,
+            "status": {
+                "tamat": true,
+                "desc": ""
+            },
             "sinopsis": "Seorang gadis ceria bernama Miyo memiliki perasaan mendalam terhadap teman sekelasnya, Kento. Suatu hari, ia menemukan topeng ajaib yang memungkinkannya berubah menjadi kucing. Sebagai kucing, ia bisa lebih dekat dengan Kento, tetapi semakin lama ia menghabiskan waktu dalam bentuk itu, semakin sulit baginya untuk kembali menjadi manusia.",
             "url": null,
             "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/d/df/Nakitai_Watashi_wa_Neko_o_Kaburu_poster.png/220px-Nakitai_Watashi_wa_Neko_o_Kaburu_poster.png",
@@ -84,7 +147,14 @@
         {
             "nama": "Source Code",
             "tahun": "2011",
-            "myrating": null,
+            "genre": [],
+            "jenis": "movie",
+            "type": 1,
+            "myrating": 7,
+            "status": {
+                "tamat": true,
+                "desc": ""
+            },
             "sinopsis": "Seorang tentara bernama Colter Stevens terbangun di tubuh pria lain dalam sebuah kereta yang beberapa menit kemudian meledak. Ia kemudian menyadari bahwa ia adalah bagian dari eksperimen militer bernama Source Code, yang memungkinkannya untuk menghidupkan kembali delapan menit terakhir dari seseorang di masa lalu. Dengan waktu yang terbatas, ia harus menemukan pelaku di balik ledakan tersebut sebelum serangan berikutnya terjadi.",
             "url": null,
             "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/e/e5/Source_Code_Poster.jpg/250px-Source_Code_Poster.jpg",
@@ -93,7 +163,14 @@
         {
             "nama": "Dilan 1990",
             "tahun": "2018",
-            "myrating": null,
+            "genre": [],
+            "jenis": "movie",
+            "type": 1,
+            "myrating": 8,
+            "status": {
+                "tamat": true,
+                "desc": ""
+            },
             "sinopsis": "Di Bandung tahun 1990, Milea, seorang siswi baru, bertemu dengan Dilan, seorang anak geng motor yang unik dan penuh kejutan. Dilan berusaha mendekati Milea dengan cara-cara tak biasa, membuat hubungan mereka berkembang dalam kisah cinta remaja yang penuh romansa dan puisi.",
             "url": null,
             "poster": "https://upload.wikimedia.org/wikipedia/id/thumb/1/19/Dilan_1990_%28poster%29.jpg/250px-Dilan_1990_%28poster%29.jpg",
@@ -102,7 +179,14 @@
         {
             "nama": "Dilan 1991",
             "tahun": "2019",
-            "myrating": null,
+            "genre": [],
+            "jenis": "movie",
+            "type": 1,
+            "myrating": 7,
+            "status": {
+                "tamat": true,
+                "desc": ""
+            },
             "sinopsis": "Melanjutkan kisah cinta mereka, Milea dan Dilan mulai menghadapi tantangan yang lebih besar, terutama karena keterlibatan Dilan dalam geng motor. Perbedaan prinsip dan kejadian tak terduga mulai menguji hubungan mereka, membawa mereka pada keputusan sulit tentang masa depan bersama.",
             "url": null,
             "poster": "https://upload.wikimedia.org/wikipedia/id/thumb/c/cc/Dilan_1991_Film_Poster.jpg/250px-Dilan_1991_Film_Poster.jpg",
@@ -111,7 +195,14 @@
         {
             "nama": "Milea: Suara dari Dilan",
             "tahun": "2020",
-            "myrating": null,
+            "genre": [],
+            "jenis": "movie",
+            "type": 1,
+            "myrating": 7,
+            "status": {
+                "tamat": true,
+                "desc": ""
+            },
             "sinopsis": "Film ini menceritakan kembali kisah cinta Dilan dan Milea, tetapi kali ini dari sudut pandang Dilan. Ia mengungkapkan perasaannya yang sebenarnya, alasan di balik tindakannya, dan bagaimana ia menghadapi kenyataan setelah perpisahan mereka.",
             "url": null,
             "poster": "https://i.ibb.co.com/VwsSJ0k/20240421-120315.png",
@@ -120,7 +211,14 @@
         {
             "nama": "Shaun the Sheep Movie",
             "tahun": "2015",
-            "myrating": null,
+            "genre": [],
+            "jenis": "movie",
+            "type": 4,
+            "myrating": 8,
+            "status": {
+                "tamat": true,
+                "desc": ""
+            },
             "sinopsis": "Shaun, domba cerdas dan nakal, secara tidak sengaja menyebabkan peternaknya tersesat di kota besar. Bersama teman-temannya, Shaun harus menemukan cara untuk membawa sang peternak kembali ke rumah sambil menghindari bahaya di dunia manusia.",
             "url": null,
             "poster": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkGzaX-NW_r6oOrtZXh971bzuZmIJjx2v3WBDwMh6-9yvKpDeXthyn5b-7VQ4-w1FSlhqWPOErN2FyFf0S1LLbkxMo6FOmrSqGw83OivsXXwfZKuWFxXpxPdYHZ1-O7cpIBA1ReZRhouYohwGvKzo_z6HIZVrSbzTRH8cZptOQMUZ1DZ4dIjAbcBne0w/s320/shaun-the-sheep-movie-movie-poster-2015-1010772489.jpg",
@@ -129,7 +227,14 @@
         {
             "nama": "Kungfu Panda",
             "tahun": "2008",
-            "myrating": null,
+            "genre": [],
+            "jenis": "movie",
+            "type": 4,
+            "myrating": 9,
+            "status": {
+                "tamat": true,
+                "desc": ""
+            },
             "sinopsis": "Po, seekor panda gemuk dan ceroboh, bermimpi menjadi master kung fu. Secara tak terduga, ia terpilih sebagai Pendekar Naga dan harus berlatih di bawah bimbingan Master Shifu serta Lima Pendekar. Saat musuh kuat, Tai Lung, datang mengancam, Po harus membuktikan bahwa dirinya layak menyandang gelar tersebut.",
             "url": null,
             "poster": "https://upload.wikimedia.org/wikipedia/id/thumb/1/18/Kung_fu_panda_poster.jpg/220px-Kung_fu_panda_poster.jpg",
@@ -138,7 +243,14 @@
         {
             "nama": "Kungfu Panda 2",
             "tahun": "2011",
-            "myrating": null,
+            "genre": [],
+            "jenis": "movie",
+            "type": 4,
+            "myrating": 8,
+            "status": {
+                "tamat": true,
+                "desc": ""
+            },
             "sinopsis": "Po kini menjadi ksatria yang tangguh, tetapi ia mulai dihantui oleh masa lalunya. Saat Lord Shen, seorang merak jahat dengan senjata mematikan, berusaha menguasai China, Po harus menghadapi ketakutannya dan menemukan rahasia tentang asal-usulnya untuk menyelamatkan dunia.",
             "url": null,
             "poster": "https://upload.wikimedia.org/wikipedia/id/thumb/b/b1/Kung_Fu_Panda_2_Poster.jpg/220px-Kung_Fu_Panda_2_Poster.jpg",
@@ -147,7 +259,14 @@
         {
             "nama": "Kungfu Panda 3",
             "tahun": "2016",
-            "myrating": null,
+            "genre": [],
+            "jenis": "movie",
+            "type": 4,
+            "myrating": 7,
+            "status": {
+                "tamat": true,
+                "desc": ""
+            },
             "sinopsis": "Po bertemu dengan ayah kandungnya dan menemukan desa panda tersembunyi. Sementara itu, Kai, seorang musuh dari dunia roh, mulai mencuri kekuatan para master kung fu. Po harus melatih para panda untuk bertarung dan memahami jati dirinya sebagai Pendekar Naga sejati.",
             "url": null,
             "poster": "https://upload.wikimedia.org/wikipedia/id/thumb/e/e6/Kung_Fu_Panda_3_poster.jpg/220px-Kung_Fu_Panda_3_poster.jpg",
@@ -156,25 +275,46 @@
         {
             "nama": "Kungfu Panda 4",
             "tahun": "2024",
-            "myrating": null,
+            "genre": [],
+            "jenis": "movie",
+            "type": 4,
+            "myrating": 8,
+            "status": {
+                "tamat": true,
+                "desc": ""
+            },
             "sinopsis": "Po dipilih menjadi Pemimpin Roh, tetapi sebelum itu, ia harus menemukan penggantinya sebagai Pendekar Naga. Di tengah pencariannya, ia menghadapi musuh baru bernama The Chameleon, penjahat licik yang bisa meniru kekuatan siapa pun. Po harus bekerja sama dengan seorang pencuri rubah bernama Zhen untuk mengalahkan ancaman baru ini.",
             "url": null,
             "poster": "https://wikisinetron.com/app/uploads/2024/03/Kung-Fu-Panda-4-Poster-350x520.jpg",
             "note": null
         },
         {
-            "nama": "Josee, the Tiger and the Fish",
+            "nama": "Josee, the Tiger and the Fish (Joze to Tora to Sakanatachi)",
             "tahun": "2020",
-            "myrating": null,
+            "genre": [],
+            "jenis": "movie",
+            "type": 3,
+            "myrating": 9,
+            "status": {
+                "tamat": true,
+                "desc": ""
+            },
             "sinopsis": "Tsuneo, seorang mahasiswa yang bercita-cita belajar ke luar negeri, secara tak sengaja bertemu dengan Josee, seorang gadis yang tidak bisa berjalan dan hidup dalam dunianya sendiri. Awalnya, hubungan mereka penuh ketegangan, tetapi seiring waktu, mereka mulai saling memahami dan mendukung impian masing-masing, menghadapi tantangan hidup bersama.",
             "url": null,
             "poster": "https://upload.wikimedia.org/wikipedia/id/thumb/f/f0/Josee%2C_the_Tiger_and_the_Fish_2020_film_poster.jpg/250px-Josee%2C_the_Tiger_and_the_Fish_2020_film_poster.jpg",
             "note": null
         },
         {
-            "nama": "I Want to Eat Your Pancreas",
+            "nama": "I Want to Eat Your Pancreas (Kimi no Suizō o Tabetai)",
             "tahun": "2018",
-            "myrating": null,
+            "genre": [],
+            "jenis": "movie",
+            "type": 3,
+            "myrating": 10,
+            "status": {
+                "tamat": true,
+                "desc": ""
+            },
             "sinopsis": "Seorang siswa pendiam secara tak sengaja menemukan buku harian milik Sakura, seorang gadis ceria yang diam-diam menderita penyakit pankreas yang mematikan. Meski awalnya enggan terlibat, ia perlahan mulai menjalin hubungan yang mengubah cara pandangnya tentang kehidupan dan kebahagiaan.",
             "url": null,
             "poster": "https://a.ltrbxd.com/resized/film-poster/4/3/4/4/1/3/434413-i-want-to-eat-your-pancreas-0-1000-0-1500-crop.jpg",
@@ -183,16 +323,30 @@
         {
             "nama": "Mr Bean Holiday",
             "tahun": "2007",
-            "myrating": null,
+            "genre": [],
+            "jenis": "movie",
+            "type": 1,
+            "myrating": 7,
+            "status": {
+                "tamat": true,
+                "desc": ""
+            },
             "sinopsis": "Mr. Bean memenangkan tiket liburan ke Prancis, tetapi perjalanannya penuh dengan kekacauan. Dalam perjalanannya menuju Cannes, ia tanpa sengaja terpisah dari seorang anak kecil dan harus membantunya menemukan kembali ayahnya, sambil terus terjebak dalam berbagai situasi lucu.",
             "url": null,
             "poster": "https://akcdn.detik.net.id/community/media/visual/2024/07/05/mr-beans-holiday_34.png?w=700&q=90",
             "note": null
         },
         {
-            "nama": "Weathering with You",
+            "nama": "Weathering with You (Tenki no Ko)",
             "tahun": "2019",
-            "myrating": null,
+            "genre": [],
+            "jenis": "movie",
+            "type": 3,
+            "myrating": 8,
+            "status": {
+                "tamat": true,
+                "desc": ""
+            },
             "sinopsis": "Hodaka, seorang remaja yang melarikan diri ke Tokyo, bertemu dengan Hina, seorang gadis yang memiliki kekuatan untuk mengendalikan cuaca. Ketika Tokyo dilanda hujan tiada henti, mereka berusaha menggunakan kemampuan Hina untuk membantu orang lain, tetapi kekuatan itu memiliki konsekuensi besar yang harus mereka hadapi.",
             "url": null,
             "poster": "https://upload.wikimedia.org/wikipedia/id/thumb/6/66/Weathering_with_You_Poster.jpg/220px-Weathering_with_You_Poster.jpg",
@@ -201,7 +355,14 @@
         {
             "nama": "Curious George",
             "tahun": "2006",
-            "myrating": null,
+            "genre": [],
+            "jenis": "movie",
+            "type": 4,
+            "myrating": 7,
+            "status": {
+                "tamat": true,
+                "desc": ""
+            },
             "sinopsis": "Seekor monyet kecil yang penasaran bernama George tanpa sengaja terbawa ke kota besar bersama seorang pria bernama Ted. Dengan rasa ingin tahu yang tinggi, George menyebabkan berbagai kekacauan lucu, tetapi juga membantu Ted menemukan sesuatu yang lebih berharga daripada yang ia cari.",
             "url": null,
             "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/6/6b/3rd_Curious_George_Poster.jpg/220px-3rd_Curious_George_Poster.jpg",
@@ -210,7 +371,14 @@
         {
             "nama": "Doraemon: New Nobita's Great Demon - Peko and the Exploration Party of Five",
             "tahun": "2014",
-            "myrating": null,
+            "genre": [],
+            "jenis": "movie",
+            "type": 4,
+            "myrating": 8,
+            "status": {
+                "tamat": true,
+                "desc": ""
+            },
             "sinopsis": "Nobita dan teman-temannya menemukan seekor anjing misterius bernama Peko yang membawa mereka ke sebuah kerajaan tersembunyi. Di sana, mereka menghadapi berbagai tantangan dan harus melawan kekuatan jahat yang mengancam negeri tersebut.",
             "url": null,
             "poster": "https://upload.wikimedia.org/wikipedia/id/thumb/3/31/Doraemon_Shin_Nobita_no_Daimakyo_~Peko_to_5-nin_no_Tankentai_Poster.jpg/220px-Doraemon_Shin_Nobita_no_Daimakyo_~Peko_to_5-nin_no_Tankentai_Poster.jpg",
@@ -219,7 +387,14 @@
         {
             "nama": "Doraemon: Nobita and the Birth of Japan",
             "tahun": "1989 & 2016",
+            "genre": [],
+            "jenis": "movie",
+            "type": 4,
             "myrating": null,
+            "status": {
+                "tamat": true,
+                "desc": ""
+            },
             "sinopsis": "Nobita dan teman-temannya memutuskan untuk kabur dari rumah dan melakukan perjalanan ke masa lalu, tepatnya ke zaman prasejarah Jepang. Di sana, mereka bertemu dengan seorang anak dari suku kuno dan membantu melindungi bangsanya dari ancaman musuh yang berbahaya.",
             "url": null,
             "poster": "https://upload.wikimedia.org/wikipedia/en/3/3f/Nobita_and_the_Birth_of_Japan.jpg",
@@ -228,7 +403,14 @@
         {
             "nama": "Rise of the Planet of the Apes",
             "tahun": "2011",
+            "genre": [],
+            "jenis": "movie",
+            "type": 2,
             "myrating": null,
+            "status": {
+                "tamat": true,
+                "desc": ""
+            },
             "sinopsis": "Seorang ilmuwan menciptakan obat untuk menyembuhkan Alzheimer, tetapi tanpa disadari, obat tersebut meningkatkan kecerdasan seekor simpanse bernama Caesar. Ketika Caesar menyadari bagaimana manusia memperlakukan kaumnya, ia mulai memberontak dan memimpin revolusi yang akan mengubah dunia selamanya.",
             "url": null,
             "poster": "https://cdn11.bigcommerce.com/s-9yct61arm5/images/stencil/1280x1280/products/291351/289172/ds7eaj1f_rise-of-the-planet-of-the-apes_1456721788__96287.1674112835.jpg",
@@ -237,7 +419,14 @@
         {
             "nama": "Home Alone",
             "tahun": "1990",
-            "myrating": null,
+            "genre": [],
+            "jenis": "movie",
+            "type": 1,
+            "myrating": 9,
+            "status": {
+                "tamat": true,
+                "desc": ""
+            },
             "sinopsis": "Kevin, seorang bocah 8 tahun, secara tidak sengaja tertinggal di rumah saat keluarganya pergi berlibur. Ia harus menghadapi dua pencuri kocak yang mencoba merampok rumahnya, menggunakan berbagai jebakan kreatif untuk mengusir mereka.",
             "url": null,
             "poster": "https://i.ebayimg.com/images/g/nqMAAOSwzc9jNvup/s-l1600.webp",
@@ -246,7 +435,14 @@
         {
             "nama": "Home Alone 2: Lost in New York",
             "tahun": "1992",
-            "myrating": null,
+            "genre": [],
+            "jenis": "movie",
+            "type": 1,
+            "myrating": 7,
+            "status": {
+                "tamat": true,
+                "desc": ""
+            },
             "sinopsis": "Kevin kembali terpisah dari keluarganya, kali ini tersesat di New York. Saat menikmati kebebasannya, ia bertemu kembali dengan dua pencuri yang dulu mencoba merampok rumahnya. Sekali lagi, ia harus menggunakan kecerdasannya untuk menggagalkan rencana jahat mereka.",
             "url": null,
             "poster": "https://m.media-amazon.com/images/I/81mHI6ZJvcL.__AC_SX300_SY300_QL70_ML2_.jpg",
@@ -255,7 +451,14 @@
         {
             "nama": "Home Alone 3",
             "tahun": "1997",
-            "myrating": null,
+            "genre": [],
+            "jenis": "movie",
+            "type": 1,
+            "myrating": 7,
+            "status": {
+                "tamat": true,
+                "desc": ""
+            },
             "sinopsis": "Seorang bocah bernama Alex secara tidak sengaja menemukan microchip rahasia milik sekelompok agen kriminal. Saat mereka mencoba merebutnya kembali, Alex mempersiapkan serangkaian jebakan cerdik untuk melindungi rumahnya dan menggagalkan rencana para penjahat.",
             "url": null,
             "poster": "https://m.media-amazon.com/images/I/51HO47A1vhL._AC_.jpg",
@@ -264,7 +467,14 @@
         {
             "nama": "Home Alone 4: Taking Back the House",
             "tahun": "2002",
+            "genre": [],
+            "jenis": "movie",
+            "type": 1,
             "myrating": null,
+            "status": {
+                "tamat": true,
+                "desc": ""
+            },
             "sinopsis": "Kevin, yang kini tinggal bersama ayahnya setelah perceraian orang tuanya, harus berhadapan kembali dengan musuh lamanya, Marv. Kali ini, Marv dan rekannya merencanakan penculikan, dan Kevin harus menggunakan kecerdasannya untuk menggagalkan aksi mereka di sebuah rumah mewah yang penuh teknologi canggih.",
             "url": null,
             "poster": "https://upload.wikimedia.org/wikipedia/id/thumb/a/ad/Home_alone_4_tv_print_ad.jpg/200px-Home_alone_4_tv_print_ad.jpg",
@@ -273,16 +483,30 @@
         {
             "nama": "Boboiboy: The Movie",
             "tahun": "2016",
-            "myrating": null,
+            "genre": [],
+            "jenis": "movie",
+            "type": 4,
+            "myrating": 8,
+            "status": {
+                "tamat": true,
+                "desc": ""
+            },
             "sinopsis": "BoBoiBoy dan teman-temannya harus menghadapi sekelompok pemburu artefak alien yang ingin mencuri Sfera Kuasa Ochobot untuk tujuan jahat. Dalam petualangan ini, BoBoiBoy mengembangkan kekuatan baru dan bertarung demi menyelamatkan bumi serta teman-temannya.",
             "url": null,
             "poster": "https://upload.wikimedia.org/wikipedia/id/thumb/2/2f/Boboiboy_The_Movies.jpg/220px-Boboiboy_The_Movies.jpg",
             "note": null
         },
         {
-            "nama": "Boboiboy the Movie 2",
+            "nama": "Boboiboy: The Movie 2",
             "tahun": "2019",
-            "myrating": null,
+            "genre": [],
+            "jenis": "movie",
+            "type": 4,
+            "myrating": 8,
+            "status": {
+                "tamat": true,
+                "desc": ""
+            },
             "sinopsis": "BoBoiBoy menghadapi musuh baru bernama Retak’ka, sosok misterius yang ingin merebut kembali kekuatan elemen BoBoiBoy. Dalam pertarungan epik ini, BoBoiBoy harus berjuang lebih keras dan menguasai kekuatan baru untuk menyelamatkan alam semesta dari ancaman besar.",
             "url": null,
             "poster": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEir86m2v06mKza4Q9CQriJK41pDKekdXSOSG5NjEUJsn1SlsQuTT8H2geDNoKqF66PqZWtbz_r5vuxRwVlQZXpGUGDgAOLE-dBzodiMkxPZ-yBsqx3u4l-8yVraq2_V7RJqPc4xSJb5Uv-lUg3ClLN-bhOpGLIA8JgBOfwKQ3lsZo-UdZ0YrkB0jL_wbQ/s320/bby.webp",
@@ -291,7 +515,14 @@
         {
             "nama": "Pocong Jumat Kliwon",
             "tahun": "2010",
+            "genre": [],
+            "jenis": "movie",
+            "type": 1,
             "myrating": null,
+            "status": {
+                "tamat": true,
+                "desc": ""
+            },
             "sinopsis": "BoBoiBoy dan teman-temannya harus menghadapi sekelompok pemburu artefak alien yang ingin mencuri Sfera Kuasa Ochobot untuk tujuan jahat. Dalam petualangan ini, BoBoiBoy mengembangkan kekuatan baru dan bertarung demi menyelamatkan bumi serta teman-temannya.",
             "url": null,
             "poster": "https://upload.wikimedia.org/wikipedia/id/thumb/7/7e/Poster_film_Pocong_Jumat_Kliwon.jpg/220px-Poster_film_Pocong_Jumat_Kliwon.jpg",
@@ -300,52 +531,94 @@
         {
             "nama": "Beauty & the Beast",
             "tahun": "2017",
+            "genre": [],
+            "jenis": "movie",
+            "type": 1,
             "myrating": null,
+            "status": {
+                "tamat": true,
+                "desc": ""
+            },
             "sinopsis": "Belle, seorang gadis cerdas dan mandiri, secara tak terduga menjadi tawanan di kastil makhluk misterius yang dikenal sebagai Beast. Seiring waktu, ia mulai melihat sisi lain dari Beast dan menemukan rahasia kelam di balik kutukan yang mengubahnya menjadi sosok mengerikan.",
             "url": null,
             "poster": "https://upload.wikimedia.org/wikipedia/id/thumb/2/2a/Beauty_and_The_Beast_Poster.jpg/404px-Beauty_and_The_Beast_Poster.jpg",
             "note": null
         },
         {
-            "nama": "Hello World",
+            "nama": "Hello World (Harōwārudo)",
             "tahun": "2019",
-            "myrating": null,
+            "genre": [],
+            "jenis": "movie",
+            "type": 3,
+            "myrating": 7,
+            "status": {
+                "tamat": true,
+                "desc": ""
+            },
             "sinopsis": "Seorang remaja pemalu bernama Naomi Katagaki bertemu dengan versi dirinya dari masa depan, yang memberitahunya bahwa ia harus menyelamatkan seorang gadis bernama Ruri dari kejadian tragis. Namun, semakin jauh ia mengikuti petunjuk masa depannya, semakin ia menyadari bahwa dunia tempatnya tinggal menyimpan rahasia besar.",
             "url": null,
             "poster": "https://upload.wikimedia.org/wikipedia/id/thumb/a/a8/HELLOWORLD.jpg/250px-HELLOWORLD.jpg",
             "note": null
         },
         {
-            "nama": "The Garden of Words",
+            "nama": "The Garden of Words (Kotonoha no Niwa)",
             "tahun": "2013",
-            "myrating": null,
+            "genre": [],
+            "jenis": "movie",
+            "type": 3,
+            "myrating": 7,
+            "status": {
+                "tamat": true,
+                "desc": ""
+            },
             "sinopsis": "Seorang remaja bernama Takao, yang bercita-cita menjadi pembuat sepatu, sering bolos sekolah dan menghabiskan waktu di taman saat hujan. Di sana, ia bertemu dengan seorang wanita misterius bernama Yukino. Seiring waktu, hubungan mereka berkembang, tetapi kenyataan hidup perlahan menguji ikatan mereka.",
             "url": null,
             "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/Garden_of_Words_poster.png/220px-Garden_of_Words_poster.png",
             "note": null
         },
         {
-            "nama": "The Anthem of the Heart",
+            "nama": "The Anthem of the Heart (Kokoro ga Sakebitagatterunda)",
             "tahun": "2015",
-            "myrating": null,
+            "genre": [],
+            "jenis": "movie",
+            "type": 3,
+            "myrating": 9,
+            "status": {
+                "tamat": true,
+                "desc": ""
+            },
             "sinopsis": "Jun Naruse adalah seorang gadis yang dulu sangat ceria, tetapi setelah kejadian di masa kecilnya, ia dikutuk untuk tidak bisa berbicara tanpa merasa sakit. Ketika ia dipilih untuk terlibat dalam proyek musikal di sekolah, ia mulai menemukan cara baru untuk mengekspresikan perasaannya dan memahami arti sebenarnya dari komunikasi dan emosi.",
             "url": null,
             "poster": "https://upload.wikimedia.org/wikipedia/id/thumb/e/e4/The_Anthem_of_the_Heart_poster.jpeg/220px-The_Anthem_of_the_Heart_poster.jpeg",
             "note": null
         },
         {
-            "nama": "Words Bubble Up Like Soda Pop",
+            "nama": "Words Bubble Up Like Soda Pop (Saidā no Yō ni Kotoba ga Wakiagaru)",
             "tahun": "2020",
-            "myrating": null,
+            "genre": [],
+            "jenis": "movie",
+            "type": 3,
+            "myrating": 8,
+            "status": {
+                "tamat": true,
+                "desc": ""
+            },
             "sinopsis": "Cherry, seorang remaja pendiam yang suka menulis haiku, bertemu dengan Smile, seorang gadis ceria yang selalu memakai masker untuk menyembunyikan rasa tidak percaya dirinya. Keduanya mulai menjalin hubungan melalui kata-kata dan musik, menemukan cara untuk mengekspresikan perasaan mereka yang sulit diungkapkan secara langsung.",
             "url": null,
             "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/0/00/Words_Bubble_Up_Like_Soda_Pop_key_visual.jpg/220px-Words_Bubble_Up_Like_Soda_Pop_key_visual.jpg",
             "note": null
         },
         {
-            "nama": "Ride Your Wave",
+            "nama": "Ride Your Wave (Kimi to, Nami ni Noretara)",
             "tahun": "2019",
-            "myrating": null,
+            "genre": [],
+            "jenis": "movie",
+            "type": 3,
+            "myrating": 7,
+            "status": {
+                "tamat": true,
+                "desc": ""
+            },
             "sinopsis": "Hinako, seorang gadis muda yang baru saja pindah ke pantai untuk melanjutkan studi, bertemu dengan Minato, seorang pemuda penyelamat yang ceria. Mereka jatuh cinta, tetapi tragedi datang ketika Minato meninggal dalam sebuah kecelakaan. Dalam kesedihannya, Hinako menemukan bahwa ia dapat berkomunikasi dengan roh Minato melalui air, dan melalui proses ini, ia belajar untuk mengatasi kehilangan dan melanjutkan hidupnya.",
             "url": null,
             "poster": "https://upload.wikimedia.org/wikipedia/id/thumb/d/d2/Ride_Your_Wave_poster.jpg/220px-Ride_Your_Wave_poster.jpg",
@@ -354,7 +627,14 @@
         {
             "nama": "Upin & Ipin: Jeng Jeng Jeng",
             "tahun": "2016",
-            "myrating": null,
+            "genre": [],
+            "jenis": "movie",
+            "type": 2,
+            "myrating": 5,
+            "status": {
+                "tamat": true,
+                "desc": ""
+            },
             "sinopsis": "Sekelompok anak yatim piatu yang sangat menyukai serial Upin & Ipin menghadapi ancaman kehilangan panti asuhan mereka. Dalam situasi sulit tersebut, mereka menemukan kejutan ajaib: karakter Upin dan Ipin muncul di dunia nyata! Bersama-sama, mereka berusaha mencari solusi untuk menyelamatkan rumah mereka.",
             "url": null,
             "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/4/41/UpinIpinJengJengJengMalaysiaposter.jpg/220px-UpinIpinJengJengJengMalaysiaposter.jpg",
@@ -363,7 +643,14 @@
         {
             "nama": "Upin & Ipin: Keris Siamang Tunggal",
             "tahun": "2019",
-            "myrating": null,
+            "genre": [],
+            "jenis": "movie",
+            "type": 4,
+            "myrating": 7,
+            "status": {
+                "tamat": true,
+                "desc": ""
+            },
             "sinopsis": "Upin, Ipin, dan teman-temannya secara tak sengaja menemukan sebilah keris mistis yang membawa mereka ke kerajaan Inderaloka, dunia fantasi yang penuh dengan legenda. Di sana, mereka harus membantu para penghuni melawan ancaman jahat dan menemukan jalan pulang sebelum terlambat.",
             "url": null,
             "poster": "https://cdn.moviescore.com/posters/28136.jpg",
@@ -372,7 +659,14 @@
         {
             "nama": "Tamako Love Story",
             "tahun": "2014",
-            "myrating": null,
+            "genre": [],
+            "jenis": "movie",
+            "type": 3,
+            "myrating": 8,
+            "status": {
+                "tamat": true,
+                "desc": ""
+            },
             "sinopsis": "Tamako, seorang gadis ceria yang sibuk dengan kehidupan sekolah dan toko keluarganya, tidak pernah memikirkan tentang cinta. Namun, sahabat masa kecilnya, Mochizou, akhirnya mengumpulkan keberanian untuk mengungkapkan perasaannya sebelum ia pergi ke Tokyo. Tamako pun mulai menyadari perasaan yang selama ini tersembunyi di dalam hatinya.",
             "url": null,
             "poster": "https://cdn.myanimelist.net/images/anime/1417/91333.jpg",
@@ -381,7 +675,14 @@
         {
             "nama": "I, Robot",
             "tahun": "2004",
+            "genre": [],
+            "jenis": "movie",
+            "type": 2,
             "myrating": null,
+            "status": {
+                "tamat": true,
+                "desc": ""
+            },
             "sinopsis": "Di masa depan, robot-robot telah menjadi bagian integral dari kehidupan manusia, mengikuti tiga hukum dasar untuk menjaga keselamatan manusia. Namun, seorang detektif bernama Del Spooner mulai meragukan sebuah kejadian yang melibatkan kematian seorang ilmuwan, yang tampaknya dilakukan oleh robot—sesuatu yang tidak mungkin terjadi. Spooner menyelidiki lebih jauh dan menemukan konspirasi besar yang melibatkan kecerdasan buatan yang dapat mengancam umat manusia.",
             "url": null,
             "poster": "https://upload.wikimedia.org/wikipedia/id/thumb/3/3b/Movie_poster_i_robot.jpg/220px-Movie_poster_i_robot.jpg",
@@ -390,7 +691,14 @@
         {
             "nama": "Dosen Ghaib: Sudah Malam atau Sudah Tahu",
             "tahun": "2024",
-            "myrating": null,
+            "genre": [],
+            "jenis": "movie",
+            "type": 2,
+            "myrating": 6,
+            "status": {
+                "tamat": true,
+                "desc": ""
+            },
             "sinopsis": "Empat mahasiswa mengikuti kelas malam dengan Pak Bakti, dosen galak yang misterius. Awalnya biasa saja, hingga mereka menyadari Pak Bakti tidak menapakkan kaki di lantai. Teror demi teror pun terjadi, mengungkap rahasia gelap di balik kelas tersebut. Kini, mereka harus bertahan sebelum semuanya terlambat.",
             "url": null,
             "poster": "https://akcdn.detik.net.id/community/media/visual/2024/06/27/dosen-ghaib-sudah-malam-atau-sudah-tahu.jpeg",
@@ -399,7 +707,14 @@
         {
             "nama": "Geng: Pengembaraan Bermula",
             "tahun": "2009",
-            "myrating": null,
+            "genre": [],
+            "jenis": "movie",
+            "type": 4,
+            "myrating": 8,
+            "status": {
+                "tamat": true,
+                "desc": ""
+            },
             "sinopsis": "Badrol dan Lim mengunjungi Kampung Durian Runtuh dan mendengar tentang Hantu Durian yang mencuri durian di malam hari. Bersama Upin, Ipin, Rajoo, dan Kak Ros, mereka menyelidiki misteri ini dan menemukan makhluk asing bernama Oopet. Petualangan mereka pun dipenuhi tantangan, termasuk menghadapi pemburu liar dengan niat jahat.",
             "url": null,
             "poster": "https://upload.wikimedia.org/wikipedia/id/thumb/8/8a/Geng_poster_new.jpg/220px-Geng_poster_new.jpg",
@@ -408,7 +723,14 @@
         {
             "nama": "5 Centimeters per Second",
             "tahun": "2007",
-            "myrating": null,
+            "genre": [],
+            "jenis": "movie",
+            "type": 3,
+            "myrating": 7,
+            "status": {
+                "tamat": true,
+                "desc": ""
+            },
             "sinopsis": "Takaki dan Akari adalah dua sahabat yang terpisah karena keadaan. Meski awalnya masih berusaha menjaga komunikasi, jarak dan waktu perlahan membuat mereka semakin jauh. Film ini menggambarkan perjalanan hidup mereka dalam tiga babak, menunjukkan bagaimana perasaan yang tak tersampaikan dan kenangan masa lalu dapat membentuk seseorang seiring berjalannya waktu.",
             "url": null,
             "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/9/92/5_Centimeters_Per_Second.jpg/220px-5_Centimeters_Per_Second.jpg",
@@ -417,7 +739,14 @@
         {
             "nama": "The Butterfly Effect",
             "tahun": "2004",
-            "myrating": null,
+            "genre": [],
+            "jenis": "movie",
+            "type": 1,
+            "myrating": 7,
+            "status": {
+                "tamat": true,
+                "desc": ""
+            },
             "sinopsis": "Evan Treborn memiliki kemampuan untuk kembali ke masa lalu dengan membaca jurnalnya. Ia mencoba mengubah kejadian traumatis dalam hidupnya untuk memperbaiki masa depan. Namun, setiap perubahan yang ia buat justru membawa konsekuensi tak terduga, menunjukkan bahwa setiap keputusan kecil bisa berdampak besar pada hidupnya dan orang-orang di sekitarnya.",
             "url": null,
             "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/4/43/Butterflyeffect_poster.jpg/250px-Butterflyeffect_poster.jpg",
@@ -426,7 +755,14 @@
         {
             "nama": "Hush",
             "tahun": "2016",
-            "myrating": null,
+            "genre": [],
+            "jenis": "movie",
+            "type": 1,
+            "myrating": 8,
+            "status": {
+                "tamat": true,
+                "desc": ""
+            },
             "sinopsis": "Maddie, seorang penulis tuli yang tinggal sendirian di tengah hutan, harus berjuang bertahan hidup ketika seorang pembunuh bertopeng meneror rumahnya. Tanpa bisa mendengar atau berbicara, Maddie harus menggunakan kecerdikan dan instingnya untuk melawan dan menghindari si pembunuh sebelum semuanya terlambat.",
             "url": null,
             "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/e/e3/Hush_2016_poster.jpg/250px-Hush_2016_poster.jpg",
@@ -435,16 +771,30 @@
         {
             "nama": "The House of Small Cubes",
             "tahun": "2008",
-            "myrating": null,
+            "genre": [],
+            "jenis": "movie",
+            "type": 4,
+            "myrating": 6,
+            "status": {
+                "tamat": true,
+                "desc": ""
+            },
             "sinopsis": "Seorang pria tua tinggal di sebuah rumah yang semakin tenggelam akibat banjir. Untuk bertahan, ia membangun lantai-lantai baru menggunakan kubus-kubus yang lebih kecil, membuat rumahnya semakin tinggi. Suatu hari, ia menemukan kenangan-kenangan lama di bawah rumahnya yang tenggelam, mengingatkan dirinya akan masa lalu yang penuh dengan kehilangan dan harapan.",
             "url": null,
             "poster": "https://miro.medium.com/v2/resize:fit:640/format:webp/1*MRD1VOve8O5Dmk7v3cjv-Q.jpeg",
             "note": null
         },
         {
-            "nama": "Sing a Bit of Harmony",
+            "nama": "Sing a Bit of Harmony (Ai no Utagoe o Kikasete)",
             "tahun": "2021",
-            "myrating": null,
+            "genre": [],
+            "jenis": "movie",
+            "type": 3,
+            "myrating": 8,
+            "status": {
+                "tamat": true,
+                "desc": ""
+            },
             "sinopsis": "Shion, seorang AI berbentuk gadis, tiba-tiba muncul di sekolah Satomi dan mulai bernyanyi untuk membuatnya bahagia. Dengan kepribadiannya yang ceria, Shion dengan cepat menarik perhatian teman-teman Satomi. Namun, di balik keceriaannya, Shion menyimpan rahasia besar yang akan mengubah kehidupan mereka. Film ini menggabungkan drama, musik, dan sci-fi dalam kisah persahabatan yang menyentuh.",
             "url": null,
             "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/8/81/Sing_a_Bit_of_Harmony.png/220px-Sing_a_Bit_of_Harmony.png",
@@ -453,7 +803,14 @@
         {
             "nama": "Hosts",
             "tahun": "2020",
+            "genre": [],
+            "jenis": "movie",
+            "type": 1,
             "myrating": null,
+            "status": {
+                "tamat": true,
+                "desc": ""
+            },
             "sinopsis": "Sebuah keluarga yang sedang berkumpul untuk makan malam Natal mengalami teror ketika makhluk jahat mengambil alih tubuh tamu mereka. Malam yang seharusnya penuh kebahagiaan berubah menjadi mimpi buruk saat rahasia kelam terungkap dan mereka harus berjuang untuk bertahan hidup melawan kekuatan supranatural yang mengerikan.",
             "url": null,
             "poster": "https://images.justwatch.com/poster/207663652/s166/hosts.avif",
@@ -462,16 +819,30 @@
         {
             "nama": "Host",
             "tahun": "2020",
-            "myrating": null,
+            "genre": [],
+            "jenis": "movie",
+            "type": 1,
+            "myrating": 7,
+            "status": {
+                "tamat": true,
+                "desc": ""
+            },
             "sinopsis": "Film ini mengikuti sekelompok teman yang mengadakan sesi pemanggilan arwah secara daring selama pandemi. Awalnya hanya iseng, namun ritual tersebut secara tak sengaja mengundang roh jahat sungguhan. Satu per satu, para peserta mulai mengalami gangguan mengerikan di rumah masing-masing.",
             "url": null,
             "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/9/94/Host_%28film%29.jpg/250px-Host_%28film%29.jpg",
             "note": null
         },
         {
-            "nama": "The Moment You Fall in Love",
+            "nama": "The Moment You Fall in Love (Suki ni Naru Sono Shunkan o: Kokuhaku Jikkō Iinkai)",
             "tahun": "2016",
-            "myrating": null,
+            "genre": [],
+            "jenis": "movie",
+            "type": 3,
+            "myrating": 8,
+            "status": {
+                "tamat": true,
+                "desc": ""
+            },
             "sinopsis": "Hina Setoguchi mulai merasakan cinta untuk pertama kalinya kepada Koyuki, kakak dari teman masa kecilnya. Namun, perasaan itu membuatnya menghadapi kenyataan pahit tentang cinta bertepuk sebelah tangan. Dalam perjalanannya, Hina belajar tentang arti cinta, persahabatan, dan bagaimana menghadapi perasaan yang tumbuh di masa remaja.",
             "url": null,
             "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/6/6d/Suki_ni_Naru_Sono_Shunkan_o_Kokuhaku_Jikk%C5%8D_Iinkai_poster.jpeg/250px-Suki_ni_Naru_Sono_Shunkan_o_Kokuhaku_Jikk%C5%8D_Iinkai_poster.jpeg",
@@ -480,37 +851,374 @@
         {
             "nama": "Exam",
             "tahun": "2009",
-            "myrating": null,
+            "genre": [],
+            "jenis": "movie",
+            "type": 1,
+            "myrating": 8,
+            "status": {
+                "tamat": true,
+                "desc": ""
+            },
             "sinopsis": "Delapan kandidat elit dikumpulkan di sebuah ruangan terkunci untuk menjalani tahap akhir seleksi kerja di perusahaan misterius. Mereka diberi selembar kertas kosong dan satu instruksi: jawab pertanyaannya—tanpa merusak kertas, meninggalkan ruangan, atau bicara dengan penjaga. Namun, tidak ada pertanyaan yang terlihat, memicu ketegangan, kerja sama, dan pengkhianatan saat mereka mencoba memecahkan teka-teki dalam ujian psikologis yang menantang logika dan moralitas.",
             "url": null,
             "poster": "https://resizing.flixster.com/LW9OxCI6o76tWaN4c2QlEzRSBA0=/206x305/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p7979129_p_v13_aa.jpg",
             "note": null
         },
         {
-            "nama": "Book Girl",
+            "nama": "Book Girl (Gekijōban Bungaku Shōjo)",
             "tahun": "2010",
-            "myrating": null,
+            "genre": [],
+            "jenis": "movie",
+            "type": 3,
+            "myrating": 7,
+            "status": {
+                "tamat": true,
+                "desc": ""
+            },
             "sinopsis": "Konoha Inoue, seorang siswa SMA yang diam-diam adalah penulis terkenal dengan masa lalu kelam. Hidupnya berubah saat ia bertemu Touko Amano, gadis misterius yang menyebut dirinya 'gadis pemakan buku' dan memaksanya bergabung dengan klub sastra. Bersama-sama, mereka terlibat dalam berbagai kisah emosional dan penuh teka-teki dari para siswa yang datang ke klub, sembari perlahan mengungkap rahasia masa lalu Konoha yang masih menghantuinya. Film ini menyatukan drama, misteri, dan sentuhan fantasi dalam suasana literer yang mendalam.",
             "url": null,
             "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/0/0e/Book_Girl_film_poster.jpg/250px-Book_Girl_film_poster.jpg",
             "note": null
         },
         {
-            "nama": "Typhoon Noruda",
+            "nama": "Typhoon Noruda (Taifū no Noruda)",
             "tahun": "2015",
-            "myrating": null,
+            "genre": [],
+            "jenis": "movie",
+            "type": 3,
+            "myrating": 7,
+            "status": {
+                "tamat": true,
+                "desc": ""
+            },
             "sinopsis": "Film ini berlatar di sebuah pulau terpencil di Jepang, di mana para siswa tengah mempersiapkan festival budaya sekolah. Di tengah persiapan, dua sahabat, Shūichi Azuma dan Kenta Saijō, berselisih karena keputusan Azuma untuk berhenti dari tim bisbol. Ketegangan mereka meningkat saat topan besar mendekat, memaksa semua orang berlindung di dalam sekolah. Dalam situasi tersebut, Azuma bertemu dengan Noruda, seorang gadis misterius dengan kalung aneh yang tampaknya memiliki keterkaitan dengan badai yang melanda. Azuma terdorong untuk membantu Noruda, yang membawa mereka pada petualangan yang menguji persahabatan dan keberanian mereka.",
             "url": null,
             "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/3/35/Typhoon_Noruda_poster.jpeg/220px-Typhoon_Noruda_poster.jpeg",
             "note": null
         },
         {
-            "nama": "Seven Days War",
+            "nama": "Seven Days War (Bokura no Nanokakan Sensou)",
             "tahun": "2019",
-            "myrating": null,
+            "genre": [],
+            "jenis": "movie",
+            "type": 3,
+            "myrating": 7,
+            "status": {
+                "tamat": true,
+                "desc": ""
+            },
             "sinopsis": "Film ini mengisahkan tentang Mamoru Suzuhara, seorang siswa SMA yang pendiam dan gemar sejarah, yang mengetahui bahwa tetangganya sekaligus teman masa kecil yang ia sukai, Aya Chiyono, akan segera pindah karena pekerjaan ayahnya sebagai politisi. Untuk menghabiskan waktu bersama sebelum kepergian Aya, Mamoru mengusulkan untuk bersembunyi selama seminggu hingga ulang tahun ke-17 Aya. Tanpa diduga, Aya mengajak beberapa teman sekelas mereka untuk bergabung dalam petualangan ini. Mereka memilih bersembunyi di pabrik batu bara yang telah lama ditinggalkan. Di sana, mereka menemukan seorang anak imigran ilegal asal Thailand bernama Mallet yang sedang melarikan diri dari petugas imigrasi. Kelompok remaja ini kemudian memutuskan untuk melindungi Mallet, yang membawa mereka pada konfrontasi dengan otoritas dan orang tua mereka sendiri. Film ini memadukan petualangan, kritik sosial, dan semangat persahabatan dalam balutan drama remaja yang menyentuh.",
             "url": null,
             "poster": "https://cdn.myanimelist.net/images/anime/1887/103944.jpg",
+            "note": null
+        },
+        {
+            "nama": "Buried",
+            "tahun": "2010",
+            "genre": [],
+            "jenis": "movie",
+            "type": 1,
+            "myrating": 7,
+            "status": {
+                "tamat": true,
+                "desc": ""
+            },
+            "sinopsis": "Buried (2010) adalah film thriller psikologis yang disutradarai oleh Rodrigo Cortés dan dibintangi oleh Ryan Reynolds sebagai Paul Conroy, seorang sopir truk sipil asal Amerika yang bekerja di Irak. Setelah disergap oleh sekelompok pemberontak, Paul terbangun dalam kondisi terkubur hidup-hidup di dalam peti kayu di bawah tanah, hanya dilengkapi dengan pemantik api, ponsel, dan beberapa barang kecil lainnya. Dengan pasokan oksigen yang terbatas dan baterai ponsel yang hampir habis, Paul berpacu dengan waktu untuk mencari bantuan, menghadapi tekanan psikologis yang intens, dan mengungkap motif di balik penculikannya.",
+            "url": null,
+            "poster": "https://upload.wikimedia.org/wikipedia/id/6/67/Buried_Poster.jpg",
+            "note": null
+        }, 
+        {
+            "nama": "Coherence",
+            "tahun": "2013",
+            "genre": [],
+            "jenis": "movie",
+            "type": 1,
+            "myrating": null,
+            "status": {
+                "tamat": true,
+                "desc": ""
+            },
+            "sinopsis": "Coherence (2013) adalah film fiksi ilmiah dengan sentuhan psikologis yang berfokus pada sekelompok teman yang berkumpul untuk makan malam saat sebuah fenomena langit langka terjadi. Awalnya suasana terasa biasa saja, tetapi semakin malam, kejadian-kejadian aneh mulai mengganggu logika dan kenyataan. Film ini menyajikan misteri yang berkembang perlahan, menciptakan rasa ketegangan melalui percakapan dan perubahan situasi yang mengejutkan.",
+            "url": null,
+            "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9d/Coherence_2013_theatrical_poster.jpg/250px-Coherence_2013_theatrical_poster.jpg",
+            "note": null
+        },
+        {
+            "nama": "My Neighbor Totoro",
+            "tahun": "1988",
+            "genre": [],
+            "jenis": "movie",
+            "type": 3,
+            "myrating": 8,
+            "status": {
+                "tamat": true,
+                "desc": ""
+            },
+            "sinopsis": "Satsuki dan adiknya Mei pindah ke pedesaan bersama ayah mereka untuk lebih dekat dengan rumah sakit tempat ibu mereka dirawat. Di tengah keindahan alam pedesaan Jepang, Mei menemukan makhluk hutan ajaib bernama Totoro, yang hanya bisa dilihat oleh anak-anak. Totoro dan teman-temannya membawa kegembiraan, keajaiban, dan kenyamanan kepada anak-anak itu saat mereka menghadapi ketakutan dan kekhawatiran mereka. Film ini adalah perayaan tentang masa kecil, keluarga, dan hubungan manusia dengan alam. Totoro menjadi simbol harapan, ketenangan, dan keajaiban dalam kehidupan sederhana.",
+            "url": null,
+            "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/0/02/My_Neighbor_Totoro_-_Tonari_no_Totoro_%28Movie_Poster%29.jpg/250px-My_Neighbor_Totoro_-_Tonari_no_Totoro_%28Movie_Poster%29.jpg",
+            "note": null
+        },
+        {
+            "nama": "Circle",
+            "tahun": "2015",
+            "genre": [],
+            "jenis": "movie",
+            "type": 1,
+            "myrating": 7,
+            "status": {
+                "tamat": true,
+                "desc": ""
+            },
+            "sinopsis": "50 orang asing terbangun dalam sebuah ruangan misterius berbentuk lingkaran tanpa tahu bagaimana mereka bisa sampai di sana. Mereka segera menyadari bahwa setiap beberapa menit, salah satu dari mereka akan mati—dieksekusi oleh mesin di tengah ruangan. Yang lebih mengejutkan, mereka bisa saling memengaruhi siapa yang akan mati selanjutnya dengan sistem voting diam-diam. Ketegangan meningkat saat mereka mulai berdebat tentang siapa yang pantas hidup berdasarkan usia, latar belakang, pekerjaan, bahkan moralitas. Film ini menyajikan drama psikologis yang intens dan mempertanyakan nilai kemanusiaan, etika, dan keadilan sosial.",
+            "url": null,
+            "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/Circle_%282015_film%29_cover_art.jpg/250px-Circle_%282015_film%29_cover_art.jpg",
+            "note": null
+        },
+        {
+            "nama": "Cube",
+            "tahun": "1997",
+            "genre": [],
+            "jenis": "movie",
+            "type": 1,
+            "myrating": null,
+            "status": {
+                "tamat": true,
+                "desc": ""
+            },
+            "sinopsis": "Cube (1997) adalah film thriller fiksi ilmiah yang mengisahkan sekelompok orang asing yang terbangun di dalam struktur misterius berbentuk kubus raksasa, yang terdiri dari ribuan ruangan identik namun mematikan. Mereka tidak tahu bagaimana mereka bisa berada di sana maupun siapa yang menciptakan tempat itu. Setiap ruangan memiliki jebakan berbahaya, dan satu-satunya cara untuk bertahan hidup adalah dengan bekerja sama dan memecahkan teka-teki matematis yang tersembunyi di balik sistem penomoran setiap ruangan. Ketegangan meningkat saat konflik antar karakter muncul, dan mereka mulai menyadari bahwa ancaman terbesar mungkin bukan hanya jebakan di dalam kubus, tetapi juga sifat manusia itu sendiri.",
+            "url": null,
+            "poster": "https://upload.wikimedia.org/wikipedia/id/thumb/0/0c/Cube_The_Movie_Poster_Art.jpg/220px-Cube_The_Movie_Poster_Art.jpg",
+            "note": null
+        },
+        {
+            "nama": "Kiki’s Delivery Service (Majo no Takkyūbin)",
+            "tahun": "1989",
+            "genre": [],
+            "jenis": "movie",
+            "type": 3,
+            "myrating": 8,
+            "status": {
+                "tamat": true,
+                "desc": ""
+            },
+            "sinopsis": "Kiki’s Delivery Service adalah film animasi yang mengisahkan seorang penyihir muda bernama Kiki yang, sesuai tradisi, harus meninggalkan rumah pada usia 13 tahun untuk hidup mandiri dan menemukan tempatnya di dunia. Dengan sapu terbang dan kucing hitamnya yang cerdas bernama Jiji, Kiki menetap di sebuah kota pesisir dan membuka layanan pengantaran barang menggunakan kemampuannya terbang. Di tengah berbagai tantangan, termasuk kehilangan kepercayaan diri dan kemampuan magisnya, Kiki perlahan belajar tentang tanggung jawab, kemandirian, serta menemukan kembali semangat dan jati dirinya.",
+            "url": null,
+            "poster": "https://upload.wikimedia.org/wikipedia/en/0/07/Kiki%27s_Delivery_Service_%28Movie%29.jpg",
+            "note": null
+        },
+        {
+            "nama": "Only Yesterday (Omoide Poro Poro)",
+            "tahun": "1991",
+            "genre": [],
+            "jenis": "movie",
+            "type": 3,
+            "myrating": null,
+            "status": {
+                "tamat": true,
+                "desc": ""
+            },
+            "sinopsis": "Only Yesterday adalah film drama animasi yang menggambarkan perjalanan emosional seorang wanita berusia 27 tahun yang kembali ke kampung halamannya di pedesaan. Selama perjalanannya, ia merenungkan kenangan masa kecilnya dan mulai mempertanyakan arah hidupnya di tengah kehidupan kota yang sibuk. Film ini menyajikan refleksi mendalam tentang pertumbuhan, nostalgia, dan pencarian jati diri.",
+            "url": null,
+            "poster": "https://upload.wikimedia.org/wikipedia/id/4/46/OYpost.jpg",
+            "note": null
+        },
+        {
+            "nama": "Triangle",
+            "tahun": "2009",
+            "genre": [],
+            "jenis": "movie",
+            "type": 1,
+            "myrating": 8,
+            "status": {
+                "tamat": true,
+                "desc": ""
+            },
+            "sinopsis": "Triangle adalah sebuah film thriller psikologis yang penuh misteri dan teka-teki, mengikuti perjalanan sekelompok orang yang terjebak dalam situasi aneh di tengah laut setelah menaiki kapal misterius. Ceritanya mengusung atmosfer yang mencekam dan penuh ketegangan, dengan alur yang tidak linear dan elemen-elemen yang membuat penonton terus menebak-nebak apa yang sebenarnya terjadi.",
+            "url": null,
+            "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b4/Triangle_%28Christopher_Smith%29.jpg/250px-Triangle_%28Christopher_Smith%29.jpg ",
+            "note": null
+        },
+
+
+
+
+        
+        {
+            "nama": "Naruto: Shippuden [1-21]",
+            "tahun": "2007-2017",
+            "genre": [],
+            "jenis": "series",
+            "type": 3,
+            "myrating": 8,
+            "status": {
+                "tamat": true,
+                "desc": "500 Episode"
+            },
+            "sinopsis": "Naruto Uzumaki, seorang ninja remaja dari desa Konohagakure. Setelah berlatih selama dua setengah tahun, Naruto kembali ke desanya dengan kekuatan yang lebih besar dan tekad yang lebih kuat untuk menyelamatkan sahabatnya, Sasuke Uchiha, dan melindungi dunia ninja dari ancaman berbahaya seperti Akatsuki, organisasi yang mengincar makhluk berekor (Bijuu) untuk tujuan jahat.",
+            "url": null,
+            "poster": "https://images-cdn.ubuy.co.id/65da696fc3c24c2e08576864-trends-international-naruto-shippuden.jpg",
+            "note": null
+        },
+        {
+            "nama": "Makeine: Too Many Losing Heroines (Make Hiroin ga Ōsugiru!)",
+            "tahun": "2024",
+            "genre": [],
+            "jenis": "series",
+            "type": 3,
+            "myrating": 8,
+            "status": {
+                "tamat": true,
+                "desc": "12 Episode"
+            },
+            "sinopsis": "Kisah ini berpusat pada Kazuhiko Nukumizu, seorang siswa SMA tahun pertama yang menganggap dirinya sebagai 'karakter latar belakang' dan lebih memilih menjalani kehidupan sekolahnya dengan tenang dan tidak mencolok. Namun, kehidupannya berubah ketika ia menyaksikan Anna Yanami, siswi populer di kelasnya, ditolak oleh teman masa kecilnya. Kazuhiko mencoba menghibur Anna, yang kemudian membawanya terlibat dengan beberapa gadis lain di sekolah yang juga mengalami penolakan cinta. Para gadis ini, yang disebut sebagai 'heroine kalah', mulai mendekati Kazuhiko, menjadikannya pusat perhatian yang tidak pernah ia bayangkan sebelumnya.",
+            "url": null,
+            "poster": "https://m.media-amazon.com/images/M/MV5BNTczYzAzZGEtNzBlYy00MWY1LWIyZDQtZWI1Yjg2M2U1M2U3XkEyXkFqcGc@._V1_.jpg",
+            "note": null
+        },
+        {
+            "nama": "As the Moon, so Beautiful (Tsuki ga Kirei)",
+            "tahun": "2017",
+            "genre": [],
+            "jenis": "series",
+            "type": 3,
+            "myrating": 8,
+            "status": {
+                "tamat": true,
+                "desc": "12 Episode"
+            },
+            "sinopsis": "Kotaro Azumi dan Akane Mizuno adalah siswa sekolah menengah pertama kelas tiga dan merupakan teman sekelas. Mereka ditugaskan untuk mengurus peralatan untuk festival olahraga dan perlahan-lahan mulai lebih dekat melalui LINE. Mereka berdua bersama dengan siswa satu sekolah lainnya bernama Chinatsu Nishio dan Takumi Hira, sering kali bertukar pikiran dan perasaan satu sama lainnya. Menjelang tahun terakhir mereka di sekolah menengah pertama, mereka berusaha mengatasi tantangan mereka masing-masing dan menjadi dewasa.",
+            "url": null,
+            "poster": "https://www.myutaku.com/media/anime/poster/325197.jpg",
+            "note": null
+        },
+        {
+            "nama": "Captain Tsubasa",
+            "tahun": "2018-2019",
+            "genre": [],
+            "jenis": "series",
+            "type": 3,
+            "myrating": 8,
+            "status": {
+                "tamat": true,
+                "desc": "52 Episode"
+            },
+            "sinopsis": "Tsubasa Ozora, seorang bocah jenius sepak bola yang bercita-cita menjadi pemain top dunia. Sejak kecil, Tsubasa sudah punya hubungan emosional yang kuat dengan bola — bahkan diceritakan bola seperti 'teman hidupnya.'",
+            "url": null,
+            "poster": "https://cdn.myanimelist.net/images/anime/1866/91270.jpg",
+            "note": null
+        },
+        {
+            "nama": "My Little Monster (Tonari no Kaibutsu-kun)",
+            "tahun": "2012",
+            "genre": [],
+            "jenis": "series",
+            "type": 3,
+            "myrating": 8,
+            "status": {
+                "tamat": true,
+                "desc": "13 Episode"
+            },
+            "sinopsis": "Tonari no Kaibutsu-kun mengisahkan hubungan unik antara Shizuku Mizutani, siswi yang hanya peduli pada pelajaran, dan Haru Yoshida, siswa problematik yang polos, saat mereka belajar memahami arti pertemanan, cinta, dan kedewasaan.",
+            "url": null,
+            "poster": "https://cdn.myanimelist.net/images/anime/4/39779.jpg",
+            "note": null
+        },
+        {
+            "nama": "From Me to You (Kimi ni Todoke) [1]",
+            "tahun": "2009",
+            "genre": [],
+            "jenis": "series",
+            "type": 3,
+            "myrating": 9,
+            "status": {
+                "tamat": true,
+                "desc": "25 Episode"
+            },
+            "sinopsis": "Dikenal karena kemiripannya dengan karakter Sadako dari serial The Ring, Sawako Kuronuma diberi julukan 'Sadako' dan disalahpahami sebagai sosok yang menakutkan dan jahat seperti karakter fiksinya, meskipun memiliki sifat pemalu dan manis. Karena ingin berteman dan menjalani kehidupan normal, Sawako secara alami tertarik pada Shouta Kazehaya yang periang dan ramah, anak laki-laki paling populer di kelasnya. Sejak pertemuan pertama mereka, Sawako mengagumi kemampuan Kazehaya untuk menjadi pusat perhatian dan bercita-cita menjadi seperti dia. Ketika Kazehaya menyelenggarakan ujian keberanian untuk seluruh kelas dan mendorongnya untuk hadir, Sawako melihat ini sebagai kesempatan untuk bergaul dengan teman-teman sekelasnya, dimulai dengan Ayane Yano dan Chizuru Yoshida. Melalui setiap pertemuan dan emosi baru yang dialaminya, Sawako percaya bahwa pertemuan dengan Kazehaya telah mengubahnya menjadi lebih baik. Tanpa disadari Sawako, kehadirannya juga telah mengubah Kazehaya.",
+            "url": null,
+            "poster": "https://cdn.myanimelist.net/images/anime/1502/124384.jpg",
+            "note": null
+        },
+        {
+            "nama": "From Me to You (Kimi ni Todoke) [2]",
+            "tahun": "2010",
+            "genre": [],
+            "jenis": "series",
+            "type": 3,
+            "myrating": 8,
+            "status": {
+                "tamat": true,
+                "desc": "12 Episode"
+            },
+            "sinopsis": "Setelah liburan Tahun Baru yang penting dan menjelang Hari Valentine, Sawako Kuronuma mulai akrab dengan teman-teman sekelasnya. Namun, sekarang setelah Sawako menyadari perasaan romantisnya terhadap Shouta Kazehaya yang populer, ia menjadi ragu untuk memberinya cokelat wajib dan memutuskan untuk tidak memberinya cokelat. Sebaliknya, Kazehaya, yang menyukai Sawako, merasa ada jarak di antara mereka. Saat Februari berakhir dan April tiba, tahun kedua sekolah menengah atas dimulai bagi Sawako. Beruntung, ia berakhir di kelas yang sama dengan teman-temannya Ayane Yano dan Chizuru Yoshida, bersama dengan Kazehaya dan temannya Ryuu Sanada, selain pendatang baru bernama Kento Miura. Ketika Kento mulai tertarik pada Sawako, perasaan Sawako dan Kazehaya satu sama lain diuji.",
+            "url": null,
+            "poster": "https://cdn.myanimelist.net/images/anime/1311/121574.jpg",
+            "note": null
+        },
+        {
+            "nama": "From Me to You (Kimi ni Todoke) [3]",
+            "tahun": "2024",
+            "genre": [],
+            "jenis": "series",
+            "type": 3,
+            "myrating": 9,
+            "status": {
+                "tamat": true,
+                "desc": "5 Episode"
+            },
+            "sinopsis": "Musim panas sedang berlangsung, begitu pula cinta antara Sawako Kuronuma dan Shouta Kazehaya. Dari menghadiri sekolah musim panas bersama hingga bertemu orang tua masing-masing, keduanya menikmati waktu berkualitas bersama sambil mengatasi perasaan ragu-ragu dan ketegangan emosional yang muncul karena cinta baru mereka. Sementara itu, sahabat karib Sawako, Chizuru Yoshida dan Ayane Yano, berjuang mengatasi dilema romantis mereka sendiri karena pengalaman masa lalu mereka dengan hubungan berbenturan dengan perasaan mereka saat ini. Penuh dengan gejolak batin, hasrat anak-anak muda untuk keintiman terus berlanjut hingga tahun kedua sekolah menengah mereka saat mereka menjalin labirin keraguan dan ketidakpastian yang disebut cinta.",
+            "url": null,
+            "poster": "https://cdn.myanimelist.net/images/anime/1617/142448.jpg",
+            "note": null
+        },
+        {
+            "nama": "ReLIFE",
+            "tahun": "2016",
+            "genre": [],
+            "jenis": "series",
+            "type": 3,
+            "myrating": 8,
+            "status": {
+                "tamat": true,
+                "desc": "13 Episode"
+            },
+            "sinopsis": "ReLIFE mengikuti kisah Arata Kaizaki, seorang pria berusia 27 tahun yang mengalami kesulitan dalam kehidupan profesionalnya. Suatu hari, ia ditawari kesempatan untuk mengulang masa SMA-nya melalui sebuah eksperimen sosial bernama 'ReLIFE'. Dengan meminum sebuah pil, Arata kembali ke usia 17 tahun dan menjalani kehidupan sebagai siswa SMA selama satu tahun. Tujuan dari eksperimen ini adalah untuk memberinya kesempatan kedua dalam hidup dan membantu memperbaiki masa depannya.",
+            "url": null,
+            "poster": "https://cdn.myanimelist.net/images/anime/3/82149.jpg",
+            "note": null
+        },
+        {
+            "nama": "ReLIFE: Kanketsu-hen",
+            "tahun": "2018",
+            "genre": [],
+            "jenis": "series",
+            "type": 3,
+            "myrating": 8,
+            "status": {
+                "tamat": true,
+                "desc": "4 Episode"
+            },
+            "sinopsis": "ReLIFE: Kanketsu-hen merupakan kelanjutan langsung dari seri utama dan berfungsi sebagai penutup cerita. Dalam empat episode ini, ditampilkan penyelesaian dari eksperimen ReLIFE yang dijalani Arata Kaizaki. Cerita berfokus pada bagaimana Arata dan Chizuru Hishiro menghadapi akhir dari eksperimen mereka dan konsekuensi yang menyertainya, termasuk apakah mereka akan mengingat satu sama lain setelah eksperimen berakhir.",
+            "url": null,
+            "poster": "https://cdn.myanimelist.net/images/anime/1566/91061.jpg",
+            "note": null
+        },
+        {
+            "nama": "The Angel Next Door Spoils Me Rotten (Otonari no Tenshi-sama ni Itsu no Ma ni ka Dame Ningen ni Sareteita Ken)",
+            "tahun": "2023",
+            "genre": [],
+            "jenis": "series",
+            "type": 3,
+            "myrating": 8,
+            "status": {
+                "tamat": true,
+                "desc": "12 Episode"
+            },
+            "sinopsis": "Amane tinggal sendiri di sebuah apartemen; dan gadis tercantik di sekolah, Mahiru, menjadi tetangganya. Suatu hari Amane melihat Mahiru dalam kesusahan di tengah hujan dan meminjamkan payungnya. Untuk membalas budi, Mahiru menawarkan bantuan untuk mengurus rumahnya, dan hubungan mereka perlahan berkembang saat jarak di antara keduanya semakin dekat.",
+            "url": null,
+            "poster": "https://cdn.myanimelist.net/images/anime/1240/133638.jpg",
             "note": null
         }
     ],
@@ -2333,6 +3041,16 @@
         },
         {
             "nama": "Bombergrounds: Reborn",
+            "perangkat": [],
+            "mynamaeorid": "",
+            "status": [],
+            "icon": "",
+            "url": "",
+            "download": "",
+            "note": null
+        },
+        {
+            "nama": "RunnerCat",
             "perangkat": [],
             "mynamaeorid": "",
             "status": [],

@@ -18,7 +18,7 @@ var isLightMode = true;
 
 function changeTheme() {
     if (isLightMode) {
-        document.getElementById("webthemebtn").innerHTML = '<span class="fas fa-toggle-on" style="cursor: pointer;"></span>';
+        document.getElementById("webthemebtn").innerHTML = '<span class="fas fa-toggle-on" style="cursor: pointer;  color: white;"></span>';
         document.querySelectorAll(".containerdtl, .mainfooter, .containeraboutme, .containerfuture, .containerlink").forEach(el => {
             el.style.backgroundColor = "#001b2b";
             el.style.boxShadow = "0 0 20px 15px #00111b";
@@ -46,7 +46,7 @@ function changeTheme() {
         document.body.style.color = "white";
         isLightMode = false;
     } else {
-        document.getElementById("webthemebtn").innerHTML = '<span class="fas fa-toggle-off" style="cursor: pointer;"></span>';
+        document.getElementById("webthemebtn").innerHTML = '<span class="fas fa-toggle-off" style="cursor: pointer; color: #e6e6e6;"></span>';
         document.querySelectorAll(".containerdtl, .mainfooter, .containeraboutme, .containerfuture, .containerlink").forEach(el => {
             el.style.backgroundColor = "#fcfcfc";
             el.style.boxShadow = "0 0 20px 15px white";
@@ -98,6 +98,40 @@ function calculateAge(birthDate) {
     return `${ageYears}`;
 }
 
-document.getElementById("umurku").innerHTML = calculateAge("2008-07-18") + " tahun";
 
+
+const faqAnswers = document.querySelectorAll('.faq-answer');
+const faqQuestions = document.querySelectorAll('.faq-question');
+const faqArrows = document.querySelectorAll('.faq-sorh');
+
+faqQuestions.forEach((question, index) => {
+    question.addEventListener('click', () => {
+    const answer = faqAnswers[index];
+    const arrows = faqArrows[index];
+
+    if (answer.style.maxHeight && answer.style.maxHeight !== '0px') {
+        arrows.innerHTML = "<i class='fas fa-caret-right'></i>";
+        answer.style.maxHeight = '0';
+        answer.style.padding = '0 12px';
+    } else {
+        arrows.innerHTML = "<i class='fas fa-caret-down'></i>";
+        answer.style.maxHeight = '500px'; // Menggunakan scrollHeight
+        answer.style.padding = '7px 12px';
+    }
+  });
+});
+
+
+let currentHour = new Date().getHours();
+
+if (currentHour >= 6 && currentHour < 19) {
+    console.log("Light");
+} else {
+    console.log("Dark");
+    changeTheme();
+}
+
+
+
+document.getElementById("umurku").innerHTML = calculateAge("2008-07-18") + " tahun";
 document.getElementById("copyinftr").innerHTML = "Created by Gede Aditya | Copyright &copy 2025";

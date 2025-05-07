@@ -1,0 +1,79 @@
+[
+    {
+        "title": "Template",
+        "type": "Anime",
+        "genre": [],
+        "is": {
+            "ismovie": true,
+            "isseries": false
+        },
+        "ifmovie": {
+            "description": "",
+            "release": "",
+            "poster": ""
+        },
+        "ifseries": {
+            "poster": "",
+            "ishaveseason": true,
+            "ifhaveseason_true": {
+                "ishavearc": false,
+                "ifhavearc_true": {
+                    "season": [
+                        {
+                            "seasonnumber": 1,
+                            "description": "",
+                            "arc": [
+                                {
+                                    "arcnumber": 1,
+                                    "arcname": "",
+                                    "description": "",
+                                    "release": "",
+                                    "allepisode": 0,
+                                    "myepisode": 0
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "ifhavearc_false": {
+                    "season": [
+                        {
+                            "seasonnumber": 1,
+                            "description": "",
+                            "release": "",
+                            "allepisode": 0,
+                            "myepisode": 0
+                        }
+                    ]
+                }
+            },
+            "ifhavenseason_false": {
+                "description": "",
+                "release": "",
+                "allepisode": 0,
+                "myepisode": 0
+            },
+            "totalepisode": 0,
+            "movies": [
+                {
+                    "title": "",
+                    "description": "",
+                    "release": "",
+                    "genre": [],
+                    "duration": "",
+                    "sudahnonton": false
+                }
+            ],
+            "specials": [
+                {
+                    "title": "",
+                    "description": "",
+                    "release": "",
+                    "genre": [],
+                    "duration": "",
+                    "sudahnonton": false
+                }
+            ]
+        }
+    }
+]
