@@ -28,7 +28,7 @@ function funTpw(page) {
         for (let tpw = 0; tpw < data_project_webiste.length; tpw++) {
             if (tpw < 3) {
                 temp_project_website += `
-                    <div class="bg-[#001928] border-[#ffffff3d] border w-[100%] md:w-[30%] h-auto rounded-md cursor-pointer" onclick=goToLink("${data_project_webiste[tpw].url}")>
+                    <div class="bg-[#001928] border-[#00a2ff1a] border w-[100%] md:w-[30%] h-auto rounded-md cursor-pointer" onclick=goToLink("${data_project_webiste[tpw].url}")>
                         <div class="w-full flex justify-center mt-[3.5%] md:mt-[0%]">
                             <div class="w-[94%] md:w-[100%]">
                                 <img class="rounded-t-sm md:rounded-t-md w-[100vw] h-auto" src="${data_project_webiste[tpw].gambar}" alt="${data_project_webiste[tpw].nama}">
@@ -54,7 +54,7 @@ function funTpw(page) {
         for (let tpw = 3 * (page - 1); tpw < data_project_webiste.length; tpw++) {
             if (tpw < (3 * page)) {
                 temp_project_website += `
-                    <div class="bg-[#001928] border-[#ffffff3d] border w-[100%] md:w-[30%] h-auto rounded-md cursor-pointer" onclick=goToLink("${data_project_webiste[tpw].url}")>
+                    <div class="bg-[#001928] border-[#00a2ff1a] border w-[100%] md:w-[30%] h-auto rounded-md cursor-pointer" onclick=goToLink("${data_project_webiste[tpw].url}")>
                         <div class="w-full flex justify-center mt-[3.5%] md:mt-[0%]">
                             <div class="w-[94%] md:w-[100%]">
                                 <img class="rounded-t-sm md:rounded-t-md w-[100vw] h-auto" src="${data_project_webiste[tpw].gambar}" alt="${data_project_webiste[tpw].nama}">
