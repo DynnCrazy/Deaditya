@@ -10,158 +10,121 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css">
     <!-- === -->
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <!-- === -->
-    <link rel="stylesheet" href="/Ast/Style/style.css">
-    <script src="/Ast/Script/script.js" defer></script>
-    <script src="/Ast/Script/list.js" defer></script>
+    <link href="/Ast/Style/styles.css" rel="stylesheet">
 </head>
-<body>    
+<body class="text-[16px]">    
     <div class="content">
         <header id="topWeb">
         </header>
 
         <main>
-            <div class="btnmode"><button id="webthemebtn" onclick="changeTheme()"><span class="fas fa-toggle-off" style="cursor: pointer; color: #e6e6e6;"></span></button></div>
-            <div class="backgroundavatar">
+            <div class="bottom-0 left-0 z-[9] fixed m-2 md:m-6 w-[10vw] mb-4 md:w-[3.8vw] forlinksm hidden" id="linkms">
+                <div id="sm1" class="w-full justify-center rounded-t-[50%] mb-[-10vw] md:mb-[-3.8vw] z-[8]" onclick="goToLink('https://www.youtube.com/@DynCrazy')">
+                    <div class="bg-[#00a2ff] flex justify-center h-[10vw] w-[10vw] md:h-[3.5vw] md:w-[3.8vw] mx-[0.25vw] my-[0.25vw] md:my-[0vw] rounded-[100%] text-center items-center"><i class="ri-youtube-fill text-[18px]"></i></div>
+                </div>
+
+                <div id="sm2" class="w-full justify-center rounded-t-[50%] mb-[-10vw] md:mb-[-3.8vw] z-[8]" onclick="goToLink('https://www.instagram.com/deaditya.xyz')">
+                    <div class="bg-[#00a2ff] flex justify-center h-[10vw] w-[10vw] md:h-[3.5vw] md:w-[3.8vw] mx-[0.25vw] my-[0.25vw] md:my-[0vw] rounded-[100%] text-center items-center"><i class="ri-instagram-line text-[18px]"></i></div>
+                </div>
+
+                <div id="sm3" class="w-full justify-center rounded-t-[50%] mb-[-10vw] md:mb-[-3.8vw] z-[8]" onclick="goToLink('https://tiktok.com/@deaditya.xyz')">
+                    <div class="bg-[#00a2ff] flex justify-center h-[10vw] w-[10vw] md:h-[3.5vw] md:w-[3.8vw] mx-[0.25vw] my-[0.25vw] md:my-[0vw] rounded-[100%] text-center items-center"><i class="ri-tiktok-fill text-[18px]"></i></div>
+                </div>
+
+                <div class="w-full justify-center rounded-t-[50%] z-[20] relative">
+                    <div onclick="btnKlik()" class="bg-[#00a2ff] flex justify-center cursor-pointer h-[10vw] w-[10vw] md:h-[3.8vw] md:w-[3.8vw] mx-[0.25vw] my-[0.25vw] rounded-[100%] text-center items-center">A</div>
+                </div>
+            </div>
+
+            <div class="w-[100%] h-[18vh] md:h-[17vh] bg-white bg-[linear-gradient(to_bottom,_#21aeff,_#00a2ff)] bg-no-repeat">
                 <!-- <img src="/Ast/Image/mntp.jpg" alt="I Love You" class="fotobackgroundavatar"> -->
             </div>
-            <div class="centerdiv">
-                <div class="avatar">
-                    <img src="/Ast/Image/icon.png" alt="I Love You" class="fotoavatar">
+            <div class="w-full flex justify-center">
+                <div class="w-[120px] h-[120px] -mt-[60px] rounded-full border-2 border-white bg-[#2b2b2b]">
+                    <img src="/Ast/Image/icon.png" alt="I Love You" class="m-0 p-0 w-[120px]">
                 </div>
             </div>
 
             <br>
 
-            <h1 class="textcenter">Hello, Im <u style="color: #00a2ff;">Deaditya</u></h1>
-            <div class="centerdiv">
-                <div class="containertext">
-                    <p class="textcenter">Seorang manusia yang tinggal di bumi.</span></p>
+            <h1 class="text-center text-3xl md:text-4xl font-bold m-6">Hello, Im <u class="text-[#00a2ff]">Deaditya</u></h1>
+            <div class="w-full flex justify-center">
+                <div class="w-[90vw] h-auto p-0 m-0">
+                    <p class="text-center m-2 text-[#ffffffe8]">Seorang manusia yang berasal dan tinggal di bumi.</span></p>
                 </div>
             </div>
 
             <div id="emojiContainer"></div>
             
-            <div class="centerdiv">
-                <button class="btn-sayhello" onclick="spawnEmoji()">Say Hello</button>
+            <div class="w-full flex justify-center">
+                <button class="w-[150px] h-[45px] bg-[#00a2ff] border-none text-white m-[50px] rounded-[6px] cursor-pointer outline-none transition-all duration-100 ease-in hover:bg-[#0092e7] hover:w-[144px] hover:h-[43px]" onclick="spawnEmoji()">Say Hello</button>
             </div>
 
-            <div class="centerdiv">
-                <div class="garispemisah"></div>
+            <div class="my-[12vh] my:h-[15vh]">
+                <div class="w-[33.3vw] h-[2px] ml-[1vw] my-[2vh] bg-[#00a2ff] rounded-md"></div>
+                <div class="w-[33.3vw] h-[2px] ml-[33vw] my-[2vh] bg-[#00a2ff] rounded-md"></div>
+                <div class="w-[33.3vw] h-[2px] ml-[65vw] my-[2vh] bg-[#00a2ff] rounded-md"></div>
             </div>
 
-            <div class="centerdiv mylife aos-nonmobile" data-aos="fade-up">
-                <div class="containerlink aos-mobile" data-aos="fade-up">
-                    <h2>Social Media:</h2>
-                    <!--
-                    <a href="https://www.instagram.com/deaditya.xyz"><button class="btnsm">Instagram</button></a><br>
-                    <a href="https://www.youtube.com/@DynCrazy"><button class="btnsm">YouTube</button></a><br>
-                    <a href="https://tiktok.com/@deaditya.xyz"><button class="btnsm">TikTok</button></a><br>
-                    <a href="https://www.facebook.com/gede.aditya.777158?mibextid=ZbWKwL"><button class="btnsm">Facebook</button></a><br>
-                    <a href="https://www.threads.net/@deaditya.xyz"><button class="btnsm">Threads</button></a>
-                    -->
-                    
-                    <p>
-                        Instagram: <a href="https://www.instagram.com/deaditya.xyz">Klik disini!</a><br>
-                        YouTube: <a href="https://www.youtube.com/@DynCrazy">Klik disini!</a><br>
-                        TikTok: <a href="https://tiktok.com/@deaditya.xyz">Klik disini!</a><br>
-                        Facebook: <a href="https://www.facebook.com/gede.aditya.777158?mibextid=ZbWKwL">Klik disini!</a><br>
-                        Threads: <a href="https://www.threads.net/@deaditya.xyz">Klik disini!</a>
+            <div class="w-full flex justify-center my-[7vh] md:my-[10vh] md:mb-[7vh]">
+                <div class="w-[70vw]">
+                    <h3 class="font-bold text-base md:text-lg my-2">About Me:</h3>
+                    <p class="text-justify text-[14px] md:text-[16px] text-[#ffffffe8]">
+                        Nama saya adalah <span class="text-[#00a2ff]">I Gede Aditya Pramana</span>, seorang remaja laki-laki berusia <span class="text-[#00a2ff]">16 tahun</span> yang tinggal di <span class="text-[#00a2ff]">Bali</span>, sebuah pulau yang dikenal dengan tradisinya yang kaya dan juga indah.
                     </p>
                 </div>
-            
-                <div class="container2div">
-                    <div class="containeraboutme aos-mobile" data-aos="fade-up">
-                        <h2>About Me:</h2>
-                        <p>Halo, perkenalkan nama saya I Gede Aditya Pramana. Sekarang, saya berusia <span id="umurku">2008</span>. Saya berasal dari Tojan, Blahbatuh, Gianyar, Bali.</p>
-                    </div>
-
-                    <div class="containerfuture aos-mobile" data-aos="fade-up">
-                        <h2>Tagline:</h2>
-                        <p>Amati dan lakukan.</p>
-                    </div>
-                </div>
             </div>
 
-            <div class="centerdiv" data-aos="fade-up" style="display: none;">
-                <div class="containerdtl">
-                    <h2>Colection:</h2>
-                        <p>My movie list:</p>
-                        <div class="contmymovielist" id="mymovielist">
-                        </div>
-                        <br>
-                        <p>My game list:</p>
-                        <div class="contmygamelist" id="mygamelist">
-                        </div>
-                    <br>
-                    <p>Last update: 21/04/2025</p>
-                </div>
-            </div>
-
-            <div class="centerdiv" data-aos="fade-up" style="display: none;">
-                <div class="containerfaq">
-                    <h2>Frequently Asked Questions</h2>
-                      
-                    <div class="faq-item">
-                        <div class="faq-question">
-                            <span class="faq-sorh"><i class='fas fa-caret-right'></i></span><span>Non excepteur exercitation deserunt ex reprehenderit.</span>
-                        </div>
-                        <div class="faq-answer">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, sapiente voluptatum? Ex quo architecto deleniti ab explicabo ut dolorum quae eius! Cupiditate numquam illum velit temporibus possimus. Ipsa, cum cumque.
-                        </div>
-                    </div>  
+            <div class="w-full flex justify-center my-[7vh] md:my-[10vh] md:mt-[7vh]">
+                <div class="w-[70vw]">
+                    <h3 class="font-bold text-base md:text-lg my-2">Project:</h3>
+                    <p class="text-justify text-[14px] md:text-[16px] text-[#ffffffe8]">
+                        Website:
+                    </p>
                     
-                    <div class="faq-item">
-                        <div class="faq-question">
-                            <span class="faq-sorh"><i class='fas fa-caret-right'></i></span><span>Incididunt minim reprehenderit in excepteur.</span>
-                        </div>
-                        <div class="faq-answer">
-                            Sit nostrud eiusmod mollit reprehenderit nostrud consequat sunt aliquip anim ipsum. Elit irure magna est do. Eiusmod cillum qui ut deserunt dolore do ut amet nisi ex. Occaecat pariatur fugiat consectetur magna ut sint. Dolore consectetur ut minim velit.
-                        </div>
-                    </div>  
+                    <div class="w-full h-auto my-[3vh] mb-[5vh] flex flex-wrap gap-6 justify-between" id="projectWebsite">
+                    </div>
 
                 </div>
             </div>
 
-            <br><br><br><br><br><br><br><br>
+            <div class="my-[12vh] my:h-[15vh]">
+                <div class="w-[33.3vw] h-[2px] ml-[1vw] my-[2vh] bg-[#00a2ff] rounded-md"></div>
+                <div class="w-[33.3vw] h-[2px] ml-[33vw] my-[2vh] bg-[#00a2ff] rounded-md"></div>
+                <div class="w-[33.3vw] h-[2px] ml-[65vw] my-[2vh] bg-[#00a2ff] rounded-md"></div>
+            </div>
+
+            <div class="w-full flex justify-center">
+                <div class="w-[70vw] flex justify-center">
+                    <h2 class="text-justify text-[14px] md:text-[16px] text-[#ffffffe8]">"Dunia <span class="text-[#00a2ff]">tak selamanya indah</span>. Semasih kamu bisa menikmatinya, maka <span class="text-[#00a2ff]">nikmatilah</span>."</h2>    
+            
+                </div>
+            </div>
+            
+            <div class="w-[100%] h-[12vh] md:h-[15vh]"></div>
         </main>
 
         <footer>
-            <div class="containerfooter">
-                <div class="mainfooter">
-                    <h3 class="copyftr" id="titleinftr">DEADITYA OFFICIAL WEBSITE</h3>
-                    <div class="submainfooter">
-                        <a href="https://www.instagram.com/deaditya.xyz"><i class="ri-instagram-line"></i></a>
-                        <a href="https://www.youtube.com/@DynCrazy"><i class="ri-youtube-fill"></i></a>
-                        <a href="https://tiktok.com/@deaditya.xyz"><i class="ri-tiktok-fill"></i></a>
-                        <a onclick="alert('Segera hadir!')"><i class="ri-whatsapp-line"></i></a>
+            <div class="relative bottom-0 !m-0 w-full h-auto bg-red-500 flex justify-center">
+                <div class="w-full h-full bg-[linear-gradient(to_top,_#21aeff,_#00a2ff)] bg-no-repeat text-white p-[7vh] pl-0 pr-0 box-border">
+                    <h3 class="text-center text-lg font-bold" id="titleinftr">DEADITYA OFFICIAL WEBSITE</h3>
+                    <div class="flex justify-center">
+                        <div class="w-[50vw] md:w-[15vw] flex justify-between text-[22px] m-6">
+                            <a href="https://www.instagram.com/deaditya.xyz"><i class="ri-instagram-line"></i></a>
+                            <a href="https://www.youtube.com/@DynCrazy"><i class="ri-youtube-fill"></i></a>
+                            <a href="https://tiktok.com/@deaditya.xyz"><i class="ri-tiktok-fill"></i></a>
+                            <a href="https://wa.me/+87817661477"><i class="ri-whatsapp-line"></i></a>
+                        </div>
                     </div>
-                    <p class="copyftr" id="copyinftr">Copyright</p>
+                    <p class="text-center text-[14px]" id="copyinftr">Copyright &copy 2025<br>Created by Gede Aditya</p>
                 </div>
             </div>
         </footer>
     </div>
 
-
-    <script>
-        const isMobile = window.innerWidth < 600;
-
-        if (isMobile) {
-            document.querySelectorAll('.aos-nonmobile').forEach(el => {
-                el.removeAttribute('data-aos');
-            });
-        } else {
-            document.querySelectorAll('.aos-mobile').forEach(el => {
-                el.removeAttribute('data-aos');
-            });
-        }
-
-        AOS.init({
-            duration: 1000
-        });
-</script>
-   
+    <script src="/Ast/Script/scripts.js"></script>
+    <script src="/Ast/Script/scripts2.js"></script>
 </body>
 </html>
