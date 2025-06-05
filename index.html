@@ -178,12 +178,12 @@
                 userMessage: pesan,
             };
 
-            cooldown = true;
-            buttons.forEach(btn => btn.disabled = true);
-
             if (pesan === "" || pesan === undefined || pesan === null) {
                 alert("Pesan tidak boleh kosong!");
             } else {
+                cooldown = true;
+                buttons.forEach(btn => btn.disabled = true);
+
                 emailjs.send("deaditya_gmail", "template_1", templateParams)
                     .then(function (response) {
                     alert("Pesan berhasil dikirim!");
