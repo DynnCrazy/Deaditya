@@ -72,7 +72,7 @@
                 <div class="w-[70vw]">
                     <h3 class="font-bold text-base md:text-lg my-2">About Me:</h3>
                     <p class="text-justify text-[14px] md:text-[16px] text-[#ffffffe8]">
-                        Nama saya adalah <span class="text-[#00a2ff]">I Gede Aditya Pramana</span>, seorang remaja laki-laki berusia <span class="text-[#00a2ff]">16 tahun</span> yang tinggal di <span class="text-[#00a2ff]">Bali</span>, sebuah pulau yang dikenal dengan tradisinya yang kaya dan juga indah.
+                        Nama saya adalah <span class="text-[#00a2ffe8]">I Gede Aditya Pramana</span>, seorang remaja laki-laki berusia <span class="text-[#00a2ffe8]">16 tahun</span> yang tinggal di <span class="text-[#00a2ffe8]">Bali</span>, sebuah pulau yang dikenal dengan tradisinya yang kaya dan juga indah.
                     </p>
                 </div>
             </div>
@@ -90,6 +90,33 @@
                 </div>
             </div>
 
+            <div class="w-full flex justify-center">
+                <div class="w-[70vw] h-full">
+                    <h3 class="font-bold text-base md:text-lg my-2">Contact Me:</h3>
+                    <form id="form-contact">
+                        <div class="md:flex md:justify-between">
+                            <div>
+                                <p class="text-justify text-[14px] md:text-[16px] text-[#ffffffe8] mb-2">Nama:</p>
+                                <input name="nama" class="w-[70vw] text-[14px] md:text-[16px] md:w-[20vw] bg-[#00a2ff] rounded-md outline-none p-2 placeholder-[white] md:block" maxlength="30" placeholder="Putu">
+                            </div>
+                            <div class="mt-3 md:mt-0">
+                                <p class="text-justify text-[14px] md:text-[16px] text-[#ffffffe8] mb-2">Pesan:</p>
+                                <input name="pesan1" class="w-[70vw] text-[14px] md:text-[16px] md:w-[47vw] bg-[#00a2ff] rounded-md outline-none p-2 placeholder-[white] max-md:hidden" minlength="2" maxlength="500" placeholder="Apa kabar?">
+                                <textarea name="pesan2" class="w-[70vw] text-[14px] h-[100px] md:h-auto md:text-[16px] md:w-[47vw] bg-[#00a2ff] rounded-md outline-none p-2 placeholder-[white] resize-none md:hidden" minlength="2" maxlength="500" placeholder="Apa kabar?"></textarea>
+                            </div>
+                        </div>
+                        <div class="flex justify-between my-5 md:hidden">
+                            <button type="submit" class="w-[40%] text-[14px] md:text-[16px] text-center items-center bg-[#00a2ff] rounded-md outline-none p-2 mr-4">Kirim</button>
+                            <p class="items-center text-[7px] text-[#ffffffc4]">*Pesan bersifat pribadi<br>*Setiap pesan cooldown 20 detik<br>*Pesan dianggap anonim jika kamu tidak mencantumkan nama</p>
+                        </div>
+                        <div class="hidden justify-between my-3 md:my-6 md:flex">
+                            <p class="items-center text-[8px] text-[#ffffffc4]">*Pesan bersifat pribadi<br>*Setiap pesan cooldown 20 detik<br>*Pesan dianggap anonim jika kamu tidak mencantumkan nama</p>
+                            <button class="w-[10%] text-[14px] md:text-[16px] text-center items-center bg-[#00a2ff] rounded-md outline-none p-2">Kirim</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
             <div class="my-[12vh] my:h-[15vh]">
                 <div class="w-[33.3vw] h-[2px] ml-[1vw] my-[2vh] bg-[#00a2ff] rounded-md"></div>
                 <div class="w-[33.3vw] h-[2px] ml-[33vw] my-[2vh] bg-[#00a2ff] rounded-md"></div>
@@ -98,7 +125,7 @@
 
             <div class="w-full flex justify-center">
                 <div class="w-[70vw] flex justify-center">
-                    <h2 class="text-justify text-[14px] md:text-[16px] text-[#ffffffe8]">"Dunia <span class="text-[#00a2ff]">tak selamanya indah</span>. Semasih kamu bisa menikmatinya, maka <span class="text-[#00a2ff]">nikmatilah</span>."</h2>    
+                    <h2 class="text-[14px] md:text-[16px] text-[#ffffffe8]">"Dunia <span class="text-[#00a2ffe8]">tak selamanya indah</span>. Semasih kamu bisa untuk menikmatinya, maka <span class="text-[#00a2ffe8]">nikmatilah</span>."</h2>    
             
                 </div>
             </div>
@@ -126,5 +153,49 @@
 
     <script src="/Ast/Script/scripts.js"></script>
     <script src="/Ast/Script/scripts2.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        emailjs.init("XXk13X9ZrFPXcgrY4");
+
+        const form = document.getElementById("form-contact");
+        const buttons = form.querySelectorAll('button[type="submit"], button');
+
+        let cooldown = false;
+
+        form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        if (cooldown) {
+            alert("Tunggu 20 detik sebelum mengirim pesan lagi.");
+            return;
+        }
+
+        const pesan = window.innerWidth >= 768 ? this.pesan1.value : this.pesan2.value;
+        const nama = this.nama.value === '' || this.nama.value === null ? "Anonim" : this.nama.value;
+
+        const templateParams = {
+            userName: nama,
+            userMessage: pesan,
+        };
+
+        cooldown = true;
+        buttons.forEach(btn => btn.disabled = true);
+
+        emailjs.send("deaditya_gmail", "template_1", templateParams)
+            .then(function (response) {
+            alert("Pesan berhasil dikirim!");
+            console.log("SUCCESS!", response.status, response.text);
+            }, function (error) {
+            alert("Gagal mengirim pesan.");
+            console.error("FAILED...", error);
+            })
+            .finally(function () {
+            setTimeout(() => {
+                cooldown = false;
+                buttons.forEach(btn => btn.disabled = false);
+            }, 20000);
+            });
+        });
+    </script>
 </body>
 </html>
