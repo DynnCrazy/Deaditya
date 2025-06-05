@@ -165,36 +165,40 @@
         form.addEventListener("submit", function (e) {
         e.preventDefault();
 
-        if (cooldown) {
-            alert("Tunggu 20 detik sebelum mengirim pesan lagi.");
-            return;
-        }
+            if (cooldown) {
+                alert("Tunggu 20 detik sebelum mengirim pesan lagi.");
+                return;
+            }
 
-        const pesan = window.innerWidth >= 768 ? this.pesan1.value : this.pesan2.value;
-        const nama = this.nama.value === '' || this.nama.value === null ? "Anonim" : this.nama.value;
+            const pesan = window.innerWidth >= 768 ? this.pesan1.value : this.pesan2.value;
+            const nama = this.nama.value === '' || this.nama.value === null ? "Anonim" : this.nama.value;
 
-        const templateParams = {
-            userName: nama,
-            userMessage: pesan,
-        };
+            const templateParams = {
+                userName: nama,
+                userMessage: pesan,
+            };
 
-        cooldown = true;
-        buttons.forEach(btn => btn.disabled = true);
+            cooldown = true;
+            buttons.forEach(btn => btn.disabled = true);
 
-        emailjs.send("deaditya_gmail", "template_1", templateParams)
-            .then(function (response) {
-            alert("Pesan berhasil dikirim!");
-            console.log("SUCCESS!", response.status, response.text);
-            }, function (error) {
-            alert("Gagal mengirim pesan.");
-            console.error("FAILED...", error);
-            })
-            .finally(function () {
-            setTimeout(() => {
-                cooldown = false;
-                buttons.forEach(btn => btn.disabled = false);
-            }, 20000);
-            });
+            if (pesan === "" || pesan === undefined || pesan === null) {
+                alert("Pesan tidak boleh kosong!");
+            } else {
+                emailjs.send("deaditya_gmail", "template_1", templateParams)
+                    .then(function (response) {
+                    alert("Pesan berhasil dikirim!");
+                    console.log("SUCCESS!", response.status, response.text);
+                    }, function (error) {
+                    alert("Gagal mengirim pesan.");
+                    console.error("FAILED...", error);
+                    })
+                    .finally(function () {
+                    setTimeout(() => {
+                        cooldown = false;
+                        buttons.forEach(btn => btn.disabled = false);
+                    }, 20000);
+                });
+            }
         });
     </script>
 </body>
