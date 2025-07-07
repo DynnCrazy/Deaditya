@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Deaditya</title>
-    <link rel="icon" href="/Ast/Image/icon.png" type="image/png">
+    <link rel="icon" href="/ast/image/icon.png" type="image/png">
     <meta property="og:title" content="Deaditya">
     <meta property="og:description" content="Website yang dibuat oleh I Gede Aditya Pramana!">
     <meta property="og:image" content="https://i.ibb.co.com/Qk5qTY1/IMG-20231212-142221-0597.jpg">
@@ -13,193 +13,122 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- === -->
     <link href="/Ast/Style/styles.css" rel="stylesheet">
+    <style>
+        /*
+        * {
+            outline: 2px solid red;
+        }
+            */
+    </style>
 </head>
-<body class="text-[16px]">    
+<body>    
     <div class="content">
-        <header id="topWeb">
+        <header>
         </header>
 
         <main>
-            <div class="bottom-0 left-0 z-[9] fixed m-2 md:m-6 w-[10vw] mb-4 md:w-[3.8vw] forlinksm hidden" id="linkms">
-                <div id="sm1" class="w-full justify-center rounded-t-[50%] mb-[-10vw] md:mb-[-3.8vw] z-[8]" onclick="goToLink('https://www.youtube.com/@DynCrazy')">
-                    <div class="bg-[#00a2ff] flex justify-center h-[10vw] w-[10vw] md:h-[3.5vw] md:w-[3.8vw] mx-[0.25vw] my-[0.25vw] md:my-[0vw] rounded-[100%] text-center items-center"><i class="ri-youtube-fill text-[18px]"></i></div>
+            <div class="bg-[#045580] w-full h-[100vh]" id="main-menu">
+                <div class="w-[100%] h-[18vh] md:h-[17vh] bg-[#2586e1]">
+                    <!-- <img src="/Ast/Image/mntp.jpg" alt="I Love You" class="fotobackgroundavatar"> -->
                 </div>
-
-                <div id="sm2" class="w-full justify-center rounded-t-[50%] mb-[-10vw] md:mb-[-3.8vw] z-[8]" onclick="goToLink('https://www.instagram.com/deaditya.xyz')">
-                    <div class="bg-[#00a2ff] flex justify-center h-[10vw] w-[10vw] md:h-[3.5vw] md:w-[3.8vw] mx-[0.25vw] my-[0.25vw] md:my-[0vw] rounded-[100%] text-center items-center"><i class="ri-instagram-line text-[18px]"></i></div>
-                </div>
-
-                <div id="sm3" class="w-full justify-center rounded-t-[50%] mb-[-10vw] md:mb-[-3.8vw] z-[8]" onclick="goToLink('https://tiktok.com/@deaditya.xyz')">
-                    <div class="bg-[#00a2ff] flex justify-center h-[10vw] w-[10vw] md:h-[3.5vw] md:w-[3.8vw] mx-[0.25vw] my-[0.25vw] md:my-[0vw] rounded-[100%] text-center items-center"><i class="ri-tiktok-fill text-[18px]"></i></div>
-                </div>
-
-                <div class="w-full justify-center rounded-t-[50%] z-[20] relative">
-                    <div onclick="btnKlik()" class="bg-[#00a2ff] flex justify-center cursor-pointer h-[10vw] w-[10vw] md:h-[3.8vw] md:w-[3.8vw] mx-[0.25vw] my-[0.25vw] rounded-[100%] text-center items-center">A</div>
-                </div>
-            </div>
-
-            <div class="w-[100%] h-[18vh] md:h-[17vh] bg-white bg-[linear-gradient(to_bottom,_#21aeff,_#00a2ff)] bg-no-repeat">
-                <!-- <img src="/Ast/Image/mntp.jpg" alt="I Love You" class="fotobackgroundavatar"> -->
-            </div>
-            <div class="w-full flex justify-center">
-                <div class="w-[120px] h-[120px] -mt-[60px] rounded-full border-2 border-white bg-[#2b2b2b]">
-                    <img src="/Ast/Image/icon.png" alt="I Love You" class="m-0 p-0 w-[120px]">
-                </div>
-            </div>
-
-            <br>
-
-            <h1 class="text-center text-3xl md:text-4xl font-bold m-6">Hello, Im <u class="text-[#00a2ff]">Deaditya</u></h1>
-            <div class="w-full flex justify-center">
-                <div class="w-[90vw] h-auto p-0 m-0">
-                    <p class="text-center m-2 text-[#ffffffe8]">Seorang manusia yang berasal dan tinggal di bumi.</span></p>
-                </div>
-            </div>
-
-            <div id="emojiContainer"></div>
-            
-            <div class="w-full flex justify-center">
-                <button class="w-[150px] h-[45px] bg-[#00a2ff] border-none text-white m-[50px] rounded-[6px] cursor-pointer outline-none transition-all duration-100 ease-in hover:bg-[#0092e7] hover:w-[144px] hover:h-[43px]" onclick="spawnEmoji()">Say Hello</button>
-            </div>
-
-            <div class="my-[12vh] my:h-[15vh]">
-                <div class="w-[33.3vw] h-[2px] ml-[1vw] my-[2vh] bg-[#00a2ff] rounded-md"></div>
-                <div class="w-[33.3vw] h-[2px] ml-[33vw] my-[2vh] bg-[#00a2ff] rounded-md"></div>
-                <div class="w-[33.3vw] h-[2px] ml-[65vw] my-[2vh] bg-[#00a2ff] rounded-md"></div>
-            </div>
-
-            <div class="w-full flex justify-center my-[7vh] md:my-[10vh] md:mb-[7vh]">
-                <div class="w-[70vw]">
-                    <h3 class="font-bold text-base md:text-lg my-2">About Me:</h3>
-                    <p class="text-justify text-[14px] md:text-[16px] text-[#ffffffe8]">
-                        Nama saya adalah <span class="text-[#00a2ffe8]">I Gede Aditya Pramana</span>, seorang remaja laki-laki berusia <span class="text-[#00a2ffe8]">16 tahun</span> yang tinggal di <span class="text-[#00a2ffe8]">Bali</span>, sebuah pulau yang dikenal dengan tradisinya yang kaya dan juga indah.
-                    </p>
-                </div>
-            </div>
-
-            <div class="w-full flex justify-center my-[7vh] md:my-[10vh] md:mt-[7vh]">
-                <div class="w-[70vw]">
-                    <h3 class="font-bold text-base md:text-lg my-2">Project:</h3>
-                    <p class="text-justify text-[14px] md:text-[16px] text-[#ffffffe8]">
-                        Website:
-                    </p>
-                    
-                    <div class="w-full h-auto my-[3vh] mb-[5vh] flex flex-wrap gap-6 justify-between" id="projectWebsite">
+                <div class="w-full flex justify-center">
+                    <div class="w-[120px] h-[120px] -mt-[60px] rounded-full border-2 border-white bg-[#2b2b2b]">
+                        <img src="/Ast/Image/icon.png" alt="I Love You" class="m-0 p-0 w-[120px]">
                     </div>
+                </div>
 
+                <div id="emojiContainer"></div>
+                
+                <div class="w-full flex justify-center mt-[7vh]">
+                    <div class="w-[90vw] md:w-[80vw] h-auto p-0 m-0">
+                        <h1 class="text-3xl md:text-4xl font-bold text-center">Hello, IM Deaditya</h1>
+                        <p class="text-center mt-[3vh] mb-[5vh] opacity-95">Seorang manusia yang berasal dan tinggal di bumi.</span></p>
+                    </div>
+                </div>
+                
+                <div class="w-full md:flex justify-center">
+                    <button class="w-[150px] max-md:w-[50vw] h-[45px] bg-[transparent] border border-[white] text-white md:m-[30px] md:mt-[7vh] max-md:mx-[25vw] max-md:mt-[3vh] rounded-md cursor-pointer outline-none transition-all duration-150 ease-in hover:bg-[#2586e1] hover:border-[#2586e1]" onclick="spawnEmoji()">Say Hello</button>
+                    <button class="w-[150px] max-md:w-[50vw] h-[45px] bg-[#2586e1] border border-[#2586e1] text-white md:m-[30px] md:mt-[7vh] max-md:mx-[25vw] max-md:my-[3vh] max-md:mb-[5vh] rounded-md cursor-pointer outline-none transition-all duration-150 ease-in hover:bg-[transparent] hover:border-[white]" onclick="goToLink('#about')">Explore</button>
                 </div>
             </div>
 
-            <div class="w-full flex justify-center">
-                <div class="w-[70vw] h-full">
-                    <h3 class="font-bold text-base md:text-lg my-2">Contact Me:</h3>
-                    <form id="form-contact">
-                        <div class="md:flex md:justify-between">
-                            <div>
-                                <p class="text-justify text-[14px] md:text-[16px] text-[#ffffffe8] mb-2">Nama:</p>
-                                <input name="nama" class="w-[70vw] text-[14px] md:text-[16px] md:w-[20vw] bg-[#00a2ff] rounded-md outline-none p-2 placeholder-[white] md:block" maxlength="30" placeholder="Putu">
-                            </div>
-                            <div class="mt-3 md:mt-0">
-                                <p class="text-justify text-[14px] md:text-[16px] text-[#ffffffe8] mb-2">Pesan:</p>
-                                <input name="pesan1" class="w-[70vw] text-[14px] md:text-[16px] md:w-[47vw] bg-[#00a2ff] rounded-md outline-none p-2 placeholder-[white] max-md:hidden" minlength="2" maxlength="500" placeholder="Apa kabar?">
-                                <textarea name="pesan2" class="w-[70vw] text-[14px] h-[100px] md:h-auto md:text-[16px] md:w-[47vw] bg-[#00a2ff] rounded-md outline-none p-2 placeholder-[white] resize-none md:hidden" minlength="2" maxlength="500" placeholder="Apa kabar?"></textarea>
-                            </div>
+
+            <div  class="bg-[#ffffff] w-full h-[100vh] px-[10vw] py-[10vh]" id="about">
+                <div class="w-full h-[50%]">
+                    <div class="h-full md:h-[50%]">
+                        <h2 class="text-2xl md:text-3xl font-bold text-[#045580]">About:</h2>
+                        <p class="text-[#045580] opacity-95 mt-[3vh]">Nama saya adalah I Gede Aditya Pramana, seorang remaja laki-laki berusia 16 tahun yang tinggal di Bali, sebuah pulau yang dikenal dengan tradisinya yang kaya dan juga indah.</p>
+                    </div>
+                    <div class="h-[35%] flex items-center max-md:hidden">
+                        <p class="text-[#045580] opacity-95">"Tujuan hidup kita adalah untuk menjadi bahagia."<br> — Dalai Lama</p>
+                    </div>
+                </div>
+                <div class="w-full h-[50%]">
+                    <h2 class="text-2xl md:text-3xl font-bold text-[#045580]">Links:</h2>
+                    <div class="w-full mt-[3vh] flex">
+                        <div class="w-full md:w-[50%] ">
+                            <p class="md:py-[0.5vh] text-[#045580] opacity-95">Instagram: <a href="https://www.instagram.com/deaditya.xyz" target="_blank" class="cursor-pointer underline transition-opacity duration-150">Klik disini!</a></p>
+                            <p class="md:py-[0.5vh] text-[#045580] opacity-95">TikTok: <a href="https://tiktok.com/@deaditya.xyz" target="_blank" class="cursor-pointer underline transition-opacity duration-150">Klik disini!</a></p>
+                            <p class="md:py-[0.5vh] text-[#045580] opacity-95">YouTube: <a href="https://www.youtube.com/@DynCrazy" target="_blank" class="cursor-pointer underline transition-opacity duration-150">Klik disini!</a></p>
+                            <p class="md:py-[0.5vh] text-[#045580] opacity-95">Facebook: <a href="https://www.facebook.com/gede.aditya.777158" target="_blank" class="cursor-pointer underline transition-opacity duration-150">Klik disini!</a></p>
+                            <p class="md:py-[0.5vh] text-[#045580] opacity-95">Threads: <a href="https://www.threads.com/@deaditya.xyz" target="_blank" class="cursor-pointer underline transition-opacity duration-150">Klik disini!</a></p>
                         </div>
-                        <div class="flex justify-between my-5 md:hidden">
-                            <button type="submit" class="w-[40%] text-[14px] md:text-[16px] text-center items-center bg-[#00a2ff] rounded-md outline-none p-2 mr-4">Kirim</button>
-                            <p class="items-center text-[7px] text-[#ffffffc4]">*Pesan bersifat pribadi<br>*Setiap pesan cooldown 20 detik<br>*Pesan dianggap anonim jika kamu tidak mencantumkan nama</p>
+                        <div class="w-[50%] max-md:hidden">
                         </div>
-                        <div class="hidden justify-between my-3 md:my-6 md:flex">
-                            <p class="items-center text-[8px] text-[#ffffffc4]">*Pesan bersifat pribadi<br>*Setiap pesan cooldown 20 detik<br>*Pesan dianggap anonim jika kamu tidak mencantumkan nama</p>
-                            <button class="w-[10%] text-[14px] md:text-[16px] text-center items-center bg-[#00a2ff] rounded-md outline-none p-2">Kirim</button>
-                        </div>
-                    </form>
+                    </div>
                 </div>
             </div>
 
-            <div class="my-[12vh] my:h-[15vh]">
-                <div class="w-[33.3vw] h-[2px] ml-[1vw] my-[2vh] bg-[#00a2ff] rounded-md"></div>
-                <div class="w-[33.3vw] h-[2px] ml-[33vw] my-[2vh] bg-[#00a2ff] rounded-md"></div>
-                <div class="w-[33.3vw] h-[2px] ml-[65vw] my-[2vh] bg-[#00a2ff] rounded-md"></div>
+            <div  class="bg-[#045580] w-full h-[100vh] px-[10vw] py-[10vh]" id="project">
+                <h2 class="text-2xl md:text-3xl font-bold text-[white]">ThIS PaRt Is CoMInG SoON!</h2>
             </div>
-
-            <div class="w-full flex justify-center">
-                <div class="w-[70vw] flex justify-center">
-                    <h2 class="text-[14px] md:text-[16px] text-[#ffffffe8]">"Dunia <span class="text-[#00a2ffe8]">tak selamanya indah</span>. Semasih kamu bisa untuk menikmatinya, maka <span class="text-[#00a2ffe8]">nikmatilah</span>."</h2>    
-            
-                </div>
-            </div>
-            
-            <div class="w-[100%] h-[12vh] md:h-[15vh]"></div>
         </main>
 
         <footer>
-            <div class="relative bottom-0 !m-0 w-full h-auto bg-red-500 flex justify-center">
-                <div class="w-full h-full bg-[linear-gradient(to_top,_#21aeff,_#00a2ff)] bg-no-repeat text-white p-[7vh] pl-0 pr-0 box-border">
-                    <h3 class="text-center text-lg font-bold" id="titleinftr">DEADITYA OFFICIAL WEBSITE</h3>
-                    <div class="flex justify-center">
-                        <div class="w-[50vw] md:w-[15vw] flex justify-between text-[22px] m-6">
-                            <a href="https://www.instagram.com/deaditya.xyz"><i class="ri-instagram-line"></i></a>
-                            <a href="https://www.youtube.com/@DynCrazy"><i class="ri-youtube-fill"></i></a>
-                            <a href="https://tiktok.com/@deaditya.xyz"><i class="ri-tiktok-fill"></i></a>
-                            <a href="https://wa.me/+6287817661477"><i class="ri-whatsapp-line"></i></a>
-                        </div>
+            <div class="bg-[#2586e1] w-full h-auto max-md:h-auto px-[10vw] py-[10vh] pb-[5vh] max-md:pb-[7vh]">
+                <div class="w-full flex justify-center">
+                    <div class="w-1/3 max-md:w-1/2 h-full pr-[10%]">
+                        <h5 class="text-[16px] font-bold text-[white]">Website:</h5>
+                        <p class="text-[white] text-[14px] opacity-95 my-[7px] leading-[1.8]">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                     </div>
-                    <p class="text-center text-[14px]" id="copyinftr">Copyright &copy 2025<br>Created by Gede Aditya</p>
+                    <div class="w-1/3 max-md:w-1/2 h-full md:pr-[10%]">
+                        <h5 class="text-[16px] font-bold text-[white]">Page Map:</h5>
+                        <p class="text-[white] text-[14px] my-[7px] leading-[1.8]">
+                            <span class="cursor-pointer opacity-95 hover:opacity-100 transition-opacity duration-150" onclick="goToLink('#main-menu')">Main Menu</span><br>
+                            <span class="cursor-pointer opacity-95 hover:opacity-100 transition-opacity duration-150" onclick="goToLink('#about')">About</span><br>
+                            <span class="cursor-pointer opacity-95 hover:opacity-100 transition-opacity duration-150" onclick="goToLink('?')">Project</span><br>
+                            <span class="cursor-pointer opacity-95 hover:opacity-100 transition-opacity duration-150" onclick="goToLink('?')">Collection</span><br>
+                            <span class="cursor-pointer opacity-95 hover:opacity-100 transition-opacity duration-150" onclick="goToLink('?')">Contact</span>
+                        </p>
+                    </div>
+                    <div class="w-1/3 h-full max-md:hidden">
+                        <h5 class="text-[16px] font-bold text-[white]">Other:</h5>
+                        <p class="text-[white] text-[14px] my-[7px] leading-[1.8]">
+                            <span class="cursor-pointer opacity-95 hover:opacity-100 transition-opacity duration-150" onclick="goToLink('?')">Terms of Service</span><br>
+                            <span class="cursor-pointer opacity-95 hover:opacity-100 transition-opacity duration-150" onclick="goToLink('?')">Privacy Policy</span><br>
+                            <span class="cursor-pointer opacity-95 hover:opacity-100 transition-opacity duration-150" onclick="goToLink('?')">Website Update</span><br>
+                        </p>
+                    </div>
+                </div>
+                <div class="w-full flex justify-center">
+                    <div class="w-[35%] max-md:w-[80%] h-full text-[22px] max-md:text-[20px] my-[5vh] max-md:my-[5vh] flex justify-between">
+                        <i onclick="goToLink('https://www.instagram.com/deaditya.xyz')" class="ri-instagram-line text-[white] opacity-95 cursor-pointer transition-opacity duration-150"></i>
+                        <i onclick="goToLink('https://tiktok.com/@deaditya.xyz')" class="ri-tiktok-fill text-[white] opacity-95 cursor-pointer transition-opacity duration-150"></i>
+                        <i onclick="goToLink('https://www.youtube.com/@DynCrazy')" class="ri-youtube-fill text-[white] opacity-95 cursor-pointer transition-opacity duration-150"></i>
+                        <i onclick="goToLink('https://www.facebook.com/gede.aditya.777158')" class="ri-facebook-circle-fill text-[white] opacity-95 cursor-pointer transition-opacity duration-150"></i>
+                        <i onclick="goToLink('https://wa.me/+6287817661477')" class="ri-whatsapp-line text-[white] opacity-95 cursor-pointer transition-opacity duration-150"></i>
+                    </div>
+                </div>
+                <div class="w-full flex items-end justify-center max-md:hidden">
+                    <p class="text-[white] text-[14px] opacity-95">Created by Gede Aditya - &copy; Copyright 2025</p>
+                </div>
+                <div class="w-full flex items-end justify-center md:hidden">
+                    <p class="text-[white] text-[14px] opacity-95 text-center">Created by Gede Aditya<br>&copy; Copyright 2025</p>
                 </div>
             </div>
         </footer>
     </div>
 
-    <script src="/Ast/Script/scripts.js"></script>
-    <script src="/Ast/Script/scripts2.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script>
-        emailjs.init("XXk13X9ZrFPXcgrY4");
-
-        const form = document.getElementById("form-contact");
-        const buttons = form.querySelectorAll('button[type="submit"], button');
-
-        let cooldown = false;
-
-        form.addEventListener("submit", function (e) {
-        e.preventDefault();
-
-            if (cooldown) {
-                alert("Tunggu 20 detik sebelum mengirim pesan lagi.");
-                return;
-            }
-
-            const pesan = window.innerWidth >= 768 ? this.pesan1.value : this.pesan2.value;
-            const nama = this.nama.value === '' || this.nama.value === null ? "Anonim" : this.nama.value;
-
-            const templateParams = {
-                userName: nama,
-                userMessage: pesan,
-            };
-
-            if (pesan === "" || pesan === undefined || pesan === null) {
-                alert("Pesan tidak boleh kosong!");
-            } else {
-                cooldown = true;
-                buttons.forEach(btn => btn.disabled = true);
-
-                emailjs.send("deaditya_gmail", "template_1", templateParams)
-                    .then(function (response) {
-                    alert("Pesan berhasil dikirim!");
-                    console.log("SUCCESS!", response.status, response.text);
-                    }, function (error) {
-                    alert("Gagal mengirim pesan.");
-                    console.error("FAILED...", error);
-                    })
-                    .finally(function () {
-                    setTimeout(() => {
-                        cooldown = false;
-                        buttons.forEach(btn => btn.disabled = false);
-                    }, 20000);
-                });
-            }
-        });
-    </script>
+    <script src="/Ast/Script/script.js"></script>  
 </body>
 </html>
