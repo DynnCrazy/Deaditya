@@ -12,7 +12,7 @@
     <!-- === -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- === -->
-    <link href="/Ast/Style/styles.css" rel="stylesheet">
+    <link href="/Ast/Style/style.css" rel="stylesheet">
     <style>
         /*
         * {
@@ -22,113 +22,71 @@
     </style>
 </head>
 <body>    
-    <div class="content">
-        <header>
-        </header>
+    <header>
+    </header>
 
-        <main>
-            <div class="bg-[#003866] w-full h-[100vh]" id="main-menu">
-                <div class="w-[100%] h-[18vh] md:h-[17vh] bg-[#0062B2]">
-                    <!-- <img src="/Ast/Image/mntp.jpg" alt="I Love You" class="fotobackgroundavatar"> -->
-                </div>
-                <div class="w-full flex justify-center">
-                    <div class="w-[120px] h-[120px] -mt-[60px] rounded-full border-2 border-white bg-[#2b2b2b]">
-                        <img src="/Ast/Image/icon.png" alt="I Love You" class="m-0 p-0 w-[120px]">
-                    </div>
-                </div>
+    <main>
+        <section class="w-full h-[100vh] flex justify-center py-[5vh] md:py-[10vh] bg-[#ffffff]">
+            <div class="w-[85vw]">
 
-                <div id="emojiContainer"></div>
-                
-                <div class="w-full flex justify-center mt-[7vh]">
-                    <div class="w-[90vw] md:w-[80vw] h-auto p-0 m-0">
-                        <h1 class="text-3xl md:text-4xl font-bold text-center">Hello, IM Deaditya</h1>
-                        <p class="text-center mt-[3vh] mb-[5vh] opacity-95">Seorang manusia yang berasal dan tinggal di bumi.</span></p>
-                    </div>
-                </div>
-                
-                <div class="w-full md:flex justify-center">
-                    <button class="w-[150px] max-md:w-[50vw] h-[45px] bg-[transparent] border border-[white] text-white md:m-[30px] md:mt-[7vh] max-md:mx-[25vw] max-md:mt-[3vh] rounded-md cursor-pointer outline-none transition-all duration-150 ease-in hover:bg-[#0062B2] hover:border-[#0062B2]" onclick="spawnEmoji()">Say Hello</button>
-                    <button class="w-[150px] max-md:w-[50vw] h-[45px] bg-[#0062B2] border border-[#0062B2] text-white md:m-[30px] md:mt-[7vh] max-md:mx-[25vw] max-md:my-[3vh] max-md:mb-[5vh] rounded-md cursor-pointer outline-none transition-all duration-150 ease-in hover:bg-[transparent] hover:border-[white]" onclick="goToLink('#about')">Explore</button>
-                </div>
-            </div>
+                <div class="w-full h-full md:flex md:justify-center rounded-md">
 
-
-            <div  class="bg-[#ffffff] w-full h-[100vh] px-[10vw] py-[10vh]" id="about">
-                <div class="w-full h-[50%]">
-                    <div class="h-full md:h-[50%]">
-                        <h2 class="text-2xl md:text-3xl font-bold text-[#003866]">About:</h2>
-                        <p class="text-[#003866] opacity-95 mt-[3vh]">Nama saya adalah I Gede Aditya Pramana, seorang remaja laki-laki berusia 17 tahun yang tinggal di Bali, sebuah pulau yang dikenal dengan tradisinya yang kaya dan juga indah.</p>
-                    </div>
-                    <div class="h-[35%] flex items-center max-md:hidden">
-                        <p class="text-[#003866] opacity-95">"Tujuan hidup kita adalah untuk menjadi bahagia."<br> — Dalai Lama</p>
-                    </div>
-                </div>
-                <div class="w-full h-[50%]">
-                    <h2 class="text-2xl md:text-3xl font-bold text-[#003866]">Links:</h2>
-                    <div class="w-full mt-[3vh] flex">
-                        <div class="w-full md:w-[50%] ">
-                            <p class="md:py-[0.5vh] text-[#003866] opacity-95">Instagram: <a href="https://www.instagram.com/deaditya.xyz" target="_blank" class="cursor-pointer underline transition-opacity duration-150">Klik disini!</a></p>
-                            <p class="md:py-[0.5vh] text-[#003866] opacity-95">TikTok: <a href="https://tiktok.com/@deaditya.xyz" target="_blank" class="cursor-pointer underline transition-opacity duration-150">Klik disini!</a></p>
-                            <p class="md:py-[0.5vh] text-[#003866] opacity-95">YouTube: <a href="https://www.youtube.com/@DynCrazy" target="_blank" class="cursor-pointer underline transition-opacity duration-150">Klik disini!</a></p>
-                            <p class="md:py-[0.5vh] text-[#003866] opacity-95">Facebook: <a href="https://www.facebook.com/gede.aditya.777158" target="_blank" class="cursor-pointer underline transition-opacity duration-150">Klik disini!</a></p>
-                            <p class="md:py-[0.5vh] text-[#003866] opacity-95">Threads: <a href="https://www.threads.com/@deaditya.xyz" target="_blank" class="cursor-pointer underline transition-opacity duration-150">Klik disini!</a></p>
+                    <div class="bg-[#f7f7f7] h-[27%] md:h-[95%] w-[100%] md:w-[30%] rounded-md">
+                        <div class="w-full h-[100%] md:h-[40%] p-[7%] md:p-[10%]">
+                            <div class="w-full h-full flex justify-center">
+                                <img src="/Ast/Image/icon.png">
+                            </div>
                         </div>
-                        <div class="w-[50%] max-md:hidden">
+                        <div class="w-full h-[60%] pb-[10%] max-md:hidden">
+                            <div class="w-full h-full flex justify-center">
+                                <div class="w-full h-full px-[10%]">
+                                    <div class="text-center">
+                                        <h4 class="text-xl">I Gede Aditya Pramana</h4><br>
+                                    </div>
+                                    <div class="w-full flex justify-center">
+                                        <div class="bg-[#e9e9e9] w-[100%] h-[2px] rounded-md my-[2%] mb-[7%]"></div>
+                                    </div>
+                                    <div class="text-left">
+                                        <p>
+                                            Gender: Laki-laki<br>
+                                            Lahir: 18 Juli XXXX<br>
+                                            Alamat: Br. Tojan, Kec.Blahbatuh, Kab.Gianyar, Bali, Indonesia<br>
+                                            Kewarganegaraan: Indonesia<br>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
 
-            <div  class="bg-[#003866] w-full h-[100vh] px-[10vw] py-[10vh]" id="project">
-                <h2 class="text-2xl md:text-3xl font-bold text-[white]">ThIS PaRt Is CoMInG SoON!</h2>
-            </div>
-        </main>
+                    <div class="h-full w-[7%] max-md:h-[7%]"></div>
 
-        <footer>
-            <div class="bg-[#0062B2] w-full h-auto max-md:h-auto px-[10vw] py-[10vh] pb-[5vh] max-md:pb-[7vh]">
-                <div class="w-full flex justify-center">
-                    <div class="w-1/3 max-md:w-1/2 h-full pr-[10%]">
-                        <h5 class="text-[16px] font-bold text-[white]">Website:</h5>
-                        <p class="text-[white] text-[14px] opacity-95 my-[7px] leading-[1.8]">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <div class="h-full max-md:h-[66%] w-[63%] max-md:w-full">
+                        <div class="w-full h-[20%] max-md:h-[15%] md:py-[3%]">
+                            <h1 class="text-5xl font-bold max-md:hidden">Hello, IM Deaditya!</h1>
+                            <h3 class="text-2xl font-bold md:hidden">Hi, IM Deaditya!</h3>
+                        </div>
+                        <div class="w-full h-[35%] max-md:h-[35%]">
+                            <p class="max-md:text-[12px] max-md:leadinng-[1]">Seorang manusia yang berasal dan tinggal di Bumi, planet dengan sejuta kehidupan yang ada.<span class="max-md:hidden">Di website ini, kamu dapat melihat informasi tentang Gede Aditya, mulai dari nama, tanggal lahir, serta alamat. Selain itu, kamu juga dapat melihat projek, koleksi, dll yang dimiliki oleh Gede Aditya. Website ini hanya sebatas hiburan yang dibuat menggunakan HTML, CSS, serta JavaScript.</span></p>
+                        </div>
+                        <div class="w-full h-[40%] max-md:h-[45%]">
+                            <button class="rounded-md bg-[#3B82F6] max-md:text-[12px] w-[20%] max-md:w-[40%] p-3 mr-[2%] border border-1 border-[#3B82F6] text-[white]" onclick="spawnEmoji()">Say Hello</button>
+                            <button class="rounded-md bg-transparent max-md:text-[12px] w-[20%] max-md:w-[40%] p-3 ml-[2%] border border-1 border-[#111111] text-[#111111]" onclick="comingSoon()">View More</button>
+                        </div>
+                        <div class="w-full h-[5%] max-md:hidden"></div>
                     </div>
-                    <div class="w-1/3 max-md:w-1/2 h-full md:pr-[10%]">
-                        <h5 class="text-[16px] font-bold text-[white]">Page Map:</h5>
-                        <p class="text-[white] text-[14px] my-[7px] leading-[1.8]">
-                            <span class="cursor-pointer opacity-95 hover:opacity-100 transition-opacity duration-150" onclick="goToLink('#main-menu')">Main Menu</span><br>
-                            <span class="cursor-pointer opacity-95 hover:opacity-100 transition-opacity duration-150" onclick="goToLink('#about')">About</span><br>
-                            <span class="cursor-pointer opacity-95 hover:opacity-100 transition-opacity duration-150" onclick="goToLink('?')">Project</span><br>
-                            <span class="cursor-pointer opacity-95 hover:opacity-100 transition-opacity duration-150" onclick="goToLink('?')">Collection</span><br>
-                            <span class="cursor-pointer opacity-95 hover:opacity-100 transition-opacity duration-150" onclick="goToLink('?')">Contact</span>
-                        </p>
-                    </div>
-                    <div class="w-1/3 h-full max-md:hidden">
-                        <h5 class="text-[16px] font-bold text-[white]">Other:</h5>
-                        <p class="text-[white] text-[14px] my-[7px] leading-[1.8]">
-                            <span class="cursor-pointer opacity-95 hover:opacity-100 transition-opacity duration-150" onclick="goToLink('?')">Terms of Service</span><br>
-                            <span class="cursor-pointer opacity-95 hover:opacity-100 transition-opacity duration-150" onclick="goToLink('?')">Privacy Policy</span><br>
-                            <span class="cursor-pointer opacity-95 hover:opacity-100 transition-opacity duration-150" onclick="goToLink('?')">Website Update</span><br>
-                        </p>
-                    </div>
-                </div>
-                <div class="w-full flex justify-center">
-                    <div class="w-[35%] max-md:w-[80%] h-full text-[22px] max-md:text-[20px] my-[5vh] max-md:my-[5vh] flex justify-between">
-                        <i onclick="goToLink('https://www.instagram.com/deaditya.xyz')" class="ri-instagram-line text-[white] opacity-95 cursor-pointer transition-opacity duration-150"></i>
-                        <i onclick="goToLink('https://tiktok.com/@deaditya.xyz')" class="ri-tiktok-fill text-[white] opacity-95 cursor-pointer transition-opacity duration-150"></i>
-                        <i onclick="goToLink('https://www.youtube.com/@DynCrazy')" class="ri-youtube-fill text-[white] opacity-95 cursor-pointer transition-opacity duration-150"></i>
-                        <i onclick="goToLink('https://www.facebook.com/gede.aditya.777158')" class="ri-facebook-circle-fill text-[white] opacity-95 cursor-pointer transition-opacity duration-150"></i>
-                        <i onclick="goToLink('https://wa.me/+6287817661477')" class="ri-whatsapp-line text-[white] opacity-95 cursor-pointer transition-opacity duration-150"></i>
-                    </div>
-                </div>
-                <div class="w-full flex items-end justify-center max-md:hidden">
-                    <p class="text-[white] text-[14px] opacity-95">Created by Gede Aditya - &copy; Copyright 2025</p>
-                </div>
-                <div class="w-full flex items-end justify-center md:hidden">
-                    <p class="text-[white] text-[14px] opacity-95 text-center">Created by Gede Aditya<br>&copy; Copyright 2025</p>
-                </div>
-            </div>
-        </footer>
-    </div>
 
+                </div>
+
+            </div>
+        </section>
+
+        
+    </main>
+
+    <footer>
+    </footer>
+ 
     <script src="/Ast/Script/script.js"></script>  
 </body>
 </html>
