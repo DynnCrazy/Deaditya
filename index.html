@@ -26,7 +26,7 @@
     </header>
 
     <main>
-        <section class="w-full h-[100vh] flex justify-center py-[5vh] md:py-[10vh] bg-[#ffffff]">
+        <section class="w-full h-[100vh] flex justify-center py-[5vh] md:py-[10vh] bg-[#ffffff]" id="section1">
             <div class="w-[85vw]">
 
                 <div class="w-full h-full md:flex md:justify-center rounded-md">
@@ -51,7 +51,7 @@
                                             Gender: Laki-laki<br>
                                             Lahir: 18 Juli XXXX<br>
                                             Alamat: Br. Tojan, Kec.Blahbatuh, Kab.Gianyar, Bali, Indonesia<br>
-                                            Kewarganegaraan: Indonesia<br>
+                                            Kewarganegaraan: Indonesia (&#x1F1EE;&#x1F1E9;)<br>
                                         </p>
                                     </div>
                                 </div>
@@ -63,16 +63,46 @@
 
                     <div class="h-full max-md:h-[66%] w-[63%] max-md:w-full">
                         <div class="w-full h-[20%] max-md:h-[15%] md:py-[3%]">
-                            <div id="typed" class="text-5xl max-md:text-2xl font-bold"></div>
+                            <div id="typed" class="text-5xl max-md:text-3xl font-bold"></div>
                         </div>
                         <div class="w-full h-[35%] max-md:h-[25%]">
-                            <p class="max-md:text-[12px] max-md:leadinng-[1]">Seorang manusia yang berasal dan tinggal di Bumi, planet dengan sejuta kehidupan yang ada.<span class="max-md:hidden">Di website ini, kamu dapat melihat informasi tentang Gede Aditya, mulai dari nama, tanggal lahir, serta alamat. Selain itu, kamu juga dapat melihat projek, koleksi, dll yang dimiliki oleh Gede Aditya. Website ini hanya sebatas hiburan yang dibuat menggunakan HTML, CSS, serta JavaScript.</span></p>
+                            <p class="max-md:text-[12px] max-md:leadinng-[1]">Seorang manusia yang berasal dan tinggal di Bumi, planet dengan sejuta kehidupan yang ada.<span class="max-md:hidden">Di website ini, kamu dapat melihat informasi tentang Gede Aditya, mulai dari nama, tanggal lahir, serta alamat. Selain itu, kamu juga dapat melihat projek, koleksi, dll yang dimiliki oleh Gede Aditya. Website ini hanya sebatas hiburan yang dibuat menggunakan HTML, CSS (Tailwind), serta JavaScript.</span></p>
                         </div>
                         <div class="w-full h-[40%] max-md:h-[55%]">
-                            <button class="transition-color duration-300 rounded-md bg-[#3B82F6] hover:bg-[#2563EB] max-md:text-[12px] w-[20%] max-md:w-[40%] p-3 mr-[2%] border border-1 border-[#3B82F6] text-[white]" onclick="spawnEmoji()">Say Hello</button>
-                            <button class="transition-color duration-300 rounded-md bg-transparent hover:bg-[#f7f7f7] max-md:text-[12px] w-[20%] max-md:w-[40%] p-3 ml-[2%] border border-1 border-[#111111] text-[#111111]" onclick="comingSoon()">View More</button>
+                            <button class="outline-none transition-color duration-300 rounded-md bg-[#3B82F6] hover:bg-[#2563EB] max-md:text-[12px] w-[20%] max-md:w-[40%] p-3 mr-[2%] border border-1 border-[#3B82F6] text-[white]" onclick="spawnEmoji()">Say Hello</button>
+                            <button class="outline-none transition-color duration-300 rounded-md bg-transparent hover:bg-[#f7f7f7] max-md:text-[12px] w-[20%] max-md:w-[40%] p-3 ml-[2%] border border-1 border-[#111111] text-[#111111]" onclick="goToLink('#section2')">View More</button>
                         </div>
                         <div class="w-full h-[5%] max-md:hidden"></div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="w-full h-[100vh] flex justify-center py-[7vh] md:py-[10vh] bg-[#f7f7f7]" id="section2">
+            <div class="w-[85vw]">
+
+                <div class="w-full h-full md:flex md:justify-center rounded-md">
+
+                    <div class="w-[47%] max-md:w-full">
+                        <h3 class="text-2xl max-md:text-xl font-bold my-[1.5%]">Quotes of the Day:</h3>
+                        <p class="max-md:text-[12px]" id="quotes_web">"Tak peduli siapa namamu, darimana asalmu, bagaimana wajahmu, karena kehidupanmu sama sepertiku"<br>- D</p>
+                    </div>
+                    <div class="w-[6%] flex justify-center max-md:hidden">
+                        <div class="w-[2px] h-full bg-[#ffffff] rounded-md"></div>
+                    </div>
+                    <div class="w-[47%] max-md:w-full max-md:my-[5vh]">
+                        <h3 class="text-2xl max-md:text-xl font-bold my-[1.5%]">Follow Me on Social Media:</h3>
+                        <p class="max-md:text-[12px]">
+                            Instagram: <a href="" target="_blank">Klik disini!</a><br>
+                            TikTok: <a href="" target="_blank">Klik disini!</a><br>
+                            YouTube: <a href="" target="_blank">Klik disini!</a><br>
+                            Facebook: <a href="" target="_blank">Klik disini!</a><br>
+                            Threads: <a href="" target="_blank">Klik disini!</a><br>
+                            <br>
+                            <i class="md:text-[14px] max-md:text-[10px] max-md:hidden">Catatan: Jika kamu mau melihat sosial media lainnya, kamu bisa chat pribadi melalui beberapa sosial media diatas.</i>
+                        </p>
                     </div>
 
                 </div>
@@ -94,7 +124,7 @@
                     "Welcome!"
                 ],
                 typeSpeed: 70, 
-                backSpeed: 60,
+                backSpeed: 70,
                 backDelay: 5000,
                 startDelay: 500,
                 loop: true

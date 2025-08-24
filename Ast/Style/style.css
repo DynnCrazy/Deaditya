@@ -18,6 +18,10 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 2;
 }
 
+a {
+    color: #3B82F6 !important;
+}
+
 .emoji {
     position: absolute;
     font-size: 30px;
@@ -41,4 +45,35 @@ h1, h2, h3, h4, h5, h6 {
     vertical-align: middle;
     line-height: 1;
     font-size: inherit;
+}
+
+
+/* === UNTUK PROJECT === */
+.item-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  text-align: center;
+  padding: 10px;
+  transition: opacity 0.3s;
+}
+
+.item:hover .item-overlay {
+  opacity: 1;
+}
+
+.item img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s;
+}
+
+.item:hover img {
+  transform: scale(1.05);
 }
