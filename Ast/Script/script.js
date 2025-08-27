@@ -49,10 +49,14 @@ async function getData(dataId) {
             if (dataId === "0") {
                 const response = await fetch("https://datadc.netlify.app/data/quotes/quotes.json");
                 var data = await response.json();
+                data.quotes.sort((a, b) => {
+                    return a.q_id.localeCompare(b.q_id);
+                });
                 const daysSinceEpoch = Math.floor(today.getTime() / (1000 * 60 * 60 * 24));
                 const index = daysSinceEpoch % data.quotes.length;
 
                 document.getElementById("quotes_web").innerText = `"${data.quotes[index].q_id}"\n- ${data.quotes[index].a}`;
+                document.getElementById("update-on").textContent = "Website diperbarui pada 27 Agustus 2025";
 
             } else if (dataId === "1") {
                 const response = await fetch("https://datadc.netlify.app/data/project/desain.json");
