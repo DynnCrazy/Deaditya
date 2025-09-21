@@ -72,6 +72,24 @@ async function getData(dataId) {
                 }
 
                 document.getElementById("masonry-grid").innerHTML = temp;
+            } else if (dataId === "2") {
+                const response = await fetch("/Ast/Data/Json/watching.json");
+                var data = await response.json();
+                var temp = '';
+
+                for (let i = 0; i < data.length; i++) {
+                    if (data[i].image === "-") {
+                        continue;
+                    } else {
+                        temp += `
+                            <div class="item mb-4 relative break-inside-avoid overflow-hidden">
+                                <img src="${data[i].image}" alt="${data[i].title}" loading="lazy">
+                                <div class="item-overlay md:text-[14px] max-md:text-[12px]">${data[i].title} (${data[i].year_release})</div>
+                            </div>`;
+                    }
+                }
+
+                document.getElementById("masonry-grid").innerHTML = temp;
             }
 
         } catch (error) {
@@ -79,8 +97,22 @@ async function getData(dataId) {
         }
 }
 
+document.addEventListener("DOMContentLoaded", () => {
+      const items = document.querySelectorAll(".item");
+
+      items.forEach(item => {
+        item.addEventListener("click", () => {
+          // toggle class show-overlay
+          item.classList.toggle("show-overlay");
+        });
+      });
+    });
+
+
 if (window.location.pathname === "/project.html") {
     getData("1");
+} else if (window.location.pathname === "/watching.html") {
+    getData("2");
 } else {
     getData("0");
 }
