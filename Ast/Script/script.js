@@ -56,7 +56,7 @@ async function getData(dataId) {
                 const index = daysSinceEpoch % data.quotes.length;
 
                 document.getElementById("quotes_web").innerText = `"${data.quotes[index].q_id}"\n- ${data.quotes[index].a}`;
-                document.getElementById("update-on").textContent = "Website diperbarui pada 27 Agustus 2025";
+                document.getElementById("update-on").textContent = "Website created by Gede Aditya & updated on 12/10/2025";
 
             } else if (dataId === "1") {
                 const response = await fetch("https://datadc.netlify.app/data/project/desain.json");
