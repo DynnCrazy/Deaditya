@@ -69,7 +69,7 @@
                             <p class="max-md:text-[12px] max-md:leadinng-[1]">Seorang manusia yang berasal dan tinggal di Bumi, sebuah planet dengan sejuta kehidupan yang ada.<span class="max-md:hidden"> Di website ini, kamu dapat melihat informasi tentang Gede Aditya, mulai dari nama, tanggal lahir, serta alamat. Selain itu, kamu juga dapat melihat projek, koleksi, dll yang dimiliki oleh Gede Aditya. Website ini hanya sebatas hiburan yang dibuat menggunakan HTML, CSS (Tailwind), serta JavaScript.</span></p>
                         </div>
                         <div class="w-full h-[40%] max-md:h-[50%]">
-                            <button class="outline-none transition-color duration-300 rounded-md bg-[#1079bb] hover:bg-[#2563EB] max-md:text-[12px] w-[20%] max-md:w-[40%] p-3 mr-[2%] border border-1 border-[#1079bb] text-[white]" onclick="spawnEmoji()">Say Hello</button>
+                            <button class="outline-none transition-color duration-300 rounded-md bg-[#1071bb] hover:bg-[#0d5b97] max-md:text-[12px] w-[20%] max-md:w-[40%] p-3 mr-[2%] border border-1 border-[#1071bb] text-[white]" onclick="spawnEmoji()">Say Hello</button>
                             <button class="outline-none transition-color duration-300 rounded-md bg-transparent hover:bg-[#f7f7f7] max-md:text-[12px] w-[20%] max-md:w-[40%] p-3 ml-[2%] border border-1 border-[#111111] text-[#111111]" onclick="goToLink('#section2')">View More</button>
                         </div>
                         <div class="w-full h-[5%] max-md:hidden"></div>
@@ -80,21 +80,21 @@
             </div>
         </section>
 
-        <section class="w-full h-[100vh] flex justify-center py-[7vh] md:py-[10vh] bg-[#1079bb]" id="section2">
+        <section class="w-full h-[100vh] flex justify-center py-[7vh] md:py-[10vh] bg-[#1071bb]" id="section2">
             <div class="w-[85vw]">
 
                 <div class="w-full h-full md:flex md:justify-center rounded-md">
 
                     <div class="w-[46%] max-md:w-full">
                         <h3 class="text-2xl max-md:text-xl font-bold my-[1.5%] text-white opacity-95">Quotes of the Day:</h3>
-                        <p class="max-md:text-[12px] text-white opacity-90"><span id="quotes_web">"Tak peduli siapa namamu, darimana asalmu, bagaimana wajahmu, karena kehidupanmu sama sepertiku"<br>- D</span><span><i class="md:text-[12px] max-md:text-[8px] max-md:block"><br><br>Catatan: Quotes otomatis update setiap hari.</i></span></p>
+                        <p class="max-md:text-[12px] text-white opacity-90"><span id="quotes_web">"Quotes not found!"<br>- D</span><span><i class="md:text-[12px] max-md:text-[8px] max-md:block"><br><br>Catatan: Quotes otomatis update setiap hari.</i></span></p>
                     </div>
                     <div class="w-[8%] flex justify-center max-md:hidden">
                         <div class="w-[2.2px] h-full bg-[#ffffff] opacity-50 rounded-md"></div>
                     </div>
                     <div class="w-[46%] max-md:w-full max-md:my-[5vh]">
                         <h3 class="text-2xl max-md:text-xl font-bold my-[1.5%] text-white opacity-95">Follow Me on Social Media:</h3>
-                        <p class="max-md:text-[12px] text-white opacity-90">
+                        <p class="max-md:text-[12px] text-white opacity-90 max-md:leading-7">
                             Instagram: <a href="https://www.instagram.com/deaditya.xyz" class="text-white opacity-90 underline" target="_blank">Klik disini!</a><br>
                             TikTok: <a href="https://tiktok.com/@deaditya.xyz" class="text-white opacity-90 underline" target="_blank">Klik disini!</a><br>
                             YouTube: <a href="https://www.youtube.com/@DynCrazy" class="text-white opacity-90 underline" target="_blank">Klik disini!</a><br>
@@ -125,6 +125,9 @@
     <footer>
     </footer>
  
+    <div onclick="putarLagu()" id="btn-lagu" class="fixed bottom-0 right-0 m-5 max-md:m-3 bg-[#48ba48] p-3 px-4 max-md:p-2 max-md:px-3 rounded-[8px] text-white cursor-pointer text-[14px] max-md:text-[10px]">Play</div>
+    <audio id="lagu" src="/Ast/Audio/wings.mp3"></audio>
+
     <script src="/Ast/Script/script.js"></script>  
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
         <script>
